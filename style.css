@@ -112,9 +112,9 @@ h1 {
 	padding: 0 1% 0 1%;
 }
 
-
-
-
+#selectedCountry {
+	list-style-type: none;
+}
 
 /* COUNTRY SELECTION MENU */
 
