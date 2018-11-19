@@ -9,10 +9,17 @@
 
 
 
-var mortality;
+var mortality_notsorted;
 
-d3.csv("/datasets/mortality_not_sorted.csv", function(data) {
-	 mortality = data;
+d3.csv("datasets/mortality_not_sorted.csv", function(data) {
+	mortality_notsorted = data;
+});
+
+
+var mortality_sorted;
+
+d3.csv("datasets/mortality_rate_sorted.csv", function(data) {
+	 mortality_sorted = data;
 });
 
 
