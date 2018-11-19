@@ -1,7 +1,7 @@
 // 2. Use the margin convention practice 
 var margin = {top: 50, right: 50, bottom: 50, left: 50}
-  , width = window.innerWidth - margin.left - margin.right // Use the window's width 
-  , height = window.innerHeight - margin.top - margin.bottom; // Use the window's height
+  , width = (window.innerWidth - margin.left - margin.right)/3 // Use the window's width 
+  , height = (window.innerHeight - margin.top - margin.bottom)/3; // Use the window's height
 
 // The number of datapoints
 var n = 21;
