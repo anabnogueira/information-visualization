@@ -119,14 +119,17 @@ h1 {
 /* COUNTRY SELECTION MENU */
 
 #search {
-	width: 90%;
+	width: 100%;
 	background-color: #3D3C45;
 	border-radius: 2vh;
 	height: 4vh;
 	border: none;
-	padding: 1vh 2vh 1vh 2vh;
+	padding: 1vh 2vh 1vh 5vh;
 	color: #EFEFEF;
 	font-family: 'Roboto Mono', monospace;
+	background-image:url('icons/searchicon.png');
+	background-repeat: no-repeat;
+	background-position: 1vh 0.5vh;
 }
 
 #searchicon {
@@ -135,6 +138,12 @@ h1 {
 	border: none;
 	float: right;
 	padding: 2% 0 0 1%;
+}
+
+#autocomplete-list {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 #sctitle {
