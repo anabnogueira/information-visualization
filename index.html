@@ -10,8 +10,11 @@
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.1/crossfilter.min.js"></script>
 <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+
 <script src="selectCountry.js"></script>
+
 <script src="script.js"></script>
+
 
 </head>
 
@@ -54,6 +57,11 @@
 
 <div id="radarplot">
 	<h1>Radar Plot</h1>
+	<div id="chart">
+		
+		<script src="radar-chart.js"></script>
+	</div>
+
 </div>
 
 <div id="selectionmenu1">
@@ -203,5 +211,6 @@
 
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 <script>autocomplete(document.getElementById("search"), countries, document.getElementById("selectedCountry"));</script>
+<script src="radar-chart-extra.js"></script>
 
 </body>

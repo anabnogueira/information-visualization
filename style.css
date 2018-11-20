@@ -101,6 +101,13 @@ h1 {
 	padding: 0 1% 0 1%;
 }
 
+#chart {
+	position: absolute;
+	top: 50px;
+	left: 100px;
+}
+
+
 #selectionmenu1 {
 	position: relative;
 	display: inline-block;
