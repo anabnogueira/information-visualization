@@ -4,7 +4,7 @@ const format = d3.format(',');
 const tip = d3.tip()
   .attr('class', 'd3-tip')
   .offset([-10, 0])
-  .html(d => `<strong>Country: </strong><span class='details'>${d.properties.name}<br></span><strong>Population: </strong><span class='details'>${format(d.population)}</span>`);
+  .html(d => `<strong>Country: </strong><span class='details'>${d.properties.name}<br></span><strong>Mortality Rate: </strong><span class='details'>${format(d.population)}</span>`);
 
 const margin_map = {top: 0, right: 0, bottom: 0, left: 0};
 const width_map = 480;
@@ -12,16 +12,18 @@ const height_map = 350;
 
 const color = d3.scaleThreshold()
   .domain([
-    10000,
-    100000,
-    500000,
-    1000000,
-    5000000,
-    10000000,
-    50000000,
-    100000000,
-    500000000,
-    1500000000
+    1,
+    3,
+    5,
+    8,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45
   ])
   .range([
     'rgb(247,251,255)',
@@ -56,7 +58,7 @@ svg_map.call(tip);
 
 queue()
   .defer(d3.json, 'world_countries.json')
-  .defer(d3.tsv, 'world_population.tsv')
+  .defer(d3.tsv, 'mortality_rate_sorted1990.tsv')
   .await(ready);
 
 function ready(error, data, population) {
