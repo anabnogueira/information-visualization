@@ -38,7 +38,7 @@ h1 {
 	width: 40%;
 	height: 45vh;
 	margin-bottom: 2vh;
-	padding: 0 1% 0 1%;
+	padding: 0 1% 0 4%;
 	text-align: justify;
 	overflow-y: hidden;
 }
@@ -99,12 +99,14 @@ h1 {
 	text-align: justify;
 	overflow-y: hidden;
 	padding: 0 1% 0 1%;
+	color: white !important;
 }
 
 #chart {
 	position: absolute;
 	top: 50px;
 	left: 100px;
+	color: white;
 }
 
 
@@ -347,3 +349,4 @@ h1 {
 	background: url('icons/skull.png');
 	background-size: 100%;
 }
+
