@@ -1,0 +1,4637 @@
+{
+  "1990 - 1995": [
+    {
+      "name": "Rwanda",
+      "rate": "43.60",
+      "code": "RWA"
+    },
+    {
+      "name": "Sierra Leone",
+      "rate": "27.50",
+      "code": "SLE"
+    },
+    {
+      "name": "Angola",
+      "rate": "22.30",
+      "code": "AGO"
+    },
+    {
+      "name": "Niger",
+      "rate": "21.70",
+      "code": "NER"
+    },
+    {
+      "name": "Mozambique",
+      "rate": "20.30",
+      "code": "MOZ"
+    },
+    {
+      "name": "Somalia",
+      "rate": "20.00",
+      "code": "SOM"
+    },
+    {
+      "name": "Mali",
+      "rate": "19.90",
+      "code": "MLI"
+    },
+    {
+      "name": "Chad",
+      "rate": "18.80",
+      "code": "TCD"
+    },
+    {
+      "name": "Uganda",
+      "rate": "18.60",
+      "code": "UGA"
+    },
+    {
+      "name": "Zambia",
+      "rate": "18.60",
+      "code": "ZMB"
+    },
+    {
+      "name": "Nigeria",
+      "rate": "18.50",
+      "code": "NGA"
+    },
+    {
+      "name": "Burundi",
+      "rate": "18.30",
+      "code": "BDI"
+    },
+    {
+      "name": "Malawi",
+      "rate": "18.00",
+      "code": "MWI"
+    },
+    {
+      "name": "Liberia",
+      "rate": "17.60",
+      "code": "LBR"
+    },
+    {
+      "name": "Central African Republic",
+      "rate": "17.50",
+      "code": "CAF"
+    },
+    {
+      "name": "Ethiopia",
+      "rate": "17.30",
+      "code": "ETH"
+    },
+    {
+      "name": "Burkina Faso",
+      "rate": "16.90",
+      "code": "BFA"
+    },
+    {
+      "name": "Democratic Republic of Congo",
+      "rate": "16.30",
+      "code": "COD"
+    },
+    {
+      "name": "Guinea-Bissau",
+      "rate": "16.30",
+      "code": "GNB"
+    },
+    {
+      "name": "Guinea",
+      "rate": "16.10",
+      "code": "GIN"
+    },
+    {
+      "name": "Cameroon",
+      "rate": "15.10",
+      "code": "CMR"
+    },
+    {
+      "name": "Eritrea",
+      "rate": "15.10",
+      "code": "ERI"
+    },
+    {
+      "name": "Tanzania",
+      "rate": "15.10",
+      "code": "TZA"
+    },
+    {
+      "name": "Timor",
+      "rate": "14.60",
+      "code": "TLS"
+    },
+    {
+      "name": "Latvia",
+      "rate": "14.40",
+      "code": "LVA"
+    },
+    {
+      "name": "Afghanistan",
+      "rate": "14.30",
+      "code": "AFG"
+    },
+    {
+      "name": "Côte d'Ivoire",
+      "rate": "14.20",
+      "code": "CIV"
+    },
+    {
+      "name": "Hungary",
+      "rate": "14.20",
+      "code": "HUN"
+    },
+    {
+      "name": "Madagascar",
+      "rate": "14.10",
+      "code": "MDG"
+    },
+    {
+      "name": "Estonia",
+      "rate": "13.90",
+      "code": "EST"
+    },
+    {
+      "name": "Gambia",
+      "rate": "13.80",
+      "code": "GMB"
+    },
+    {
+      "name": "Benin",
+      "rate": "13.70",
+      "code": "BEN"
+    },
+    {
+      "name": "Ukraine",
+      "rate": "13.60",
+      "code": "UKR"
+    },
+    {
+      "name": "Russia",
+      "rate": "13.30",
+      "code": "RUS"
+    },
+    {
+      "name": "Bulgaria",
+      "rate": "13.00",
+      "code": "BGR"
+    },
+    {
+      "name": "Laos",
+      "rate": "12.80",
+      "code": "LAO"
+    },
+    {
+      "name": "Congo",
+      "rate": "12.40",
+      "code": "COG"
+    },
+    {
+      "name": "Haiti",
+      "rate": "12.40",
+      "code": "HTI"
+    },
+    {
+      "name": "Belarus",
+      "rate": "12.30",
+      "code": "BLR"
+    },
+    {
+      "name": "Bolivia",
+      "rate": "12.10",
+      "code": "BOL"
+    },
+    {
+      "name": "Cambodia",
+      "rate": "12.10",
+      "code": "KHM"
+    },
+    {
+      "name": "Togo",
+      "rate": "11.90",
+      "code": "TGO"
+    },
+    {
+      "name": "Bhutan",
+      "rate": "11.80",
+      "code": "BTN"
+    },
+    {
+      "name": "Czech Republic",
+      "rate": "11.80",
+      "code": "CZE"
+    },
+    {
+      "name": "Denmark",
+      "rate": "11.80",
+      "code": "DNK"
+    },
+    {
+      "name": "Lithuania",
+      "rate": "11.80",
+      "code": "LTU"
+    },
+    {
+      "name": "Sudan",
+      "rate": "11.80",
+      "code": "SDN"
+    },
+    {
+      "name": "Nepal",
+      "rate": "11.60",
+      "code": "NPL"
+    },
+    {
+      "name": "Romania",
+      "rate": "11.40",
+      "code": "ROU"
+    },
+    {
+      "name": "Croatia",
+      "rate": "11.20",
+      "code": "HRV"
+    },
+    {
+      "name": "Germany",
+      "rate": "11.20",
+      "code": "DEU"
+    },
+    {
+      "name": "United Kingdom",
+      "rate": "11.20",
+      "code": "GBR"
+    },
+    {
+      "name": "Senegal",
+      "rate": "11.10",
+      "code": "SEN"
+    },
+    {
+      "name": "Djibouti",
+      "rate": "11.00",
+      "code": "DJI"
+    },
+    {
+      "name": "Gabon",
+      "rate": "11.00",
+      "code": "GAB"
+    },
+    {
+      "name": "Sweden",
+      "rate": "11.00",
+      "code": "SWE"
+    },
+    {
+      "name": "Yemen",
+      "rate": "10.90",
+      "code": "YEM"
+    },
+    {
+      "name": "Zimbabwe",
+      "rate": "10.90",
+      "code": "ZWE"
+    },
+    {
+      "name": "Kenya",
+      "rate": "10.80",
+      "code": "KEN"
+    },
+    {
+      "name": "Moldova",
+      "rate": "10.80",
+      "code": "MDA"
+    },
+    {
+      "name": "Comoros",
+      "rate": "10.70",
+      "code": "COM"
+    },
+    {
+      "name": "Austria",
+      "rate": "10.60",
+      "code": "AUT"
+    },
+    {
+      "name": "Belgium",
+      "rate": "10.50",
+      "code": "BEL"
+    },
+    {
+      "name": "Norway",
+      "rate": "10.50",
+      "code": "NOR"
+    },
+    {
+      "name": "Ghana",
+      "rate": "10.30",
+      "code": "GHA"
+    },
+    {
+      "name": "Mauritania",
+      "rate": "10.30",
+      "code": "MRT"
+    },
+    {
+      "name": "India",
+      "rate": "10.20",
+      "code": "IND"
+    },
+    {
+      "name": "Pakistan",
+      "rate": "10.20",
+      "code": "PAK"
+    },
+    {
+      "name": "Poland",
+      "rate": "10.20",
+      "code": "POL"
+    },
+    {
+      "name": "Portugal",
+      "rate": "10.20",
+      "code": "PRT"
+    },
+    {
+      "name": "Lesotho",
+      "rate": "10.10",
+      "code": "LSO"
+    },
+    {
+      "name": "Slovakia",
+      "rate": "10.10",
+      "code": "SVK"
+    },
+    {
+      "name": "Serbia",
+      "rate": "10.00",
+      "code": "SRB"
+    },
+    {
+      "name": "Solomon Islands",
+      "rate": "10.00",
+      "code": "SLB"
+    },
+    {
+      "name": "Finland",
+      "rate": "9.90",
+      "code": "FIN"
+    },
+    {
+      "name": "Luxembourg",
+      "rate": "9.90",
+      "code": "LUX"
+    },
+    {
+      "name": "Myanmar",
+      "rate": "9.90",
+      "code": "MMR"
+    },
+    {
+      "name": "Sao Tome and Principe",
+      "rate": "9.80",
+      "code": "STP"
+    },
+    {
+      "name": "Slovenia",
+      "rate": "9.80",
+      "code": "SVN"
+    },
+    {
+      "name": "Georgia",
+      "rate": "9.70",
+      "code": "GEO"
+    },
+    {
+      "name": "Italy",
+      "rate": "9.70",
+      "code": "ITA"
+    },
+    {
+      "name": "Uruguay",
+      "rate": "9.70",
+      "code": "URY"
+    },
+    {
+      "name": "Barbados",
+      "rate": "9.60",
+      "code": "BRB"
+    },
+    {
+      "name": "Tajikistan",
+      "rate": "9.60",
+      "code": "TJK"
+    },
+    {
+      "name": "Kazakhstan",
+      "rate": "9.50",
+      "code": "KAZ"
+    },
+    {
+      "name": "Mongolia",
+      "rate": "9.40",
+      "code": "MNG"
+    },
+    {
+      "name": "Bangladesh",
+      "rate": "9.30",
+      "code": "BGD"
+    },
+    {
+      "name": "France",
+      "rate": "9.30",
+      "code": "FRA"
+    },
+    {
+      "name": "Swaziland",
+      "rate": "9.30",
+      "code": "SWZ"
+    },
+    {
+      "name": "Switzerland",
+      "rate": "9.20",
+      "code": "CHE"
+    },
+    {
+      "name": "Kiribati",
+      "rate": "9.10",
+      "code": "KIR"
+    },
+    {
+      "name": "Papua New Guinea",
+      "rate": "9.10",
+      "code": "PNG"
+    },
+    {
+      "name": "Greece",
+      "rate": "9.00",
+      "code": "GRC"
+    },
+    {
+      "name": "Armenia",
+      "rate": "8.80",
+      "code": "ARM"
+    },
+    {
+      "name": "Azerbaijan",
+      "rate": "8.80",
+      "code": "AZE"
+    },
+    {
+      "name": "United States",
+      "rate": "8.80",
+      "code": "USA"
+    },
+    {
+      "name": "Grenada",
+      "rate": "8.70",
+      "code": "GRD"
+    },
+    {
+      "name": "Netherlands",
+      "rate": "8.70",
+      "code": "NLD"
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "rate": "8.60",
+      "code": "BIH"
+    },
+    {
+      "name": "Ireland",
+      "rate": "8.60",
+      "code": "IRL"
+    },
+    {
+      "name": "Namibia",
+      "rate": "8.60",
+      "code": "NAM"
+    },
+    {
+      "name": "Spain",
+      "rate": "8.60",
+      "code": "ESP"
+    },
+    {
+      "name": "Turkmenistan",
+      "rate": "8.60",
+      "code": "TKM"
+    },
+    {
+      "name": "Botswana",
+      "rate": "8.40",
+      "code": "BWA"
+    },
+    {
+      "name": "Kyrgyzstan",
+      "rate": "8.30",
+      "code": "KGZ"
+    },
+    {
+      "name": "South Africa",
+      "rate": "8.20",
+      "code": "ZAF"
+    },
+    {
+      "name": "Argentina",
+      "rate": "8.10",
+      "code": "ARG"
+    },
+    {
+      "name": "Guyana",
+      "rate": "8.10",
+      "code": "GUY"
+    },
+    {
+      "name": "Cape Verde",
+      "rate": "7.90",
+      "code": "CPV"
+    },
+    {
+      "name": "Guatemala",
+      "rate": "7.90",
+      "code": "GTM"
+    },
+    {
+      "name": "Macedonia",
+      "rate": "7.90",
+      "code": "MKD"
+    },
+    {
+      "name": "Puerto Rico",
+      "rate": "7.90",
+      "code": "PRI"
+    },
+    {
+      "name": "Egypt",
+      "rate": "7.80",
+      "code": "EGY"
+    },
+    {
+      "name": "Turkey",
+      "rate": "7.80",
+      "code": "TUR"
+    },
+    {
+      "name": "Vanuatu",
+      "rate": "7.70",
+      "code": "VUT"
+    },
+    {
+      "name": "Indonesia",
+      "rate": "7.60",
+      "code": "IDN"
+    },
+    {
+      "name": "Malta",
+      "rate": "7.60",
+      "code": "MLT"
+    },
+    {
+      "name": "New Zealand",
+      "rate": "7.60",
+      "code": "NZL"
+    },
+    {
+      "name": "Trinidad and Tobago",
+      "rate": "7.60",
+      "code": "TTO"
+    },
+    {
+      "name": "Maldives",
+      "rate": "7.50",
+      "code": "MDV"
+    },
+    {
+      "name": "Uzbekistan",
+      "rate": "7.50",
+      "code": "UZB"
+    },
+    {
+      "name": "El Salvador",
+      "rate": "7.40",
+      "code": "SLV"
+    },
+    {
+      "name": "Montenegro",
+      "rate": "7.40",
+      "code": "MNE"
+    },
+    {
+      "name": "Seychelles",
+      "rate": "7.30",
+      "code": "SYC"
+    },
+    {
+      "name": "Cuba",
+      "rate": "7.20",
+      "code": "CUB"
+    },
+    {
+      "name": "Suriname",
+      "rate": "7.20",
+      "code": "SUR"
+    },
+    {
+      "name": "Canada",
+      "rate": "7.10",
+      "code": "CAN"
+    },
+    {
+      "name": "Jamaica",
+      "rate": "7.10",
+      "code": "JAM"
+    },
+    {
+      "name": "Australia",
+      "rate": "7.00",
+      "code": "AUS"
+    },
+    {
+      "name": "Saint Lucia",
+      "rate": "7.00",
+      "code": "LCA"
+    },
+    {
+      "name": "Antigua and Barbuda",
+      "rate": "6.90",
+      "code": "ATG"
+    },
+    {
+      "name": "Brazil",
+      "rate": "6.90",
+      "code": "BRA"
+    },
+    {
+      "name": "Cyprus",
+      "rate": "6.90",
+      "code": "CYP"
+    },
+    {
+      "name": "Japan",
+      "rate": "6.90",
+      "code": "JPN"
+    },
+    {
+      "name": "Morocco",
+      "rate": "6.90",
+      "code": "MAR"
+    },
+    {
+      "name": "Peru",
+      "rate": "6.90",
+      "code": "PER"
+    },
+    {
+      "name": "Samoa",
+      "rate": "6.90",
+      "code": "WSM"
+    },
+    {
+      "name": "Iceland",
+      "rate": "6.80",
+      "code": "ISL"
+    },
+    {
+      "name": "Saint Vincent and the Grenadines",
+      "rate": "6.70",
+      "code": "VCT"
+    },
+    {
+      "name": "China",
+      "rate": "6.60",
+      "code": "CHN"
+    },
+    {
+      "name": "Lebanon",
+      "rate": "6.60",
+      "code": "LBN"
+    },
+    {
+      "name": "Sri Lanka",
+      "rate": "6.60",
+      "code": "LKA"
+    },
+    {
+      "name": "Nicaragua",
+      "rate": "6.50",
+      "code": "NIC"
+    },
+    {
+      "name": "Iraq",
+      "rate": "6.40",
+      "code": "IRQ"
+    },
+    {
+      "name": "Micronesia",
+      "rate": "6.40",
+      "code": "FSM"
+    },
+    {
+      "name": "Philippines",
+      "rate": "6.40",
+      "code": "PHL"
+    },
+    {
+      "name": "Albania",
+      "rate": "6.30",
+      "code": "ALB"
+    },
+    {
+      "name": "Honduras",
+      "rate": "6.30",
+      "code": "HND"
+    },
+    {
+      "name": "Fiji",
+      "rate": "6.20",
+      "code": "FJI"
+    },
+    {
+      "name": "Paraguay",
+      "rate": "6.20",
+      "code": "PRY"
+    },
+    {
+      "name": "Algeria",
+      "rate": "6.10",
+      "code": "DZA"
+    },
+    {
+      "name": "Colombia",
+      "rate": "6.10",
+      "code": "COL"
+    },
+    {
+      "name": "Israel",
+      "rate": "6.10",
+      "code": "ISR"
+    },
+    {
+      "name": "Mauritius",
+      "rate": "6.10",
+      "code": "MUS"
+    },
+    {
+      "name": "Thailand",
+      "rate": "6.10",
+      "code": "THA"
+    },
+    {
+      "name": "Tonga",
+      "rate": "6.10",
+      "code": "TON"
+    },
+    {
+      "name": "Vietnam",
+      "rate": "6.10",
+      "code": "VNM"
+    },
+    {
+      "name": "Dominican Republic",
+      "rate": "6.00",
+      "code": "DOM"
+    },
+    {
+      "name": "Iran",
+      "rate": "6.00",
+      "code": "IRN"
+    },
+    {
+      "name": "Ecuador",
+      "rate": "5.80",
+      "code": "ECU"
+    },
+    {
+      "name": "North Korea",
+      "rate": "5.80",
+      "code": "PRK"
+    },
+    {
+      "name": "Tunisia",
+      "rate": "5.80",
+      "code": "TUN"
+    },
+    {
+      "name": "Belize",
+      "rate": "5.60",
+      "code": "BLZ"
+    },
+    {
+      "name": "South Korea",
+      "rate": "5.60",
+      "code": "KOR"
+    },
+    {
+      "name": "Bahamas",
+      "rate": "5.50",
+      "code": "BHS"
+    },
+    {
+      "name": "Chile",
+      "rate": "5.50",
+      "code": "CHL"
+    },
+    {
+      "name": "Taiwan",
+      "rate": "5.50",
+      "code": "TWN"
+    },
+    {
+      "name": "United States Virgin Islands",
+      "rate": "5.50",
+      "code": "VIR"
+    },
+    {
+      "name": "Mexico",
+      "rate": "5.20",
+      "code": "MEX"
+    },
+    {
+      "name": "Venezuela",
+      "rate": "5.20",
+      "code": "VEN"
+    },
+    {
+      "name": "Libya",
+      "rate": "4.90",
+      "code": "LBY"
+    },
+    {
+      "name": "Panama",
+      "rate": "4.90",
+      "code": "PAN"
+    },
+    {
+      "name": "Malaysia",
+      "rate": "4.80",
+      "code": "MYS"
+    },
+    {
+      "name": "Oman",
+      "rate": "4.80",
+      "code": "OMN"
+    },
+    {
+      "name": "Guam",
+      "rate": "4.70",
+      "code": "GUM"
+    },
+    {
+      "name": "Jordan",
+      "rate": "4.70",
+      "code": "JOR"
+    },
+    {
+      "name": "Saudi Arabia",
+      "rate": "4.60",
+      "code": "SAU"
+    },
+    {
+      "name": "Singapore",
+      "rate": "4.20",
+      "code": "SGP"
+    },
+    {
+      "name": "Syria",
+      "rate": "4.20",
+      "code": "SYR"
+    },
+    {
+      "name": "Costa Rica",
+      "rate": "4.00",
+      "code": "CRI"
+    },
+    {
+      "name": "Brunei",
+      "rate": "3.50",
+      "code": "BRN"
+    },
+    {
+      "name": "Bahrain",
+      "rate": "3.20",
+      "code": "BHR"
+    },
+    {
+      "name": "Kuwait",
+      "rate": "2.50",
+      "code": "KWT"
+    },
+    {
+      "name": "United Arab Emirates",
+      "rate": "2.50",
+      "code": "ARE"
+    },
+    {
+      "name": "Qatar",
+      "rate": "2.10",
+      "code": "QAT"
+    }
+  ],
+  "1995 - 2000": [
+    {
+      "name": "Sierra Leone",
+      "rate": "26.20",
+      "code": "SLE"
+    },
+    {
+      "name": "Angola",
+      "rate": "19.80",
+      "code": "AGO"
+    },
+    {
+      "name": "Mali",
+      "rate": "19.40",
+      "code": "MLI"
+    },
+    {
+      "name": "Central African Republic",
+      "rate": "19.00",
+      "code": "CAF"
+    },
+    {
+      "name": "Niger",
+      "rate": "18.60",
+      "code": "NER"
+    },
+    {
+      "name": "Zambia",
+      "rate": "18.40",
+      "code": "ZMB"
+    },
+    {
+      "name": "Nigeria",
+      "rate": "18.20",
+      "code": "NGA"
+    },
+    {
+      "name": "Chad",
+      "rate": "18.00",
+      "code": "TCD"
+    },
+    {
+      "name": "Uganda",
+      "rate": "17.60",
+      "code": "UGA"
+    },
+    {
+      "name": "Mozambique",
+      "rate": "17.50",
+      "code": "MOZ"
+    },
+    {
+      "name": "Malawi",
+      "rate": "17.10",
+      "code": "MWI"
+    },
+    {
+      "name": "Democratic Republic of Congo",
+      "rate": "16.80",
+      "code": "COD"
+    },
+    {
+      "name": "Côte d'Ivoire",
+      "rate": "16.40",
+      "code": "CIV"
+    },
+    {
+      "name": "Somalia",
+      "rate": "16.40",
+      "code": "SOM"
+    },
+    {
+      "name": "Rwanda",
+      "rate": "16.30",
+      "code": "RWA"
+    },
+    {
+      "name": "Burkina Faso",
+      "rate": "16.20",
+      "code": "BFA"
+    },
+    {
+      "name": "Cameroon",
+      "rate": "15.80",
+      "code": "CMR"
+    },
+    {
+      "name": "Guinea",
+      "rate": "15.40",
+      "code": "GIN"
+    },
+    {
+      "name": "Ethiopia",
+      "rate": "15.20",
+      "code": "ETH"
+    },
+    {
+      "name": "Ukraine",
+      "rate": "15.20",
+      "code": "UKR"
+    },
+    {
+      "name": "Burundi",
+      "rate": "15.00",
+      "code": "BDI"
+    },
+    {
+      "name": "Belarus",
+      "rate": "14.60",
+      "code": "BLR"
+    },
+    {
+      "name": "Russia",
+      "rate": "14.60",
+      "code": "RUS"
+    },
+    {
+      "name": "Zimbabwe",
+      "rate": "14.60",
+      "code": "ZWE"
+    },
+    {
+      "name": "Guinea-Bissau",
+      "rate": "14.50",
+      "code": "GNB"
+    },
+    {
+      "name": "Tanzania",
+      "rate": "14.50",
+      "code": "TZA"
+    },
+    {
+      "name": "Latvia",
+      "rate": "14.40",
+      "code": "LVA"
+    },
+    {
+      "name": "Liberia",
+      "rate": "14.40",
+      "code": "LBR"
+    },
+    {
+      "name": "Bulgaria",
+      "rate": "14.30",
+      "code": "BGR"
+    },
+    {
+      "name": "Congo",
+      "rate": "14.00",
+      "code": "COG"
+    },
+    {
+      "name": "Estonia",
+      "rate": "13.80",
+      "code": "EST"
+    },
+    {
+      "name": "Hungary",
+      "rate": "13.80",
+      "code": "HUN"
+    },
+    {
+      "name": "Benin",
+      "rate": "13.20",
+      "code": "BEN"
+    },
+    {
+      "name": "Lesotho",
+      "rate": "13.20",
+      "code": "LSO"
+    },
+    {
+      "name": "Afghanistan",
+      "rate": "12.90",
+      "code": "AFG"
+    },
+    {
+      "name": "Botswana",
+      "rate": "12.80",
+      "code": "BWA"
+    },
+    {
+      "name": "Togo",
+      "rate": "12.70",
+      "code": "TGO"
+    },
+    {
+      "name": "Eritrea",
+      "rate": "12.30",
+      "code": "ERI"
+    },
+    {
+      "name": "Gambia",
+      "rate": "12.30",
+      "code": "GMB"
+    },
+    {
+      "name": "Kenya",
+      "rate": "12.30",
+      "code": "KEN"
+    },
+    {
+      "name": "Lithuania",
+      "rate": "12.30",
+      "code": "LTU"
+    },
+    {
+      "name": "Romania",
+      "rate": "12.30",
+      "code": "ROU"
+    },
+    {
+      "name": "Swaziland",
+      "rate": "12.00",
+      "code": "SWZ"
+    },
+    {
+      "name": "Moldova",
+      "rate": "11.70",
+      "code": "MDA"
+    },
+    {
+      "name": "Kazakhstan",
+      "rate": "11.60",
+      "code": "KAZ"
+    },
+    {
+      "name": "Madagascar",
+      "rate": "11.40",
+      "code": "MDG"
+    },
+    {
+      "name": "Denmark",
+      "rate": "11.30",
+      "code": "DNK"
+    },
+    {
+      "name": "Haiti",
+      "rate": "11.30",
+      "code": "HTI"
+    },
+    {
+      "name": "Gabon",
+      "rate": "11.10",
+      "code": "GAB"
+    },
+    {
+      "name": "Senegal",
+      "rate": "11.10",
+      "code": "SEN"
+    },
+    {
+      "name": "Timor",
+      "rate": "11.00",
+      "code": "TLS"
+    },
+    {
+      "name": "Croatia",
+      "rate": "10.90",
+      "code": "HRV"
+    },
+    {
+      "name": "Czech Republic",
+      "rate": "10.90",
+      "code": "CZE"
+    },
+    {
+      "name": "United Kingdom",
+      "rate": "10.90",
+      "code": "GBR"
+    },
+    {
+      "name": "Serbia",
+      "rate": "10.80",
+      "code": "SRB"
+    },
+    {
+      "name": "Sudan",
+      "rate": "10.80",
+      "code": "SDN"
+    },
+    {
+      "name": "Bolivia",
+      "rate": "10.70",
+      "code": "BOL"
+    },
+    {
+      "name": "Germany",
+      "rate": "10.70",
+      "code": "DEU"
+    },
+    {
+      "name": "Ghana",
+      "rate": "10.70",
+      "code": "GHA"
+    },
+    {
+      "name": "Laos",
+      "rate": "10.70",
+      "code": "LAO"
+    },
+    {
+      "name": "Sweden",
+      "rate": "10.70",
+      "code": "SWE"
+    },
+    {
+      "name": "Cambodia",
+      "rate": "10.60",
+      "code": "KHM"
+    },
+    {
+      "name": "Belgium",
+      "rate": "10.40",
+      "code": "BEL"
+    },
+    {
+      "name": "Portugal",
+      "rate": "10.40",
+      "code": "PRT"
+    },
+    {
+      "name": "Djibouti",
+      "rate": "10.30",
+      "code": "DJI"
+    },
+    {
+      "name": "Norway",
+      "rate": "10.10",
+      "code": "NOR"
+    },
+    {
+      "name": "Austria",
+      "rate": "10.00",
+      "code": "AUT"
+    },
+    {
+      "name": "Georgia",
+      "rate": "10.00",
+      "code": "GEO"
+    },
+    {
+      "name": "Italy",
+      "rate": "9.90",
+      "code": "ITA"
+    },
+    {
+      "name": "Poland",
+      "rate": "9.90",
+      "code": "POL"
+    },
+    {
+      "name": "South Africa",
+      "rate": "9.90",
+      "code": "ZAF"
+    },
+    {
+      "name": "Barbados",
+      "rate": "9.80",
+      "code": "BRB"
+    },
+    {
+      "name": "Namibia",
+      "rate": "9.80",
+      "code": "NAM"
+    },
+    {
+      "name": "Slovakia",
+      "rate": "9.80",
+      "code": "SVK"
+    },
+    {
+      "name": "Comoros",
+      "rate": "9.70",
+      "code": "COM"
+    },
+    {
+      "name": "Finland",
+      "rate": "9.70",
+      "code": "FIN"
+    },
+    {
+      "name": "Mauritania",
+      "rate": "9.70",
+      "code": "MRT"
+    },
+    {
+      "name": "Bhutan",
+      "rate": "9.60",
+      "code": "BTN"
+    },
+    {
+      "name": "Slovenia",
+      "rate": "9.60",
+      "code": "SVN"
+    },
+    {
+      "name": "Yemen",
+      "rate": "9.60",
+      "code": "YEM"
+    },
+    {
+      "name": "Nepal",
+      "rate": "9.40",
+      "code": "NPL"
+    },
+    {
+      "name": "North Korea",
+      "rate": "9.40",
+      "code": "PRK"
+    },
+    {
+      "name": "Uruguay",
+      "rate": "9.40",
+      "code": "URY"
+    },
+    {
+      "name": "Luxembourg",
+      "rate": "9.30",
+      "code": "LUX"
+    },
+    {
+      "name": "Montenegro",
+      "rate": "9.30",
+      "code": "MNE"
+    },
+    {
+      "name": "Myanmar",
+      "rate": "9.30",
+      "code": "MMR"
+    },
+    {
+      "name": "Sao Tome and Principe",
+      "rate": "9.30",
+      "code": "STP"
+    },
+    {
+      "name": "France",
+      "rate": "9.20",
+      "code": "FRA"
+    },
+    {
+      "name": "Pakistan",
+      "rate": "9.20",
+      "code": "PAK"
+    },
+    {
+      "name": "Greece",
+      "rate": "9.10",
+      "code": "GRC"
+    },
+    {
+      "name": "India",
+      "rate": "9.10",
+      "code": "IND"
+    },
+    {
+      "name": "Spain",
+      "rate": "8.90",
+      "code": "ESP"
+    },
+    {
+      "name": "Switzerland",
+      "rate": "8.90",
+      "code": "CHE"
+    },
+    {
+      "name": "Netherlands",
+      "rate": "8.80",
+      "code": "NLD"
+    },
+    {
+      "name": "United States",
+      "rate": "8.70",
+      "code": "USA"
+    },
+    {
+      "name": "Armenia",
+      "rate": "8.60",
+      "code": "ARM"
+    },
+    {
+      "name": "Papua New Guinea",
+      "rate": "8.60",
+      "code": "PNG"
+    },
+    {
+      "name": "Ireland",
+      "rate": "8.40",
+      "code": "IRL"
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "rate": "8.30",
+      "code": "BIH"
+    },
+    {
+      "name": "Grenada",
+      "rate": "8.30",
+      "code": "GRD"
+    },
+    {
+      "name": "Mongolia",
+      "rate": "8.30",
+      "code": "MNG"
+    },
+    {
+      "name": "Solomon Islands",
+      "rate": "8.30",
+      "code": "SLB"
+    },
+    {
+      "name": "Macedonia",
+      "rate": "8.20",
+      "code": "MKD"
+    },
+    {
+      "name": "Kiribati",
+      "rate": "8.00",
+      "code": "KIR"
+    },
+    {
+      "name": "Puerto Rico",
+      "rate": "8.00",
+      "code": "PRI"
+    },
+    {
+      "name": "Guyana",
+      "rate": "7.90",
+      "code": "GUY"
+    },
+    {
+      "name": "Kyrgyzstan",
+      "rate": "7.90",
+      "code": "KGZ"
+    },
+    {
+      "name": "Turkmenistan",
+      "rate": "7.90",
+      "code": "TKM"
+    },
+    {
+      "name": "Argentina",
+      "rate": "7.80",
+      "code": "ARG"
+    },
+    {
+      "name": "Tajikistan",
+      "rate": "7.80",
+      "code": "TJK"
+    },
+    {
+      "name": "Trinidad and Tobago",
+      "rate": "7.80",
+      "code": "TTO"
+    },
+    {
+      "name": "Azerbaijan",
+      "rate": "7.70",
+      "code": "AZE"
+    },
+    {
+      "name": "Sri Lanka",
+      "rate": "7.70",
+      "code": "LKA"
+    },
+    {
+      "name": "Malta",
+      "rate": "7.60",
+      "code": "MLT"
+    },
+    {
+      "name": "Bangladesh",
+      "rate": "7.50",
+      "code": "BGD"
+    },
+    {
+      "name": "Japan",
+      "rate": "7.40",
+      "code": "JPN"
+    },
+    {
+      "name": "New Zealand",
+      "rate": "7.40",
+      "code": "NZL"
+    },
+    {
+      "name": "Saint Lucia",
+      "rate": "7.40",
+      "code": "LCA"
+    },
+    {
+      "name": "Seychelles",
+      "rate": "7.40",
+      "code": "SYC"
+    },
+    {
+      "name": "Canada",
+      "rate": "7.30",
+      "code": "CAN"
+    },
+    {
+      "name": "Suriname",
+      "rate": "7.30",
+      "code": "SUR"
+    },
+    {
+      "name": "Indonesia",
+      "rate": "7.20",
+      "code": "IDN"
+    },
+    {
+      "name": "Jamaica",
+      "rate": "7.20",
+      "code": "JAM"
+    },
+    {
+      "name": "Cuba",
+      "rate": "7.10",
+      "code": "CUB"
+    },
+    {
+      "name": "Saint Vincent and the Grenadines",
+      "rate": "7.10",
+      "code": "VCT"
+    },
+    {
+      "name": "El Salvador",
+      "rate": "7.00",
+      "code": "SLV"
+    },
+    {
+      "name": "Australia",
+      "rate": "6.90",
+      "code": "AUS"
+    },
+    {
+      "name": "Cyprus",
+      "rate": "6.90",
+      "code": "CYP"
+    },
+    {
+      "name": "Turkey",
+      "rate": "6.90",
+      "code": "TUR"
+    },
+    {
+      "name": "Uzbekistan",
+      "rate": "6.90",
+      "code": "UZB"
+    },
+    {
+      "name": "Iceland",
+      "rate": "6.80",
+      "code": "ISL"
+    },
+    {
+      "name": "Vanuatu",
+      "rate": "6.80",
+      "code": "VUT"
+    },
+    {
+      "name": "Antigua and Barbuda",
+      "rate": "6.70",
+      "code": "ATG"
+    },
+    {
+      "name": "Cape Verde",
+      "rate": "6.70",
+      "code": "CPV"
+    },
+    {
+      "name": "Egypt",
+      "rate": "6.70",
+      "code": "EGY"
+    },
+    {
+      "name": "Guatemala",
+      "rate": "6.70",
+      "code": "GTM"
+    },
+    {
+      "name": "Mauritius",
+      "rate": "6.60",
+      "code": "MUS"
+    },
+    {
+      "name": "Thailand",
+      "rate": "6.60",
+      "code": "THA"
+    },
+    {
+      "name": "China",
+      "rate": "6.50",
+      "code": "CHN"
+    },
+    {
+      "name": "Morocco",
+      "rate": "6.50",
+      "code": "MAR"
+    },
+    {
+      "name": "Micronesia",
+      "rate": "6.30",
+      "code": "FSM"
+    },
+    {
+      "name": "Samoa",
+      "rate": "6.30",
+      "code": "WSM"
+    },
+    {
+      "name": "Albania",
+      "rate": "6.20",
+      "code": "ALB"
+    },
+    {
+      "name": "Brazil",
+      "rate": "6.20",
+      "code": "BRA"
+    },
+    {
+      "name": "Tonga",
+      "rate": "6.20",
+      "code": "TON"
+    },
+    {
+      "name": "Belize",
+      "rate": "6.10",
+      "code": "BLZ"
+    },
+    {
+      "name": "Peru",
+      "rate": "6.10",
+      "code": "PER"
+    },
+    {
+      "name": "Philippines",
+      "rate": "6.10",
+      "code": "PHL"
+    },
+    {
+      "name": "Dominican Republic",
+      "rate": "6.00",
+      "code": "DOM"
+    },
+    {
+      "name": "Fiji",
+      "rate": "6.00",
+      "code": "FJI"
+    },
+    {
+      "name": "Israel",
+      "rate": "6.00",
+      "code": "ISR"
+    },
+    {
+      "name": "Paraguay",
+      "rate": "6.00",
+      "code": "PRY"
+    },
+    {
+      "name": "Lebanon",
+      "rate": "5.90",
+      "code": "LBN"
+    },
+    {
+      "name": "Taiwan",
+      "rate": "5.90",
+      "code": "TWN"
+    },
+    {
+      "name": "United States Virgin Islands",
+      "rate": "5.80",
+      "code": "VIR"
+    },
+    {
+      "name": "Bahamas",
+      "rate": "5.70",
+      "code": "BHS"
+    },
+    {
+      "name": "Colombia",
+      "rate": "5.70",
+      "code": "COL"
+    },
+    {
+      "name": "Iraq",
+      "rate": "5.70",
+      "code": "IRQ"
+    },
+    {
+      "name": "Nicaragua",
+      "rate": "5.60",
+      "code": "NIC"
+    },
+    {
+      "name": "Vietnam",
+      "rate": "5.60",
+      "code": "VNM"
+    },
+    {
+      "name": "Honduras",
+      "rate": "5.50",
+      "code": "HND"
+    },
+    {
+      "name": "Maldives",
+      "rate": "5.50",
+      "code": "MDV"
+    },
+    {
+      "name": "Tunisia",
+      "rate": "5.50",
+      "code": "TUN"
+    },
+    {
+      "name": "Ecuador",
+      "rate": "5.40",
+      "code": "ECU"
+    },
+    {
+      "name": "South Korea",
+      "rate": "5.40",
+      "code": "KOR"
+    },
+    {
+      "name": "Algeria",
+      "rate": "5.30",
+      "code": "DZA"
+    },
+    {
+      "name": "Chile",
+      "rate": "5.30",
+      "code": "CHL"
+    },
+    {
+      "name": "Iran",
+      "rate": "5.30",
+      "code": "IRN"
+    },
+    {
+      "name": "Venezuela",
+      "rate": "5.00",
+      "code": "VEN"
+    },
+    {
+      "name": "Libya",
+      "rate": "4.80",
+      "code": "LBY"
+    },
+    {
+      "name": "Mexico",
+      "rate": "4.80",
+      "code": "MEX"
+    },
+    {
+      "name": "Panama",
+      "rate": "4.80",
+      "code": "PAN"
+    },
+    {
+      "name": "Singapore",
+      "rate": "4.60",
+      "code": "SGP"
+    },
+    {
+      "name": "Guam",
+      "rate": "4.50",
+      "code": "GUM"
+    },
+    {
+      "name": "Malaysia",
+      "rate": "4.50",
+      "code": "MYS"
+    },
+    {
+      "name": "Jordan",
+      "rate": "4.30",
+      "code": "JOR"
+    },
+    {
+      "name": "Costa Rica",
+      "rate": "4.00",
+      "code": "CRI"
+    },
+    {
+      "name": "Saudi Arabia",
+      "rate": "3.90",
+      "code": "SAU"
+    },
+    {
+      "name": "Syria",
+      "rate": "3.90",
+      "code": "SYR"
+    },
+    {
+      "name": "Oman",
+      "rate": "3.80",
+      "code": "OMN"
+    },
+    {
+      "name": "Brunei",
+      "rate": "3.20",
+      "code": "BRN"
+    },
+    {
+      "name": "Bahrain",
+      "rate": "3.00",
+      "code": "BHR"
+    },
+    {
+      "name": "Kuwait",
+      "rate": "2.50",
+      "code": "KWT"
+    },
+    {
+      "name": "Qatar",
+      "rate": "2.10",
+      "code": "QAT"
+    },
+    {
+      "name": "United Arab Emirates",
+      "rate": "2.10",
+      "code": "ARE"
+    }
+  ],
+  "2000 - 2005": [
+    {
+      "name": "Sierra Leone",
+      "rate": "21.40",
+      "code": "SLE"
+    },
+    {
+      "name": "Central African Republic",
+      "rate": "19.60",
+      "code": "CAF"
+    },
+    {
+      "name": "Chad",
+      "rate": "17.50",
+      "code": "TCD"
+    },
+    {
+      "name": "Lesotho",
+      "rate": "17.40",
+      "code": "LSO"
+    },
+    {
+      "name": "Nigeria",
+      "rate": "17.30",
+      "code": "NGA"
+    },
+    {
+      "name": "Côte d'Ivoire",
+      "rate": "17.00",
+      "code": "CIV"
+    },
+    {
+      "name": "Zimbabwe",
+      "rate": "16.90",
+      "code": "ZWE"
+    },
+    {
+      "name": "Mali",
+      "rate": "16.70",
+      "code": "MLI"
+    },
+    {
+      "name": "Niger",
+      "rate": "16.00",
+      "code": "NER"
+    },
+    {
+      "name": "Russia",
+      "rate": "16.00",
+      "code": "RUS"
+    },
+    {
+      "name": "Ukraine",
+      "rate": "15.90",
+      "code": "UKR"
+    },
+    {
+      "name": "Angola",
+      "rate": "15.70",
+      "code": "AGO"
+    },
+    {
+      "name": "Malawi",
+      "rate": "15.60",
+      "code": "MWI"
+    },
+    {
+      "name": "Swaziland",
+      "rate": "15.60",
+      "code": "SWZ"
+    },
+    {
+      "name": "Zambia",
+      "rate": "15.60",
+      "code": "ZMB"
+    },
+    {
+      "name": "Belarus",
+      "rate": "15.40",
+      "code": "BLR"
+    },
+    {
+      "name": "Mozambique",
+      "rate": "15.40",
+      "code": "MOZ"
+    },
+    {
+      "name": "Guinea",
+      "rate": "15.00",
+      "code": "GIN"
+    },
+    {
+      "name": "Somalia",
+      "rate": "14.90",
+      "code": "SOM"
+    },
+    {
+      "name": "Democratic Republic of Congo",
+      "rate": "14.70",
+      "code": "COD"
+    },
+    {
+      "name": "Botswana",
+      "rate": "14.60",
+      "code": "BWA"
+    },
+    {
+      "name": "Burkina Faso",
+      "rate": "14.60",
+      "code": "BFA"
+    },
+    {
+      "name": "Bulgaria",
+      "rate": "14.40",
+      "code": "BGR"
+    },
+    {
+      "name": "Rwanda",
+      "rate": "14.20",
+      "code": "RWA"
+    },
+    {
+      "name": "Cameroon",
+      "rate": "14.10",
+      "code": "CMR"
+    },
+    {
+      "name": "Latvia",
+      "rate": "14.10",
+      "code": "LVA"
+    },
+    {
+      "name": "Uganda",
+      "rate": "14.00",
+      "code": "UGA"
+    },
+    {
+      "name": "Liberia",
+      "rate": "13.90",
+      "code": "LBR"
+    },
+    {
+      "name": "Burundi",
+      "rate": "13.80",
+      "code": "BDI"
+    },
+    {
+      "name": "Congo",
+      "rate": "13.80",
+      "code": "COG"
+    },
+    {
+      "name": "Guinea-Bissau",
+      "rate": "13.60",
+      "code": "GNB"
+    },
+    {
+      "name": "Estonia",
+      "rate": "13.30",
+      "code": "EST"
+    },
+    {
+      "name": "South Africa",
+      "rate": "13.30",
+      "code": "ZAF"
+    },
+    {
+      "name": "Hungary",
+      "rate": "13.20",
+      "code": "HUN"
+    },
+    {
+      "name": "Ethiopia",
+      "rate": "12.70",
+      "code": "ETH"
+    },
+    {
+      "name": "Lithuania",
+      "rate": "12.40",
+      "code": "LTU"
+    },
+    {
+      "name": "Togo",
+      "rate": "12.40",
+      "code": "TGO"
+    },
+    {
+      "name": "Benin",
+      "rate": "12.10",
+      "code": "BEN"
+    },
+    {
+      "name": "Romania",
+      "rate": "12.10",
+      "code": "ROU"
+    },
+    {
+      "name": "Tanzania",
+      "rate": "12.10",
+      "code": "TZA"
+    },
+    {
+      "name": "Kenya",
+      "rate": "11.90",
+      "code": "KEN"
+    },
+    {
+      "name": "Namibia",
+      "rate": "11.90",
+      "code": "NAM"
+    },
+    {
+      "name": "Serbia",
+      "rate": "11.80",
+      "code": "SRB"
+    },
+    {
+      "name": "Moldova",
+      "rate": "11.70",
+      "code": "MDA"
+    },
+    {
+      "name": "Croatia",
+      "rate": "11.60",
+      "code": "HRV"
+    },
+    {
+      "name": "Gabon",
+      "rate": "11.20",
+      "code": "GAB"
+    },
+    {
+      "name": "Afghanistan",
+      "rate": "11.00",
+      "code": "AFG"
+    },
+    {
+      "name": "Gambia",
+      "rate": "10.90",
+      "code": "GMB"
+    },
+    {
+      "name": "Kazakhstan",
+      "rate": "10.80",
+      "code": "KAZ"
+    },
+    {
+      "name": "Czech Republic",
+      "rate": "10.70",
+      "code": "CZE"
+    },
+    {
+      "name": "Denmark",
+      "rate": "10.70",
+      "code": "DNK"
+    },
+    {
+      "name": "Haiti",
+      "rate": "10.60",
+      "code": "HTI"
+    },
+    {
+      "name": "Eritrea",
+      "rate": "10.50",
+      "code": "ERI"
+    },
+    {
+      "name": "Ghana",
+      "rate": "10.50",
+      "code": "GHA"
+    },
+    {
+      "name": "Sweden",
+      "rate": "10.50",
+      "code": "SWE"
+    },
+    {
+      "name": "Germany",
+      "rate": "10.30",
+      "code": "DEU"
+    },
+    {
+      "name": "Barbados",
+      "rate": "10.20",
+      "code": "BRB"
+    },
+    {
+      "name": "Belgium",
+      "rate": "10.20",
+      "code": "BEL"
+    },
+    {
+      "name": "Djibouti",
+      "rate": "10.20",
+      "code": "DJI"
+    },
+    {
+      "name": "Portugal",
+      "rate": "10.20",
+      "code": "PRT"
+    },
+    {
+      "name": "United Kingdom",
+      "rate": "10.20",
+      "code": "GBR"
+    },
+    {
+      "name": "Georgia",
+      "rate": "10.10",
+      "code": "GEO"
+    },
+    {
+      "name": "Montenegro",
+      "rate": "10.00",
+      "code": "MNE"
+    },
+    {
+      "name": "Senegal",
+      "rate": "10.00",
+      "code": "SEN"
+    },
+    {
+      "name": "Sudan",
+      "rate": "9.80",
+      "code": "SDN"
+    },
+    {
+      "name": "Italy",
+      "rate": "9.70",
+      "code": "ITA"
+    },
+    {
+      "name": "Slovakia",
+      "rate": "9.70",
+      "code": "SVK"
+    },
+    {
+      "name": "Norway",
+      "rate": "9.50",
+      "code": "NOR"
+    },
+    {
+      "name": "Slovenia",
+      "rate": "9.50",
+      "code": "SVN"
+    },
+    {
+      "name": "Austria",
+      "rate": "9.40",
+      "code": "AUT"
+    },
+    {
+      "name": "Bolivia",
+      "rate": "9.40",
+      "code": "BOL"
+    },
+    {
+      "name": "Comoros",
+      "rate": "9.40",
+      "code": "COM"
+    },
+    {
+      "name": "Finland",
+      "rate": "9.40",
+      "code": "FIN"
+    },
+    {
+      "name": "Mauritania",
+      "rate": "9.40",
+      "code": "MRT"
+    },
+    {
+      "name": "Poland",
+      "rate": "9.40",
+      "code": "POL"
+    },
+    {
+      "name": "Uruguay",
+      "rate": "9.40",
+      "code": "URY"
+    },
+    {
+      "name": "Madagascar",
+      "rate": "9.20",
+      "code": "MDG"
+    },
+    {
+      "name": "Greece",
+      "rate": "9.10",
+      "code": "GRC"
+    },
+    {
+      "name": "France",
+      "rate": "9.00",
+      "code": "FRA"
+    },
+    {
+      "name": "Laos",
+      "rate": "9.00",
+      "code": "LAO"
+    },
+    {
+      "name": "Myanmar",
+      "rate": "8.90",
+      "code": "MMR"
+    },
+    {
+      "name": "Spain",
+      "rate": "8.80",
+      "code": "ESP"
+    },
+    {
+      "name": "Armenia",
+      "rate": "8.70",
+      "code": "ARM"
+    },
+    {
+      "name": "Netherlands",
+      "rate": "8.70",
+      "code": "NLD"
+    },
+    {
+      "name": "Sao Tome and Principe",
+      "rate": "8.70",
+      "code": "STP"
+    },
+    {
+      "name": "Luxembourg",
+      "rate": "8.60",
+      "code": "LUX"
+    },
+    {
+      "name": "Yemen",
+      "rate": "8.60",
+      "code": "YEM"
+    },
+    {
+      "name": "Macedonia",
+      "rate": "8.50",
+      "code": "MKD"
+    },
+    {
+      "name": "Switzerland",
+      "rate": "8.50",
+      "code": "CHE"
+    },
+    {
+      "name": "United States",
+      "rate": "8.50",
+      "code": "USA"
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "rate": "8.40",
+      "code": "BIH"
+    },
+    {
+      "name": "India",
+      "rate": "8.40",
+      "code": "IND"
+    },
+    {
+      "name": "Pakistan",
+      "rate": "8.40",
+      "code": "PAK"
+    },
+    {
+      "name": "Cambodia",
+      "rate": "8.30",
+      "code": "KHM"
+    },
+    {
+      "name": "North Korea",
+      "rate": "8.30",
+      "code": "PRK"
+    },
+    {
+      "name": "Trinidad and Tobago",
+      "rate": "8.30",
+      "code": "TTO"
+    },
+    {
+      "name": "Grenada",
+      "rate": "8.10",
+      "code": "GRD"
+    },
+    {
+      "name": "Timor",
+      "rate": "8.10",
+      "code": "TLS"
+    },
+    {
+      "name": "Papua New Guinea",
+      "rate": "8.00",
+      "code": "PNG"
+    },
+    {
+      "name": "Puerto Rico",
+      "rate": "8.00",
+      "code": "PRI"
+    },
+    {
+      "name": "Japan",
+      "rate": "7.90",
+      "code": "JPN"
+    },
+    {
+      "name": "Argentina",
+      "rate": "7.80",
+      "code": "ARG"
+    },
+    {
+      "name": "Nepal",
+      "rate": "7.80",
+      "code": "NPL"
+    },
+    {
+      "name": "Guyana",
+      "rate": "7.70",
+      "code": "GUY"
+    },
+    {
+      "name": "Malta",
+      "rate": "7.70",
+      "code": "MLT"
+    },
+    {
+      "name": "Turkmenistan",
+      "rate": "7.70",
+      "code": "TKM"
+    },
+    {
+      "name": "Bhutan",
+      "rate": "7.60",
+      "code": "BTN"
+    },
+    {
+      "name": "Kyrgyzstan",
+      "rate": "7.50",
+      "code": "KGZ"
+    },
+    {
+      "name": "Saint Vincent and the Grenadines",
+      "rate": "7.50",
+      "code": "VCT"
+    },
+    {
+      "name": "Suriname",
+      "rate": "7.50",
+      "code": "SUR"
+    },
+    {
+      "name": "Indonesia",
+      "rate": "7.40",
+      "code": "IDN"
+    },
+    {
+      "name": "Azerbaijan",
+      "rate": "7.30",
+      "code": "AZE"
+    },
+    {
+      "name": "Ireland",
+      "rate": "7.30",
+      "code": "IRL"
+    },
+    {
+      "name": "Kiribati",
+      "rate": "7.30",
+      "code": "KIR"
+    },
+    {
+      "name": "Canada",
+      "rate": "7.20",
+      "code": "CAN"
+    },
+    {
+      "name": "Cuba",
+      "rate": "7.20",
+      "code": "CUB"
+    },
+    {
+      "name": "Jamaica",
+      "rate": "7.20",
+      "code": "JAM"
+    },
+    {
+      "name": "Mongolia",
+      "rate": "7.20",
+      "code": "MNG"
+    },
+    {
+      "name": "Saint Lucia",
+      "rate": "7.20",
+      "code": "LCA"
+    },
+    {
+      "name": "Seychelles",
+      "rate": "7.20",
+      "code": "SYC"
+    },
+    {
+      "name": "New Zealand",
+      "rate": "7.10",
+      "code": "NZL"
+    },
+    {
+      "name": "Thailand",
+      "rate": "7.00",
+      "code": "THA"
+    },
+    {
+      "name": "Solomon Islands",
+      "rate": "6.90",
+      "code": "SLB"
+    },
+    {
+      "name": "Cyprus",
+      "rate": "6.80",
+      "code": "CYP"
+    },
+    {
+      "name": "Australia",
+      "rate": "6.70",
+      "code": "AUS"
+    },
+    {
+      "name": "El Salvador",
+      "rate": "6.70",
+      "code": "SLV"
+    },
+    {
+      "name": "Mauritius",
+      "rate": "6.70",
+      "code": "MUS"
+    },
+    {
+      "name": "Bangladesh",
+      "rate": "6.50",
+      "code": "BGD"
+    },
+    {
+      "name": "Egypt",
+      "rate": "6.40",
+      "code": "EGY"
+    },
+    {
+      "name": "Micronesia",
+      "rate": "6.40",
+      "code": "FSM"
+    },
+    {
+      "name": "Tajikistan",
+      "rate": "6.40",
+      "code": "TJK"
+    },
+    {
+      "name": "United States Virgin Islands",
+      "rate": "6.40",
+      "code": "VIR"
+    },
+    {
+      "name": "Uzbekistan",
+      "rate": "6.40",
+      "code": "UZB"
+    },
+    {
+      "name": "China",
+      "rate": "6.30",
+      "code": "CHN"
+    },
+    {
+      "name": "Iceland",
+      "rate": "6.30",
+      "code": "ISL"
+    },
+    {
+      "name": "Antigua and Barbuda",
+      "rate": "6.20",
+      "code": "ATG"
+    },
+    {
+      "name": "Fiji",
+      "rate": "6.20",
+      "code": "FJI"
+    },
+    {
+      "name": "Tonga",
+      "rate": "6.20",
+      "code": "TON"
+    },
+    {
+      "name": "Turkey",
+      "rate": "6.20",
+      "code": "TUR"
+    },
+    {
+      "name": "Morocco",
+      "rate": "6.10",
+      "code": "MAR"
+    },
+    {
+      "name": "Sri Lanka",
+      "rate": "6.10",
+      "code": "LKA"
+    },
+    {
+      "name": "Dominican Republic",
+      "rate": "6.00",
+      "code": "DOM"
+    },
+    {
+      "name": "Philippines",
+      "rate": "6.00",
+      "code": "PHL"
+    },
+    {
+      "name": "Brazil",
+      "rate": "5.90",
+      "code": "BRA"
+    },
+    {
+      "name": "Guatemala",
+      "rate": "5.90",
+      "code": "GTM"
+    },
+    {
+      "name": "Samoa",
+      "rate": "5.90",
+      "code": "WSM"
+    },
+    {
+      "name": "Taiwan",
+      "rate": "5.90",
+      "code": "TWN"
+    },
+    {
+      "name": "Albania",
+      "rate": "5.80",
+      "code": "ALB"
+    },
+    {
+      "name": "Israel",
+      "rate": "5.80",
+      "code": "ISR"
+    },
+    {
+      "name": "Belize",
+      "rate": "5.70",
+      "code": "BLZ"
+    },
+    {
+      "name": "Tunisia",
+      "rate": "5.70",
+      "code": "TUN"
+    },
+    {
+      "name": "Vanuatu",
+      "rate": "5.70",
+      "code": "VUT"
+    },
+    {
+      "name": "Colombia",
+      "rate": "5.60",
+      "code": "COL"
+    },
+    {
+      "name": "Iraq",
+      "rate": "5.60",
+      "code": "IRQ"
+    },
+    {
+      "name": "Paraguay",
+      "rate": "5.60",
+      "code": "PRY"
+    },
+    {
+      "name": "Peru",
+      "rate": "5.60",
+      "code": "PER"
+    },
+    {
+      "name": "Bahamas",
+      "rate": "5.50",
+      "code": "BHS"
+    },
+    {
+      "name": "Cape Verde",
+      "rate": "5.50",
+      "code": "CPV"
+    },
+    {
+      "name": "Vietnam",
+      "rate": "5.50",
+      "code": "VNM"
+    },
+    {
+      "name": "Chile",
+      "rate": "5.30",
+      "code": "CHL"
+    },
+    {
+      "name": "South Korea",
+      "rate": "5.30",
+      "code": "KOR"
+    },
+    {
+      "name": "Ecuador",
+      "rate": "5.20",
+      "code": "ECU"
+    },
+    {
+      "name": "Lebanon",
+      "rate": "5.20",
+      "code": "LBN"
+    },
+    {
+      "name": "Honduras",
+      "rate": "5.10",
+      "code": "HND"
+    },
+    {
+      "name": "Iran",
+      "rate": "5.10",
+      "code": "IRN"
+    },
+    {
+      "name": "Nicaragua",
+      "rate": "5.10",
+      "code": "NIC"
+    },
+    {
+      "name": "Venezuela",
+      "rate": "5.00",
+      "code": "VEN"
+    },
+    {
+      "name": "Algeria",
+      "rate": "4.90",
+      "code": "DZA"
+    },
+    {
+      "name": "Libya",
+      "rate": "4.80",
+      "code": "LBY"
+    },
+    {
+      "name": "Panama",
+      "rate": "4.80",
+      "code": "PAN"
+    },
+    {
+      "name": "Guam",
+      "rate": "4.60",
+      "code": "GUM"
+    },
+    {
+      "name": "Mexico",
+      "rate": "4.60",
+      "code": "MEX"
+    },
+    {
+      "name": "Singapore",
+      "rate": "4.50",
+      "code": "SGP"
+    },
+    {
+      "name": "Malaysia",
+      "rate": "4.40",
+      "code": "MYS"
+    },
+    {
+      "name": "Costa Rica",
+      "rate": "4.10",
+      "code": "CRI"
+    },
+    {
+      "name": "Maldives",
+      "rate": "4.10",
+      "code": "MDV"
+    },
+    {
+      "name": "Jordan",
+      "rate": "4.00",
+      "code": "JOR"
+    },
+    {
+      "name": "Saudi Arabia",
+      "rate": "3.60",
+      "code": "SAU"
+    },
+    {
+      "name": "Syria",
+      "rate": "3.60",
+      "code": "SYR"
+    },
+    {
+      "name": "Oman",
+      "rate": "3.30",
+      "code": "OMN"
+    },
+    {
+      "name": "Brunei",
+      "rate": "2.80",
+      "code": "BRN"
+    },
+    {
+      "name": "Bahrain",
+      "rate": "2.70",
+      "code": "BHR"
+    },
+    {
+      "name": "Kuwait",
+      "rate": "2.50",
+      "code": "KWT"
+    },
+    {
+      "name": "Qatar",
+      "rate": "1.90",
+      "code": "QAT"
+    },
+    {
+      "name": "United Arab Emirates",
+      "rate": "1.80",
+      "code": "ARE"
+    }
+  ],
+  "2005 - 2010": [
+    {
+      "name": "Central African Republic",
+      "rate": "17.70",
+      "code": "CAF"
+    },
+    {
+      "name": "Sierra Leone",
+      "rate": "17.40",
+      "code": "SLE"
+    },
+    {
+      "name": "Chad",
+      "rate": "16.30",
+      "code": "TCD"
+    },
+    {
+      "name": "Ukraine",
+      "rate": "16.30",
+      "code": "UKR"
+    },
+    {
+      "name": "Lesotho",
+      "rate": "15.30",
+      "code": "LSO"
+    },
+    {
+      "name": "Belarus",
+      "rate": "15.20",
+      "code": "BLR"
+    },
+    {
+      "name": "Côte d'Ivoire",
+      "rate": "15.10",
+      "code": "CIV"
+    },
+    {
+      "name": "Nigeria",
+      "rate": "15.10",
+      "code": "NGA"
+    },
+    {
+      "name": "Russia",
+      "rate": "14.90",
+      "code": "RUS"
+    },
+    {
+      "name": "Bulgaria",
+      "rate": "14.80",
+      "code": "BGR"
+    },
+    {
+      "name": "Latvia",
+      "rate": "14.70",
+      "code": "LVA"
+    },
+    {
+      "name": "South Africa",
+      "rate": "14.40",
+      "code": "ZAF"
+    },
+    {
+      "name": "Swaziland",
+      "rate": "14.30",
+      "code": "SWZ"
+    },
+    {
+      "name": "Zimbabwe",
+      "rate": "14.20",
+      "code": "ZWE"
+    },
+    {
+      "name": "Lithuania",
+      "rate": "14.00",
+      "code": "LTU"
+    },
+    {
+      "name": "Mali",
+      "rate": "13.60",
+      "code": "MLI"
+    },
+    {
+      "name": "Somalia",
+      "rate": "13.60",
+      "code": "SOM"
+    },
+    {
+      "name": "Hungary",
+      "rate": "13.20",
+      "code": "HUN"
+    },
+    {
+      "name": "Niger",
+      "rate": "13.10",
+      "code": "NER"
+    },
+    {
+      "name": "Mozambique",
+      "rate": "13.00",
+      "code": "MOZ"
+    },
+    {
+      "name": "Burundi",
+      "rate": "12.90",
+      "code": "BDI"
+    },
+    {
+      "name": "Estonia",
+      "rate": "12.80",
+      "code": "EST"
+    },
+    {
+      "name": "Guinea-Bissau",
+      "rate": "12.60",
+      "code": "GNB"
+    },
+    {
+      "name": "Democratic Republic of Congo",
+      "rate": "12.50",
+      "code": "COD"
+    },
+    {
+      "name": "Romania",
+      "rate": "12.50",
+      "code": "ROU"
+    },
+    {
+      "name": "Serbia",
+      "rate": "12.40",
+      "code": "SRB"
+    },
+    {
+      "name": "Cameroon",
+      "rate": "12.30",
+      "code": "CMR"
+    },
+    {
+      "name": "Moldova",
+      "rate": "12.20",
+      "code": "MDA"
+    },
+    {
+      "name": "Angola",
+      "rate": "12.00",
+      "code": "AGO"
+    },
+    {
+      "name": "Guinea",
+      "rate": "12.00",
+      "code": "GIN"
+    },
+    {
+      "name": "Burkina Faso",
+      "rate": "11.90",
+      "code": "BFA"
+    },
+    {
+      "name": "Croatia",
+      "rate": "11.90",
+      "code": "HRV"
+    },
+    {
+      "name": "Zambia",
+      "rate": "11.90",
+      "code": "ZMB"
+    },
+    {
+      "name": "Malawi",
+      "rate": "11.70",
+      "code": "MWI"
+    },
+    {
+      "name": "Georgia",
+      "rate": "11.60",
+      "code": "GEO"
+    },
+    {
+      "name": "Namibia",
+      "rate": "11.40",
+      "code": "NAM"
+    },
+    {
+      "name": "Togo",
+      "rate": "11.10",
+      "code": "TGO"
+    },
+    {
+      "name": "Uganda",
+      "rate": "11.10",
+      "code": "UGA"
+    },
+    {
+      "name": "Botswana",
+      "rate": "10.80",
+      "code": "BWA"
+    },
+    {
+      "name": "Benin",
+      "rate": "10.60",
+      "code": "BEN"
+    },
+    {
+      "name": "Congo",
+      "rate": "10.60",
+      "code": "COG"
+    },
+    {
+      "name": "Germany",
+      "rate": "10.40",
+      "code": "DEU"
+    },
+    {
+      "name": "Kazakhstan",
+      "rate": "10.40",
+      "code": "KAZ"
+    },
+    {
+      "name": "Montenegro",
+      "rate": "10.40",
+      "code": "MNE"
+    },
+    {
+      "name": "Czech Republic",
+      "rate": "10.30",
+      "code": "CZE"
+    },
+    {
+      "name": "Liberia",
+      "rate": "10.30",
+      "code": "LBR"
+    },
+    {
+      "name": "Barbados",
+      "rate": "10.20",
+      "code": "BRB"
+    },
+    {
+      "name": "Denmark",
+      "rate": "10.10",
+      "code": "DNK"
+    },
+    {
+      "name": "Gabon",
+      "rate": "9.90",
+      "code": "GAB"
+    },
+    {
+      "name": "Slovakia",
+      "rate": "9.90",
+      "code": "SVK"
+    },
+    {
+      "name": "Sweden",
+      "rate": "9.90",
+      "code": "SWE"
+    },
+    {
+      "name": "Belgium",
+      "rate": "9.80",
+      "code": "BEL"
+    },
+    {
+      "name": "Poland",
+      "rate": "9.80",
+      "code": "POL"
+    },
+    {
+      "name": "Portugal",
+      "rate": "9.80",
+      "code": "PRT"
+    },
+    {
+      "name": "Armenia",
+      "rate": "9.70",
+      "code": "ARM"
+    },
+    {
+      "name": "Haiti",
+      "rate": "9.70",
+      "code": "HTI"
+    },
+    {
+      "name": "Italy",
+      "rate": "9.70",
+      "code": "ITA"
+    },
+    {
+      "name": "Ethiopia",
+      "rate": "9.60",
+      "code": "ETH"
+    },
+    {
+      "name": "Gambia",
+      "rate": "9.60",
+      "code": "GMB"
+    },
+    {
+      "name": "Ghana",
+      "rate": "9.60",
+      "code": "GHA"
+    },
+    {
+      "name": "Tanzania",
+      "rate": "9.60",
+      "code": "TZA"
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "rate": "9.40",
+      "code": "BIH"
+    },
+    {
+      "name": "Djibouti",
+      "rate": "9.40",
+      "code": "DJI"
+    },
+    {
+      "name": "Finland",
+      "rate": "9.40",
+      "code": "FIN"
+    },
+    {
+      "name": "Greece",
+      "rate": "9.40",
+      "code": "GRC"
+    },
+    {
+      "name": "United Kingdom",
+      "rate": "9.40",
+      "code": "GBR"
+    },
+    {
+      "name": "Macedonia",
+      "rate": "9.30",
+      "code": "MKD"
+    },
+    {
+      "name": "Austria",
+      "rate": "9.20",
+      "code": "AUT"
+    },
+    {
+      "name": "Slovenia",
+      "rate": "9.20",
+      "code": "SVN"
+    },
+    {
+      "name": "Uruguay",
+      "rate": "9.20",
+      "code": "URY"
+    },
+    {
+      "name": "Rwanda",
+      "rate": "9.10",
+      "code": "RWA"
+    },
+    {
+      "name": "Eritrea",
+      "rate": "9.00",
+      "code": "ERI"
+    },
+    {
+      "name": "North Korea",
+      "rate": "9.00",
+      "code": "PRK"
+    },
+    {
+      "name": "Afghanistan",
+      "rate": "8.90",
+      "code": "AFG"
+    },
+    {
+      "name": "Mauritania",
+      "rate": "8.90",
+      "code": "MRT"
+    },
+    {
+      "name": "Trinidad and Tobago",
+      "rate": "8.90",
+      "code": "TTO"
+    },
+    {
+      "name": "Japan",
+      "rate": "8.80",
+      "code": "JPN"
+    },
+    {
+      "name": "Norway",
+      "rate": "8.80",
+      "code": "NOR"
+    },
+    {
+      "name": "Comoros",
+      "rate": "8.70",
+      "code": "COM"
+    },
+    {
+      "name": "Sudan",
+      "rate": "8.70",
+      "code": "SDN"
+    },
+    {
+      "name": "France",
+      "rate": "8.60",
+      "code": "FRA"
+    },
+    {
+      "name": "Kenya",
+      "rate": "8.60",
+      "code": "KEN"
+    },
+    {
+      "name": "Myanmar",
+      "rate": "8.50",
+      "code": "MMR"
+    },
+    {
+      "name": "Spain",
+      "rate": "8.50",
+      "code": "ESP"
+    },
+    {
+      "name": "Bolivia",
+      "rate": "8.40",
+      "code": "BOL"
+    },
+    {
+      "name": "Luxembourg",
+      "rate": "8.20",
+      "code": "LUX"
+    },
+    {
+      "name": "Netherlands",
+      "rate": "8.20",
+      "code": "NLD"
+    },
+    {
+      "name": "Senegal",
+      "rate": "8.20",
+      "code": "SEN"
+    },
+    {
+      "name": "United States",
+      "rate": "8.20",
+      "code": "USA"
+    },
+    {
+      "name": "Malta",
+      "rate": "8.10",
+      "code": "MLT"
+    },
+    {
+      "name": "Switzerland",
+      "rate": "8.10",
+      "code": "CHE"
+    },
+    {
+      "name": "Pakistan",
+      "rate": "8.00",
+      "code": "PAK"
+    },
+    {
+      "name": "Puerto Rico",
+      "rate": "8.00",
+      "code": "PRI"
+    },
+    {
+      "name": "Madagascar",
+      "rate": "7.90",
+      "code": "MDG"
+    },
+    {
+      "name": "India",
+      "rate": "7.80",
+      "code": "IND"
+    },
+    {
+      "name": "Laos",
+      "rate": "7.80",
+      "code": "LAO"
+    },
+    {
+      "name": "Argentina",
+      "rate": "7.70",
+      "code": "ARG"
+    },
+    {
+      "name": "Grenada",
+      "rate": "7.70",
+      "code": "GRD"
+    },
+    {
+      "name": "Guyana",
+      "rate": "7.70",
+      "code": "GUY"
+    },
+    {
+      "name": "Kyrgyzstan",
+      "rate": "7.70",
+      "code": "KGZ"
+    },
+    {
+      "name": "Sao Tome and Principe",
+      "rate": "7.70",
+      "code": "STP"
+    },
+    {
+      "name": "Seychelles",
+      "rate": "7.50",
+      "code": "SYC"
+    },
+    {
+      "name": "Yemen",
+      "rate": "7.50",
+      "code": "YEM"
+    },
+    {
+      "name": "Papua New Guinea",
+      "rate": "7.40",
+      "code": "PNG"
+    },
+    {
+      "name": "Saint Vincent and the Grenadines",
+      "rate": "7.30",
+      "code": "VCT"
+    },
+    {
+      "name": "Turkmenistan",
+      "rate": "7.30",
+      "code": "TKM"
+    },
+    {
+      "name": "Canada",
+      "rate": "7.20",
+      "code": "CAN"
+    },
+    {
+      "name": "Indonesia",
+      "rate": "7.20",
+      "code": "IDN"
+    },
+    {
+      "name": "Kiribati",
+      "rate": "7.20",
+      "code": "KIR"
+    },
+    {
+      "name": "Suriname",
+      "rate": "7.20",
+      "code": "SUR"
+    },
+    {
+      "name": "Thailand",
+      "rate": "7.20",
+      "code": "THA"
+    },
+    {
+      "name": "United States Virgin Islands",
+      "rate": "7.20",
+      "code": "VIR"
+    },
+    {
+      "name": "Mauritius",
+      "rate": "7.10",
+      "code": "MUS"
+    },
+    {
+      "name": "Cuba",
+      "rate": "7.00",
+      "code": "CUB"
+    },
+    {
+      "name": "Jamaica",
+      "rate": "7.00",
+      "code": "JAM"
+    },
+    {
+      "name": "Nepal",
+      "rate": "7.00",
+      "code": "NPL"
+    },
+    {
+      "name": "Cambodia",
+      "rate": "6.90",
+      "code": "KHM"
+    },
+    {
+      "name": "Mongolia",
+      "rate": "6.90",
+      "code": "MNG"
+    },
+    {
+      "name": "Cyprus",
+      "rate": "6.80",
+      "code": "CYP"
+    },
+    {
+      "name": "New Zealand",
+      "rate": "6.80",
+      "code": "NZL"
+    },
+    {
+      "name": "Albania",
+      "rate": "6.70",
+      "code": "ALB"
+    },
+    {
+      "name": "Azerbaijan",
+      "rate": "6.70",
+      "code": "AZE"
+    },
+    {
+      "name": "Australia",
+      "rate": "6.60",
+      "code": "AUS"
+    },
+    {
+      "name": "El Salvador",
+      "rate": "6.60",
+      "code": "SLV"
+    },
+    {
+      "name": "Saint Lucia",
+      "rate": "6.60",
+      "code": "LCA"
+    },
+    {
+      "name": "Bhutan",
+      "rate": "6.50",
+      "code": "BTN"
+    },
+    {
+      "name": "China",
+      "rate": "6.50",
+      "code": "CHN"
+    },
+    {
+      "name": "Fiji",
+      "rate": "6.50",
+      "code": "FJI"
+    },
+    {
+      "name": "Ireland",
+      "rate": "6.40",
+      "code": "IRL"
+    },
+    {
+      "name": "Sri Lanka",
+      "rate": "6.40",
+      "code": "LKA"
+    },
+    {
+      "name": "Egypt",
+      "rate": "6.30",
+      "code": "EGY"
+    },
+    {
+      "name": "Iceland",
+      "rate": "6.30",
+      "code": "ISL"
+    },
+    {
+      "name": "Micronesia",
+      "rate": "6.30",
+      "code": "FSM"
+    },
+    {
+      "name": "Taiwan",
+      "rate": "6.30",
+      "code": "TWN"
+    },
+    {
+      "name": "Timor",
+      "rate": "6.30",
+      "code": "TLS"
+    },
+    {
+      "name": "Tonga",
+      "rate": "6.20",
+      "code": "TON"
+    },
+    {
+      "name": "Uzbekistan",
+      "rate": "6.20",
+      "code": "UZB"
+    },
+    {
+      "name": "Antigua and Barbuda",
+      "rate": "6.10",
+      "code": "ATG"
+    },
+    {
+      "name": "Dominican Republic",
+      "rate": "6.00",
+      "code": "DOM"
+    },
+    {
+      "name": "Philippines",
+      "rate": "6.00",
+      "code": "PHL"
+    },
+    {
+      "name": "Tunisia",
+      "rate": "6.00",
+      "code": "TUN"
+    },
+    {
+      "name": "Bangladesh",
+      "rate": "5.90",
+      "code": "BGD"
+    },
+    {
+      "name": "Brazil",
+      "rate": "5.90",
+      "code": "BRA"
+    },
+    {
+      "name": "Solomon Islands",
+      "rate": "5.90",
+      "code": "SLB"
+    },
+    {
+      "name": "Turkey",
+      "rate": "5.90",
+      "code": "TUR"
+    },
+    {
+      "name": "Bahamas",
+      "rate": "5.80",
+      "code": "BHS"
+    },
+    {
+      "name": "Iraq",
+      "rate": "5.80",
+      "code": "IRQ"
+    },
+    {
+      "name": "Tajikistan",
+      "rate": "5.70",
+      "code": "TJK"
+    },
+    {
+      "name": "Cape Verde",
+      "rate": "5.60",
+      "code": "CPV"
+    },
+    {
+      "name": "Chile",
+      "rate": "5.60",
+      "code": "CHL"
+    },
+    {
+      "name": "Colombia",
+      "rate": "5.60",
+      "code": "COL"
+    },
+    {
+      "name": "Paraguay",
+      "rate": "5.60",
+      "code": "PRY"
+    },
+    {
+      "name": "Samoa",
+      "rate": "5.60",
+      "code": "WSM"
+    },
+    {
+      "name": "Vietnam",
+      "rate": "5.60",
+      "code": "VNM"
+    },
+    {
+      "name": "Israel",
+      "rate": "5.50",
+      "code": "ISR"
+    },
+    {
+      "name": "Morocco",
+      "rate": "5.50",
+      "code": "MAR"
+    },
+    {
+      "name": "Peru",
+      "rate": "5.50",
+      "code": "PER"
+    },
+    {
+      "name": "Guatemala",
+      "rate": "5.40",
+      "code": "GTM"
+    },
+    {
+      "name": "Ecuador",
+      "rate": "5.20",
+      "code": "ECU"
+    },
+    {
+      "name": "South Korea",
+      "rate": "5.20",
+      "code": "KOR"
+    },
+    {
+      "name": "Venezuela",
+      "rate": "5.20",
+      "code": "VEN"
+    },
+    {
+      "name": "Iran",
+      "rate": "5.10",
+      "code": "IRN"
+    },
+    {
+      "name": "Vanuatu",
+      "rate": "5.00",
+      "code": "VUT"
+    },
+    {
+      "name": "Belize",
+      "rate": "4.90",
+      "code": "BLZ"
+    },
+    {
+      "name": "Honduras",
+      "rate": "4.90",
+      "code": "HND"
+    },
+    {
+      "name": "Nicaragua",
+      "rate": "4.90",
+      "code": "NIC"
+    },
+    {
+      "name": "Panama",
+      "rate": "4.90",
+      "code": "PAN"
+    },
+    {
+      "name": "Algeria",
+      "rate": "4.70",
+      "code": "DZA"
+    },
+    {
+      "name": "Guam",
+      "rate": "4.70",
+      "code": "GUM"
+    },
+    {
+      "name": "Lebanon",
+      "rate": "4.70",
+      "code": "LBN"
+    },
+    {
+      "name": "Libya",
+      "rate": "4.70",
+      "code": "LBY"
+    },
+    {
+      "name": "Malaysia",
+      "rate": "4.70",
+      "code": "MYS"
+    },
+    {
+      "name": "Mexico",
+      "rate": "4.60",
+      "code": "MEX"
+    },
+    {
+      "name": "Singapore",
+      "rate": "4.50",
+      "code": "SGP"
+    },
+    {
+      "name": "Costa Rica",
+      "rate": "4.40",
+      "code": "CRI"
+    },
+    {
+      "name": "Jordan",
+      "rate": "3.90",
+      "code": "JOR"
+    },
+    {
+      "name": "Saudi Arabia",
+      "rate": "3.60",
+      "code": "SAU"
+    },
+    {
+      "name": "Syria",
+      "rate": "3.50",
+      "code": "SYR"
+    },
+    {
+      "name": "Maldives",
+      "rate": "3.40",
+      "code": "MDV"
+    },
+    {
+      "name": "Brunei",
+      "rate": "3.00",
+      "code": "BRN"
+    },
+    {
+      "name": "Oman",
+      "rate": "2.90",
+      "code": "OMN"
+    },
+    {
+      "name": "Kuwait",
+      "rate": "2.60",
+      "code": "KWT"
+    },
+    {
+      "name": "Bahrain",
+      "rate": "2.40",
+      "code": "BHR"
+    },
+    {
+      "name": "Qatar",
+      "rate": "1.60",
+      "code": "QAT"
+    },
+    {
+      "name": "United Arab Emirates",
+      "rate": "1.50",
+      "code": "ARE"
+    }
+  ],
+  "2010 - 2015": [
+    {
+      "name": "Central African Republic",
+      "rate": "15.30",
+      "code": "CAF"
+    },
+    {
+      "name": "Bulgaria",
+      "rate": "15.00",
+      "code": "BGR"
+    },
+    {
+      "name": "Ukraine",
+      "rate": "14.90",
+      "code": "UKR"
+    },
+    {
+      "name": "Latvia",
+      "rate": "14.30",
+      "code": "LVA"
+    },
+    {
+      "name": "Chad",
+      "rate": "14.00",
+      "code": "TCD"
+    },
+    {
+      "name": "Sierra Leone",
+      "rate": "13.90",
+      "code": "SLE"
+    },
+    {
+      "name": "Lesotho",
+      "rate": "13.60",
+      "code": "LSO"
+    },
+    {
+      "name": "Nigeria",
+      "rate": "13.60",
+      "code": "NGA"
+    },
+    {
+      "name": "Lithuania",
+      "rate": "13.50",
+      "code": "LTU"
+    },
+    {
+      "name": "Belarus",
+      "rate": "13.40",
+      "code": "BLR"
+    },
+    {
+      "name": "Côte d'Ivoire",
+      "rate": "13.40",
+      "code": "CIV"
+    },
+    {
+      "name": "Russia",
+      "rate": "13.40",
+      "code": "RUS"
+    },
+    {
+      "name": "Georgia",
+      "rate": "13.10",
+      "code": "GEO"
+    },
+    {
+      "name": "Hungary",
+      "rate": "12.60",
+      "code": "HUN"
+    },
+    {
+      "name": "Croatia",
+      "rate": "12.40",
+      "code": "HRV"
+    },
+    {
+      "name": "Romania",
+      "rate": "12.40",
+      "code": "ROU"
+    },
+    {
+      "name": "Serbia",
+      "rate": "12.40",
+      "code": "SRB"
+    },
+    {
+      "name": "Somalia",
+      "rate": "12.30",
+      "code": "SOM"
+    },
+    {
+      "name": "Estonia",
+      "rate": "11.70",
+      "code": "EST"
+    },
+    {
+      "name": "Burundi",
+      "rate": "11.60",
+      "code": "BDI"
+    },
+    {
+      "name": "Mali",
+      "rate": "11.60",
+      "code": "MLI"
+    },
+    {
+      "name": "Guinea-Bissau",
+      "rate": "11.40",
+      "code": "GNB"
+    },
+    {
+      "name": "Moldova",
+      "rate": "11.40",
+      "code": "MDA"
+    },
+    {
+      "name": "Mozambique",
+      "rate": "11.20",
+      "code": "MOZ"
+    },
+    {
+      "name": "South Africa",
+      "rate": "11.20",
+      "code": "ZAF"
+    },
+    {
+      "name": "Cameroon",
+      "rate": "11.10",
+      "code": "CMR"
+    },
+    {
+      "name": "Democratic Republic of Congo",
+      "rate": "10.90",
+      "code": "COD"
+    },
+    {
+      "name": "Germany",
+      "rate": "10.90",
+      "code": "DEU"
+    },
+    {
+      "name": "Swaziland",
+      "rate": "10.80",
+      "code": "SWZ"
+    },
+    {
+      "name": "Niger",
+      "rate": "10.70",
+      "code": "NER"
+    },
+    {
+      "name": "Barbados",
+      "rate": "10.50",
+      "code": "BRB"
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "rate": "10.40",
+      "code": "BIH"
+    },
+    {
+      "name": "Guinea",
+      "rate": "10.40",
+      "code": "GIN"
+    },
+    {
+      "name": "Czech Republic",
+      "rate": "10.30",
+      "code": "CZE"
+    },
+    {
+      "name": "Portugal",
+      "rate": "10.30",
+      "code": "PRT"
+    },
+    {
+      "name": "Greece",
+      "rate": "10.20",
+      "code": "GRC"
+    },
+    {
+      "name": "Italy",
+      "rate": "10.20",
+      "code": "ITA"
+    },
+    {
+      "name": "Japan",
+      "rate": "9.90",
+      "code": "JPN"
+    },
+    {
+      "name": "Poland",
+      "rate": "9.90",
+      "code": "POL"
+    },
+    {
+      "name": "Belgium",
+      "rate": "9.80",
+      "code": "BEL"
+    },
+    {
+      "name": "Armenia",
+      "rate": "9.70",
+      "code": "ARM"
+    },
+    {
+      "name": "Benin",
+      "rate": "9.70",
+      "code": "BEN"
+    },
+    {
+      "name": "Montenegro",
+      "rate": "9.70",
+      "code": "MNE"
+    },
+    {
+      "name": "Burkina Faso",
+      "rate": "9.60",
+      "code": "BFA"
+    },
+    {
+      "name": "Macedonia",
+      "rate": "9.60",
+      "code": "MKD"
+    },
+    {
+      "name": "Slovakia",
+      "rate": "9.60",
+      "code": "SVK"
+    },
+    {
+      "name": "Zimbabwe",
+      "rate": "9.60",
+      "code": "ZWE"
+    },
+    {
+      "name": "Denmark",
+      "rate": "9.50",
+      "code": "DNK"
+    },
+    {
+      "name": "Finland",
+      "rate": "9.50",
+      "code": "FIN"
+    },
+    {
+      "name": "Sweden",
+      "rate": "9.50",
+      "code": "SWE"
+    },
+    {
+      "name": "Austria",
+      "rate": "9.40",
+      "code": "AUT"
+    },
+    {
+      "name": "Uganda",
+      "rate": "9.40",
+      "code": "UGA"
+    },
+    {
+      "name": "Angola",
+      "rate": "9.30",
+      "code": "AGO"
+    },
+    {
+      "name": "Togo",
+      "rate": "9.30",
+      "code": "TGO"
+    },
+    {
+      "name": "Uruguay",
+      "rate": "9.30",
+      "code": "URY"
+    },
+    {
+      "name": "Slovenia",
+      "rate": "9.20",
+      "code": "SVN"
+    },
+    {
+      "name": "Trinidad and Tobago",
+      "rate": "9.20",
+      "code": "TTO"
+    },
+    {
+      "name": "United Kingdom",
+      "rate": "9.00",
+      "code": "GBR"
+    },
+    {
+      "name": "Haiti",
+      "rate": "8.90",
+      "code": "HTI"
+    },
+    {
+      "name": "Kazakhstan",
+      "rate": "8.90",
+      "code": "KAZ"
+    },
+    {
+      "name": "France",
+      "rate": "8.80",
+      "code": "FRA"
+    },
+    {
+      "name": "Ghana",
+      "rate": "8.80",
+      "code": "GHA"
+    },
+    {
+      "name": "Liberia",
+      "rate": "8.80",
+      "code": "LBR"
+    },
+    {
+      "name": "Zambia",
+      "rate": "8.80",
+      "code": "ZMB"
+    },
+    {
+      "name": "Malta",
+      "rate": "8.70",
+      "code": "MLT"
+    },
+    {
+      "name": "Gambia",
+      "rate": "8.60",
+      "code": "GMB"
+    },
+    {
+      "name": "North Korea",
+      "rate": "8.60",
+      "code": "PRK"
+    },
+    {
+      "name": "Spain",
+      "rate": "8.60",
+      "code": "ESP"
+    },
+    {
+      "name": "Djibouti",
+      "rate": "8.50",
+      "code": "DJI"
+    },
+    {
+      "name": "Gabon",
+      "rate": "8.40",
+      "code": "GAB"
+    },
+    {
+      "name": "Congo",
+      "rate": "8.30",
+      "code": "COG"
+    },
+    {
+      "name": "Malawi",
+      "rate": "8.30",
+      "code": "MWI"
+    },
+    {
+      "name": "Namibia",
+      "rate": "8.30",
+      "code": "NAM"
+    },
+    {
+      "name": "Netherlands",
+      "rate": "8.30",
+      "code": "NLD"
+    },
+    {
+      "name": "Mauritania",
+      "rate": "8.20",
+      "code": "MRT"
+    },
+    {
+      "name": "Norway",
+      "rate": "8.20",
+      "code": "NOR"
+    },
+    {
+      "name": "United States",
+      "rate": "8.20",
+      "code": "USA"
+    },
+    {
+      "name": "Botswana",
+      "rate": "8.10",
+      "code": "BWA"
+    },
+    {
+      "name": "Guyana",
+      "rate": "8.10",
+      "code": "GUY"
+    },
+    {
+      "name": "Myanmar",
+      "rate": "8.10",
+      "code": "MMR"
+    },
+    {
+      "name": "Switzerland",
+      "rate": "8.10",
+      "code": "CHE"
+    },
+    {
+      "name": "Puerto Rico",
+      "rate": "7.90",
+      "code": "PRI"
+    },
+    {
+      "name": "Seychelles",
+      "rate": "7.90",
+      "code": "SYC"
+    },
+    {
+      "name": "Tanzania",
+      "rate": "7.90",
+      "code": "TZA"
+    },
+    {
+      "name": "Comoros",
+      "rate": "7.80",
+      "code": "COM"
+    },
+    {
+      "name": "Sudan",
+      "rate": "7.80",
+      "code": "SDN"
+    },
+    {
+      "name": "Eritrea",
+      "rate": "7.70",
+      "code": "ERI"
+    },
+    {
+      "name": "United States Virgin Islands",
+      "rate": "7.70",
+      "code": "VIR"
+    },
+    {
+      "name": "Argentina",
+      "rate": "7.60",
+      "code": "ARG"
+    },
+    {
+      "name": "Bolivia",
+      "rate": "7.60",
+      "code": "BOL"
+    },
+    {
+      "name": "Cuba",
+      "rate": "7.60",
+      "code": "CUB"
+    },
+    {
+      "name": "Ethiopia",
+      "rate": "7.60",
+      "code": "ETH"
+    },
+    {
+      "name": "Afghanistan",
+      "rate": "7.50",
+      "code": "AFG"
+    },
+    {
+      "name": "Pakistan",
+      "rate": "7.50",
+      "code": "PAK"
+    },
+    {
+      "name": "Thailand",
+      "rate": "7.50",
+      "code": "THA"
+    },
+    {
+      "name": "Luxembourg",
+      "rate": "7.40",
+      "code": "LUX"
+    },
+    {
+      "name": "Mauritius",
+      "rate": "7.40",
+      "code": "MUS"
+    },
+    {
+      "name": "Saint Lucia",
+      "rate": "7.40",
+      "code": "LCA"
+    },
+    {
+      "name": "Canada",
+      "rate": "7.30",
+      "code": "CAN"
+    },
+    {
+      "name": "India",
+      "rate": "7.30",
+      "code": "IND"
+    },
+    {
+      "name": "Grenada",
+      "rate": "7.20",
+      "code": "GRD"
+    },
+    {
+      "name": "Papua New Guinea",
+      "rate": "7.20",
+      "code": "PNG"
+    },
+    {
+      "name": "Turkmenistan",
+      "rate": "7.20",
+      "code": "TKM"
+    },
+    {
+      "name": "Indonesia",
+      "rate": "7.10",
+      "code": "IDN"
+    },
+    {
+      "name": "Kiribati",
+      "rate": "7.10",
+      "code": "KIR"
+    },
+    {
+      "name": "Sao Tome and Principe",
+      "rate": "7.10",
+      "code": "STP"
+    },
+    {
+      "name": "Suriname",
+      "rate": "7.10",
+      "code": "SUR"
+    },
+    {
+      "name": "China",
+      "rate": "7.00",
+      "code": "CHN"
+    },
+    {
+      "name": "Laos",
+      "rate": "7.00",
+      "code": "LAO"
+    },
+    {
+      "name": "Saint Vincent and the Grenadines",
+      "rate": "7.00",
+      "code": "VCT"
+    },
+    {
+      "name": "Madagascar",
+      "rate": "6.90",
+      "code": "MDG"
+    },
+    {
+      "name": "New Zealand",
+      "rate": "6.90",
+      "code": "NZL"
+    },
+    {
+      "name": "Albania",
+      "rate": "6.80",
+      "code": "ALB"
+    },
+    {
+      "name": "Cyprus",
+      "rate": "6.80",
+      "code": "CYP"
+    },
+    {
+      "name": "Fiji",
+      "rate": "6.80",
+      "code": "FJI"
+    },
+    {
+      "name": "Jamaica",
+      "rate": "6.80",
+      "code": "JAM"
+    },
+    {
+      "name": "Rwanda",
+      "rate": "6.80",
+      "code": "RWA"
+    },
+    {
+      "name": "Taiwan",
+      "rate": "6.80",
+      "code": "TWN"
+    },
+    {
+      "name": "Yemen",
+      "rate": "6.80",
+      "code": "YEM"
+    },
+    {
+      "name": "Azerbaijan",
+      "rate": "6.70",
+      "code": "AZE"
+    },
+    {
+      "name": "Australia",
+      "rate": "6.60",
+      "code": "AUS"
+    },
+    {
+      "name": "El Salvador",
+      "rate": "6.60",
+      "code": "SLV"
+    },
+    {
+      "name": "Senegal",
+      "rate": "6.60",
+      "code": "SEN"
+    },
+    {
+      "name": "Sri Lanka",
+      "rate": "6.60",
+      "code": "LKA"
+    },
+    {
+      "name": "Kyrgyzstan",
+      "rate": "6.50",
+      "code": "KGZ"
+    },
+    {
+      "name": "Nepal",
+      "rate": "6.50",
+      "code": "NPL"
+    },
+    {
+      "name": "Iceland",
+      "rate": "6.40",
+      "code": "ISL"
+    },
+    {
+      "name": "Philippines",
+      "rate": "6.40",
+      "code": "PHL"
+    },
+    {
+      "name": "Tunisia",
+      "rate": "6.40",
+      "code": "TUN"
+    },
+    {
+      "name": "Cambodia",
+      "rate": "6.30",
+      "code": "KHM"
+    },
+    {
+      "name": "Kenya",
+      "rate": "6.30",
+      "code": "KEN"
+    },
+    {
+      "name": "Mongolia",
+      "rate": "6.30",
+      "code": "MNG"
+    },
+    {
+      "name": "Ireland",
+      "rate": "6.20",
+      "code": "IRL"
+    },
+    {
+      "name": "Micronesia",
+      "rate": "6.20",
+      "code": "FSM"
+    },
+    {
+      "name": "Bhutan",
+      "rate": "6.10",
+      "code": "BTN"
+    },
+    {
+      "name": "Egypt",
+      "rate": "6.10",
+      "code": "EGY"
+    },
+    {
+      "name": "Tonga",
+      "rate": "6.10",
+      "code": "TON"
+    },
+    {
+      "name": "Bahamas",
+      "rate": "6.00",
+      "code": "BHS"
+    },
+    {
+      "name": "Dominican Republic",
+      "rate": "6.00",
+      "code": "DOM"
+    },
+    {
+      "name": "Brazil",
+      "rate": "5.90",
+      "code": "BRA"
+    },
+    {
+      "name": "Chile",
+      "rate": "5.90",
+      "code": "CHL"
+    },
+    {
+      "name": "Timor",
+      "rate": "5.90",
+      "code": "TLS"
+    },
+    {
+      "name": "Uzbekistan",
+      "rate": "5.90",
+      "code": "UZB"
+    },
+    {
+      "name": "Antigua and Barbuda",
+      "rate": "5.80",
+      "code": "ATG"
+    },
+    {
+      "name": "Colombia",
+      "rate": "5.80",
+      "code": "COL"
+    },
+    {
+      "name": "Turkey",
+      "rate": "5.80",
+      "code": "TUR"
+    },
+    {
+      "name": "Vietnam",
+      "rate": "5.80",
+      "code": "VNM"
+    },
+    {
+      "name": "Cape Verde",
+      "rate": "5.70",
+      "code": "CPV"
+    },
+    {
+      "name": "Belize",
+      "rate": "5.60",
+      "code": "BLZ"
+    },
+    {
+      "name": "Paraguay",
+      "rate": "5.60",
+      "code": "PRY"
+    },
+    {
+      "name": "Peru",
+      "rate": "5.60",
+      "code": "PER"
+    },
+    {
+      "name": "South Korea",
+      "rate": "5.50",
+      "code": "KOR"
+    },
+    {
+      "name": "Venezuela",
+      "rate": "5.50",
+      "code": "VEN"
+    },
+    {
+      "name": "Bangladesh",
+      "rate": "5.40",
+      "code": "BGD"
+    },
+    {
+      "name": "Israel",
+      "rate": "5.40",
+      "code": "ISR"
+    },
+    {
+      "name": "Syria",
+      "rate": "5.40",
+      "code": "SYR"
+    },
+    {
+      "name": "Iraq",
+      "rate": "5.30",
+      "code": "IRQ"
+    },
+    {
+      "name": "Tajikistan",
+      "rate": "5.30",
+      "code": "TJK"
+    },
+    {
+      "name": "Ecuador",
+      "rate": "5.20",
+      "code": "ECU"
+    },
+    {
+      "name": "Libya",
+      "rate": "5.20",
+      "code": "LBY"
+    },
+    {
+      "name": "Morocco",
+      "rate": "5.20",
+      "code": "MAR"
+    },
+    {
+      "name": "Samoa",
+      "rate": "5.10",
+      "code": "WSM"
+    },
+    {
+      "name": "Solomon Islands",
+      "rate": "5.10",
+      "code": "SLB"
+    },
+    {
+      "name": "Guatemala",
+      "rate": "5.00",
+      "code": "GTM"
+    },
+    {
+      "name": "Panama",
+      "rate": "5.00",
+      "code": "PAN"
+    },
+    {
+      "name": "Guam",
+      "rate": "4.90",
+      "code": "GUM"
+    },
+    {
+      "name": "Algeria",
+      "rate": "4.80",
+      "code": "DZA"
+    },
+    {
+      "name": "Honduras",
+      "rate": "4.80",
+      "code": "HND"
+    },
+    {
+      "name": "Mexico",
+      "rate": "4.80",
+      "code": "MEX"
+    },
+    {
+      "name": "Nicaragua",
+      "rate": "4.80",
+      "code": "NIC"
+    },
+    {
+      "name": "Vanuatu",
+      "rate": "4.80",
+      "code": "VUT"
+    },
+    {
+      "name": "Costa Rica",
+      "rate": "4.70",
+      "code": "CRI"
+    },
+    {
+      "name": "Iran",
+      "rate": "4.70",
+      "code": "IRN"
+    },
+    {
+      "name": "Malaysia",
+      "rate": "4.70",
+      "code": "MYS"
+    },
+    {
+      "name": "Singapore",
+      "rate": "4.70",
+      "code": "SGP"
+    },
+    {
+      "name": "Lebanon",
+      "rate": "4.60",
+      "code": "LBN"
+    },
+    {
+      "name": "Jordan",
+      "rate": "3.80",
+      "code": "JOR"
+    },
+    {
+      "name": "Maldives",
+      "rate": "3.50",
+      "code": "MDV"
+    },
+    {
+      "name": "Saudi Arabia",
+      "rate": "3.50",
+      "code": "SAU"
+    },
+    {
+      "name": "Brunei",
+      "rate": "3.40",
+      "code": "BRN"
+    },
+    {
+      "name": "Oman",
+      "rate": "2.70",
+      "code": "OMN"
+    },
+    {
+      "name": "Kuwait",
+      "rate": "2.60",
+      "code": "KWT"
+    },
+    {
+      "name": "Bahrain",
+      "rate": "2.30",
+      "code": "BHR"
+    },
+    {
+      "name": "Qatar",
+      "rate": "1.50",
+      "code": "QAT"
+    },
+    {
+      "name": "United Arab Emirates",
+      "rate": "1.50",
+      "code": "ARE"
+    }
+  ]
+}
