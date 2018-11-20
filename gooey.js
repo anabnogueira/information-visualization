@@ -3,7 +3,7 @@
 	///////////////////////////////////////////////////////////////////////////	
 	
 	var width = 500,
-	    height = 400;
+	    height = 350;
 
 	var nodes = d3.range(50).map(function() { return {radius: Math.random() * 12 + 4}; }),
 	    root = nodes[0];
