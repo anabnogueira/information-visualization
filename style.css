@@ -69,6 +69,45 @@ h1 {
 	padding: 0 1% 0 1%;
 } 
 
+#linesvg .axis {
+	font: 10px sans-serif;
+}
+
+#linesvg .axis path,
+#linesvg .axis line {
+  fill: none;
+  stroke: #D4D8DA;
+  stroke-width: 2px;
+  shape-rendering: crispEdges;
+}
+
+#linesvg .line {
+  fill: none;
+  stroke: #6F257F;
+  stroke-width: 5px;
+}
+
+#linesvg .overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+#linesvg .focus circle {
+  fill: #F1F3F3;
+  stroke: #6F257F;
+  stroke-width: 5px;
+}
+  
+#linesvg .hover-line {
+  stroke: #6F257F;
+  stroke-width: 2px;
+  stroke-dasharray: 3,3;
+}
+
+
+
+
+
 
 /*******************************/
 
