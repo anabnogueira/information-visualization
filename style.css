@@ -85,7 +85,7 @@ h1 {
 
 #linesvg .line {
   fill: none;
-  stroke: #6F257F;
+  stroke: #EE3E64;
   stroke-width: 5px;
 }
 
@@ -96,13 +96,13 @@ h1 {
 }
 
 #linesvg .focus circle {
-  fill: #F1F3F3;
-  stroke: #6F257F;
+  fill: #EE3E64;
+  stroke: #EE3E64;
   stroke-width: 5px;
 }
   
 #linesvg .hover-line {
-  stroke: #6F257F;
+  stroke: #EE3E64;
   stroke-width: 2px;
   stroke-dasharray: 3,3;
 }
