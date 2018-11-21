@@ -77,7 +77,7 @@ var svg = d3.select("#linesvg"),
               .attr("height", height)
               .on("mouseover", function() { focus.style("display", null); })
               .on("mouseout", function() { focus.style("display", "none"); })
-              .on("mousemove", mousemove);
+              .on("mousemove", mousemove); 
 
           function mousemove() {
             var x0 = x.invert(d3.mouse(this)[0]),
