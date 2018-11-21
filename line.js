@@ -42,7 +42,7 @@ var svg = d3.select("#linesvg"),
               .attr("dy", ".71em")
               .style("text-anchor", "end")
               .attr("fill", "#5D6971")
-              .text("Population)");
+              .text("Rate");
 
           g.append("path")
               .datum(data)

@@ -1,9 +1,9 @@
 var DATA_FILE_LOC = 'drinks.tsv';
 var USER_COUNTRY = 'United States of America';
 
-var margin = {top: 16, right: 0, bottom: 0, left: 0},
-    width = 720 - margin.left - margin.right,
-    height = 600 - margin.top - margin.bottom;
+var margin = {top: 10, right: 10, bottom: 10, left: 10},
+    width = 500 - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
     
 var node_radius = 13,
     padding = 1,
@@ -43,7 +43,7 @@ filter.append("feColorMatrix")
   .attr("result","gooey");
 
 // Foci
-var color1 = "#e6ca07";
+var color1 = "#EE3E64";
 var foci = {
     "beer": { x: 150, y: 150, color: color1 },
     "wine": { x: 400, y: 150, color: color1 },
@@ -125,7 +125,7 @@ circle.transition()
                 .attr("x", foci[d].x)
                 .attr("y", foci[d].y-80)
                 .attr("text-anchor", "middle")
-                .text(d);
+            //    .text(d);
 
             // Counters
             svg.append("text")
@@ -135,7 +135,7 @@ circle.transition()
                 .attr("x", foci[d].x)
                 .attr("y", foci[d].y)
                 .attr("text-anchor", "middle")
-                .text(country_data[USER_COUNTRY][d] + "%");
+           //     .text(country_data[USER_COUNTRY][d] + "%");
         }
     
     });
