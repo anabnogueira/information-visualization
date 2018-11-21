@@ -13,13 +13,14 @@ function autocomplete(inp, arr, box) {
       if (!val) { return false;}
       currentFocus = -1;
       /*create a DIV element that will contain the items (values):*/
-      a = document.createElement("DIV");
+      a = document.createElement("div");
       a.setAttribute("id", this.id + "autocomplete-list");
       a.setAttribute("class", "autocomplete-items");
       a.style.position = 'absolute';
       a.style.width = '80%';
       a.style.left = '10%';
       a.style.left = '10%';
+      a.style.zIndex = 100;
       a.style.backgroundColor = '#302f37';
       a.style.borderRadius = '0 0 2vh 2vh';
       /*append the DIV element as a child of the autocomplete container:*/
@@ -39,7 +40,7 @@ function autocomplete(inp, arr, box) {
               b.addEventListener("click", function(e) {
               /*insert the value for the autocomplete text field:*/
               inp.value = "";
-              box.innerHTML = "<script src=" + "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" + "></script>";
+              
               var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
             
               var j = this.getElementsByTagName("input")[0].value;

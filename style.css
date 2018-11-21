@@ -172,6 +172,13 @@ h1 {
 	list-style-type: none;
 }
 
+#selectedCountry li {
+	display: block;
+	z-index: 10;
+}
+
+
+
 /* COUNTRY SELECTION MENU */
 
 #search {
@@ -215,8 +222,10 @@ h1 {
 #scbox {
 	width: 100%;
 	border-radius: 2vh;
-	height: 34vh;
+	height: 28vh;
 	background-color: #3D3C45;
+	overflow: hidden;
+	overflow-y: scroll;
 }
 
 * {
