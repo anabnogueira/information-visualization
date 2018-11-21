@@ -6,11 +6,13 @@ var svg = d3.select("#linesvg"),
       var parseTime = d3.timeParse("%Y")
           bisectDate = d3.bisector(function(d) { return d.year; }).left;
 
-      var x = d3.scaleTime().range([0, width]);
-      var y = d3.scaleLinear().range([height, 0]);
+      var x = d3.scaleTime()    
+                .range([0, width]);
+      var y = d3.scaleLinear()
+                .range([height, 0]);
 
       var line = d3.line()
-          .x(function(d) { return x(d.year); })
+					.x(function(d) { return x(d.year); })
           .y(function(d) { return y(d.value); });
 
       var g = svg.append("g")
@@ -27,9 +29,12 @@ var svg = d3.select("#linesvg"),
           x.domain(d3.extent(data, function(d) { return d.year; }));
           y.domain([d3.min(data, function(d) { return d.value; }) / 1.005, d3.max(data, function(d) { return d.value; }) * 1.005]);
 
+					var axisY = d3.axisLeft(y)
+						.tickValues([]);
+
           g.append("g")
               .attr("class", "axis axis--x")
-              .attr("transform", "translate(0," + height + ")")
+							.attr("transform", "translate(0," + height + ")")
               .call(d3.axisBottom(x))
               .append("text")
                 .attr("class", "axis-title")
@@ -38,7 +43,7 @@ var svg = d3.select("#linesvg"),
 
           g.append("g")
               .attr("class", "axis axis--y")
-              .call(d3.axisLeft(y).ticks(6).tickFormat(function(d) { return parseInt(d / 1000) + "k"; }))
+              .call(axisY)
             .append("text")
               .attr("class", "axis-title")
               .attr("transform", "rotate(0)")
