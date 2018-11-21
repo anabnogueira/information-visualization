@@ -7,6 +7,8 @@
 body {
 	background-color: #2A2A2E;
 	color: #EFEFEF;
+	stroke: #fff;
+	font-weight: normal;
 	font-family: 'Roboto Mono', monospace;
 	font-size: 0.8em;
 

@@ -25,13 +25,19 @@ var line = d3.line()
 
 // 8. An array of objects of length N. Each object has key -> value pair, the key being "y" and the value is a random number
 var dataset = d3.range(n).map(function(d) { return {"y": d3.randomUniform(1)() } })
-
+var padding = 30;
 // 1. Add the SVG to the page and employ #2
 var svg = d3.select("#linechart").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    svg.selectAll("rect")
+    .attr("width",Math.floor((width-padding*2)/dataset.length)-1)
+    .attr("y",function(d) {
+    return height-padding-hscale(d.rating);
+    });
 
 // 3. Call the x axis in a group tag
 svg.append("g")
@@ -63,7 +69,7 @@ svg.selectAll(".dot")
         this.attr('class', 'focus')
 		})
       .on("mouseout", function() {  })
-//       .on("mousemove", mousemove);
+      //.on("mousemove", mousemove);
 
 
 
