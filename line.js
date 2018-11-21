@@ -1,15 +1,16 @@
 // 2. Use the margin convention practice 
 var margin = {top: 50, right: 50, bottom: 50, left: 50}
-  , width = (window.innerWidth - margin.left - margin.right)/3 // Use the window's width 
-  , height = (window.innerHeight - margin.top - margin.bottom)/3; // Use the window's height
+  , width = 500 // Use the window's width 
+  , height = 300; // Use the window's height
 
 // The number of datapoints
-var n = 21;
+var n = 6;
 
 // 5. X scale will use the index of our data
 var xScale = d3.scaleLinear()
     .domain([0, n-1]) // input
-    .range([0, width]); // output
+    .range([0, 500]); // output
+
 
 // 6. Y scale will use the randomly generate number 
 var yScale = d3.scaleLinear()
@@ -29,7 +30,7 @@ var dataset = d3.range(n).map(function(d) { return {"y": d3.randomUniform(1)() }
 var svg = d3.select("#linechart").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-  .append("g")
+    .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // 3. Call the x axis in a group tag
@@ -52,7 +53,7 @@ svg.append("path")
 // 12. Appends a circle for each datapoint 
 svg.selectAll(".dot")
     .data(dataset)
-  .enter().append("circle") // Uses the enter().append() method
+    .enter().append("circle") // Uses the enter().append() method
     .attr("class", "dot") // Assign a class for styling
     .attr("cx", function(d, i) { return xScale(i) })
     .attr("cy", function(d) { return yScale(d.y) })
