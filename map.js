@@ -87,7 +87,9 @@ function ready(error, data, population) {
           .style('stroke-width', 3)
           .html(d => d)
           .on("click", function(d){
-            console.log(d.properties.name);
+            if(countriesSelected.includes(d.properties.name)){
+              return;
+            }  
             var sc = document.getElementById("selectedCountry")
             var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
             var j = d.properties.name;
@@ -99,8 +101,8 @@ function ready(error, data, population) {
             for (i = 0; i < closebtns.length; i++) {
               closebtns[i].addEventListener("click", function() {
                 this.parentElement.style.display = 'none';
-                countries.push(j);
-                countriesSelected.slice(countriesSelected.indexOf(j), 1);
+                countriesSelected.splice(countriesSelected.indexOf(j), 1);
+                countries.push(j);    
               });
             }
 

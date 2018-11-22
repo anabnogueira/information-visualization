@@ -54,8 +54,8 @@ function autocomplete(inp, arr, box) {
               for (i = 0; i < closebtns.length; i++) {
                 closebtns[i].addEventListener("click", function() {
                   this.parentElement.style.display = 'none';
+                  countriesSelected.splice(countriesSelected.indexOf(j), 1);
                   countries.push(j);
-                  countriesSelected.slice(countriesSelected.indexOf(j), 1);
                 });
               }
 
