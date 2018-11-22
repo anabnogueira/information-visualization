@@ -30,7 +30,9 @@ function autocomplete(inp, arr, box) {
         /*check if the item starts with the same letters as the text field value:*/
         if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
           /*create a DIV element for each matching element:*/
-          b = document.createElement("DIV");
+          b = document.createElement("div");
+          b.style.padding = '0.6vh';
+          b.style.borderTop= '1px solid gray';
           /*make the matching letters bold:*/
           b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
           b.innerHTML += arr[i].substr(val.length);

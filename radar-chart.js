@@ -84,6 +84,7 @@ var RadarChart = {
 	   .style("font-size", "10px")
 	   .attr("transform", "translate(" + (cfg.w/2-levelFactor + cfg.ToRight) + ", " + (cfg.h/2-levelFactor) + ")")
 	   .attr("fill", "white")
+	   .style('font-weight', 'lighter')
 	   .text(Format((j+1)*cfg.maxValue/cfg.levels));
 	}
 	
@@ -112,6 +113,7 @@ var RadarChart = {
 		.attr("text-anchor", "middle")
 		.attr("dy", "1.5em")
 		.style("color", "white")
+		.style("font-weight", "lighter")
 		.attr("transform", function(d, i){return "translate(0, -10)"})
 		.attr("x", function(d, i){return cfg.w/2*(1-cfg.factorLegend*Math.sin(i*cfg.radians/total))-60*Math.sin(i*cfg.radians/total);})
 		.attr("y", function(d, i){return cfg.h/2*(1-Math.cos(i*cfg.radians/total))-20*Math.cos(i*cfg.radians/total);});
@@ -217,6 +219,7 @@ var RadarChart = {
 	tooltip = g.append('text')
 			   .style('opacity', 0)
 			   .style('font-family', 'sans-serif')
-			   .style('font-size', '13px');
+			   .style('font-size', '13px')
+			   .style('font-weight', 'lighter');
   }
 };
