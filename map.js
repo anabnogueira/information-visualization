@@ -97,6 +97,16 @@ function ready(error, data, population) {
     .datum(topojson.mesh(data.features, (a, b) => a.id !== b.id))
     .attr('class', 'names')
     .attr('d', path);
+
+  g.append("g")
+  .attr("class", "axis axis--x")
+  .attr("transform", "translate(0," + height + ")")
+  .call(d3.axisBottom()
+      .ticks(6))
+  .append("text")
+    .attr("class", "axis-title")
+    .attr("transform", "translate(" + width + "," + 30 + ")")
+    .text("Year");
 }
 
 

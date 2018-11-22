@@ -40,6 +40,8 @@ var svg = d3.select("#linesvg"),
               .append("text")
                 .attr("class", "axis-title")
                 .attr("transform", "translate(" + width + "," + 30 + ")")
+                .style("font-size", "14px")
+                .style("font-weight", "lighter")
                 .text("Year");
 
           g.append("g")
@@ -52,6 +54,8 @@ var svg = d3.select("#linesvg"),
               .attr("y", 6)
               .attr("dy", ".71em")
               .style("text-anchor", "end")
+              .style("font-size", "14px")
+              .style("font-weight", "lighter")
               .attr("fill", "#5D6971")
               .text("Rate");
 
