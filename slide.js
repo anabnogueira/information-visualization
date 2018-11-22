@@ -2,14 +2,15 @@
   $( function() {
     $( "#slider-range-max" ).slider({
       range: "max",
-      min: 1,
-      max: 25,
-      value: 1,
+      min: 1990,
+      max: 2015,
+      value: 1990,
       slide: function( event, ui ) {
-        $( "#amount" ).val( ui.value );
+        $( "#current_year" ).val( ui.value);
       }
+
     });
-    $( "#amount" ).val( $( "#slider-range-max" ).slider( "value" ) );
+    $( "#current_year" ).val( $( "#slider-range-max" ).slider( "value" ) );
   } );
 
 

@@ -71,6 +71,7 @@ h1 {
 	padding: 0 1% 0 1%;
 } 
 
+
 #linesvg .axis {
 	font: 10px sans-serif;
 }
@@ -108,6 +109,8 @@ h1 {
 }
 
 /*+++++++++++++++++++*/
+
+/*
 #lineyearSvg .axis {
 	font: 10px sans-serif;
 }
@@ -145,10 +148,31 @@ h1 {
 }
 
 
+*/
 
 
+#slider-container {
+	width: 80%;
+	margin: auto;
+}
+
+#slider-scale {
+	width: 100%;
+}
+
+.sliderdivision {
+	display: inline-block;
+	width: 15.6%;
+	text-align: center;
+}
 
 /*******************************/
+
+
+
+
+
+
 
 #radarplot {
 	position: relative;
@@ -263,7 +287,7 @@ h1 {
 #scbox {
 	width: 100%;
 	border-radius: 2vh;
-	height: 18vh;
+	height: 20vh;
 	background-color: #3D3C45;
 	overflow: hidden;
 	overflow-y: scroll;
@@ -281,10 +305,38 @@ h1 {
 	font-size: 1em;
 }
 
-* {
-	box-sizing: border-box;
-  }
-  
+
+#yearbox {
+	width: 80%;
+	border-radius: 2vh;
+	padding: 2vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3vh;
+	background-color: #3D3C45;
+	overflow: hidden;
+	text-align: center;
+	font-size: 1.5em;
+ 	color: white;
+ 	font-family: 'Roboto Mono', monospace;
+}
+
+#yearbox input {
+	background: transparent;
+	border: none;
+	font-weight: bold;
+ 	font-size: 2em;
+ 	color: white;
+ 	font-family: 'Roboto Mono', monospace;
+ 	text-align: center;
+ 	width: 100%;
+}
+
+
+
+
+
+ 
   ul {
 	list-style-type: none;
 	padding: 0;
