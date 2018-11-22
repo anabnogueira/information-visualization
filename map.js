@@ -90,7 +90,16 @@ function ready(error, data, population) {
             console.log(d.properties.name);
             var sc = document.getElementById("selectedCountry")
             var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
-            sc.innerHTML += "<li>"+ d.properties.name + "<span class=" + "close" + ">" + "&times;"+ "</span>" + "<span class=" + "coloring" + " style=\"background-color:" + hue + ";\">" + "</span>"+ "</li>";  
+            sc.innerHTML += "<li>"+ d.properties.name + "<span class=" + "close" + ">" + "&times;"+ "</span>" + "<span class=" + "coloring" + " style=\"background-color:" + hue + ";\">" + "</span>"+ "</li>"; 
+            var closebtns = document.getElementsByClassName("close");
+              var i;
+
+              for (i = 0; i < closebtns.length; i++) {
+                closebtns[i].addEventListener("click", function() {
+                  this.parentElement.style.display = 'none';
+                  countries.push(j);
+                });
+              } 
           });
       })
       .on('mouseout', function(d){
