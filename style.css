@@ -107,6 +107,42 @@ h1 {
   stroke-dasharray: 3,3;
 }
 
+/*+++++++++++++++++++*/
+#lineyearSvg .axis {
+	font: 10px sans-serif;
+}
+
+#lineyearSvg .axis path,
+#lineyearSvg .axis line {
+  fill: none;
+  stroke: #D4D8DA;
+  stroke-width: 2px;
+  shape-rendering: crispEdges;
+}
+
+#lineyearSvg .line {
+  fill: none;
+  stroke: #EE3E64;
+  stroke-width: 5px;
+}
+
+#lineyearSvg .overlay {
+  fill: none;
+	pointer-events: all;
+	stroke: #2A2A2E;
+}
+
+#lineyearSvg .focus circle {
+  fill: #EE3E64;
+  stroke: #EE3E64;
+  stroke-width: 5px;
+}
+  
+#lineyearSvg .hover-line {
+  stroke: #EE3E64;
+  stroke-width: 2px;
+  stroke-dasharray: 3,3;
+}
 
 
 
