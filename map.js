@@ -90,16 +90,24 @@ function ready(error, data, population) {
             console.log(d.properties.name);
             var sc = document.getElementById("selectedCountry")
             var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+            var j = d.properties.name;
+
             sc.innerHTML += "<li>"+ d.properties.name + "<span class=" + "close" + ">" + "&times;"+ "</span>" + "<span class=" + "coloring" + " style=\"background-color:" + hue + ";\">" + "</span>"+ "</li>"; 
             var closebtns = document.getElementsByClassName("close");
-              var i;
+            var i;
 
-              for (i = 0; i < closebtns.length; i++) {
-                closebtns[i].addEventListener("click", function() {
-                  this.parentElement.style.display = 'none';
-                  countries.push(j);
-                });
-              } 
+            for (i = 0; i < closebtns.length; i++) {
+              closebtns[i].addEventListener("click", function() {
+                this.parentElement.style.display = 'none';
+                countries.push(j);
+                countriesSelected.slice(countriesSelected.indexOf(j), 1);
+              });
+            }
+
+            /*close the list of autocompleted values,
+            (or any other open lists of autocompleted values:*/
+            countriesSelected.push(d.properties.name);
+            countries.splice(countries.indexOf(d.properties.name), 1);
           });
       })
       .on('mouseout', function(d){
