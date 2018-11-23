@@ -207,16 +207,15 @@ background-color:#C0C0C0;
 	position: relative;
 	display: inline-block;
 	width: 14.5%;
-	height: 45vh;
+	height: 41vh;
 	text-align: justify;
 	overflow-y: hidden;
 	padding: 0 0.5% 0 1%;
-	overflow-y: scroll;
 }
 
 
 #selectionmenuscroll {
-	height: 45vh;
+	height: 38vh;
 	overflow-y: scroll;
 }
 
@@ -227,7 +226,7 @@ background-color:#C0C0C0;
 	position: relative;
 	display: inline-block;
 	width: 14.5%;
-	height: 45vh;
+	height: 41vh;
 	text-align: justify;
 	overflow-y: hidden;
 	padding: 0 0.5% 0 1%;
