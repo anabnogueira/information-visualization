@@ -163,8 +163,9 @@ h1 {
 
 .sliderdivision {
 	display: inline-block;
-	width: 15.6%;
+	width: 12.6%;
 	text-align: center;
+	margin-left: 14pt;
 }
 
 /*******************************/
