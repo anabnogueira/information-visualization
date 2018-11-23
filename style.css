@@ -157,49 +157,6 @@ background-color:#C0C0C0;
   stroke-dasharray: 3,3;
 }
 
-/*+++++++++++++++++++*/
-
-/*
-#lineyearSvg .axis {
-	font: 10px sans-serif;
-}
-
-#lineyearSvg .axis path,
-#lineyearSvg .axis line {
-  fill: none;
-  stroke: #D4D8DA;
-  stroke-width: 2px;
-  shape-rendering: crispEdges;
-}
-
-#lineyearSvg .line {
-  fill: none;
-  stroke: #EE3E64;
-  stroke-width: 5px;
-}
-
-#lineyearSvg .overlay {
-  fill: none;
-	pointer-events: all;
-	stroke: #2A2A2E;
-}
-
-#lineyearSvg .focus circle {
-  fill: #EE3E64;
-  stroke: #EE3E64;
-  stroke-width: 5px;
-}
-  
-#lineyearSvg .hover-line {
-  stroke: #EE3E64;
-  stroke-width: 2px;
-  stroke-dasharray: 3,3;
-}
-
-
-*/
-
-
 #slider-container {
 	width: 80%;
 	margin-top: 1vh;
@@ -238,7 +195,7 @@ background-color:#C0C0C0;
 	color: white !important;
 }
 
-#chart {
+#chart {		
 	position: absolute;
 	top: 50px;
 	left: 100px;
@@ -254,7 +211,17 @@ background-color:#C0C0C0;
 	text-align: justify;
 	overflow-y: hidden;
 	padding: 0 0.5% 0 1%;
+	overflow-y: scroll;
 }
+
+
+#selectionmenuscroll {
+	height: 45vh;
+	overflow-y: scroll;
+}
+
+
+
 
 #selectionmenu2 {
 	position: relative;
@@ -465,10 +432,10 @@ background-color:#C0C0C0;
 	user-select: none;
 	text-transform: uppercase;
 	font-family: Arial, sans-serif;
-	font-size: 0.75em;
+	font-size: 0.85em;
 	text-align: left;
 	letter-spacing: 0.1em;
-	line-height: 15px;
+	line-height: 1.7em;
 
 }
 
@@ -537,10 +504,10 @@ background-color:#C0C0C0;
 	user-select: none;
 	text-transform: uppercase;
 	font-family: Arial, sans-serif;
-	font-size: 0.75em;
+	font-size: 0.85em;
 	text-align: left;
 	letter-spacing: 0.1em;
-	line-height: 20px;
+	line-height: 2em;
 
 }
 
