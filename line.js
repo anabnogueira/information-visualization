@@ -29,8 +29,8 @@ var svg = d3.select("#linesvg"),
           x.domain(d3.extent(data, function(d) { return d.year; }));
           y.domain([d3.min(data, function(d) { return d.value; }) / 1.005, d3.max(data, function(d) { return d.value; }) * 1.005]);
 
-					var axisY = d3.axisLeft(y)
-						.tickValues([]);
+            var axisY = d3.axisLeft(y)
+                .tickValues([]);
 
           g.append("g")
               .attr("class", "axis axis--x")
@@ -92,7 +92,11 @@ var svg = d3.select("#linesvg"),
               .attr("height", height)
               .on("mouseover", function() { focus.style("display", null); })
               .on("mouseout", function() { focus.style("display", "none"); })
-              .on("mousemove", mousemove); 
+              .on("mousemove", mousemove)
+              .on("click", function(){
+                  console.log("OLAAAAA");
+                //$( "#current_year" ).val(dx);
+              });
 
           function mousemove() {
             var x0 = x.invert(d3.mouse(this)[0]),
