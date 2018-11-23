@@ -7,8 +7,8 @@ const tip = d3.tip()
   .html(d => `<strong>Country: </strong><span class='details'>${d.properties.name}<br></span><strong>Mortality Rate: </strong><span class='details'>${format(d.population)}</span>`);
 
 const margin_map = {top: 0, right: 0, bottom: 0, left: 0};
-const width_map = 480;
-const height_map = 350;
+const width_map = 500;
+const height_map = 400;
 
 const color = d3.scaleThreshold()
   .domain([
@@ -42,10 +42,11 @@ const color = d3.scaleThreshold()
 
 const svg_map = d3.select('#worldmap')
   .append('svg')
-  .attr('width', '95%')
-  .attr('height', '82%')
+  .attr('width', '100%')
+  .attr('height', '76%')
   //.style('border', '1px solid white')
-  .style('padding-left', '3vh')
+  .style('padding-left', '8vh')
+  .style('margin-top', '1vh')
   .append('g')
   .attr('class', 'map');
 
