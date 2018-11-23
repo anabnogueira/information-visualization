@@ -71,6 +71,55 @@ h1 {
 	padding: 0 1% 0 1%;
 } 
 
+.button {
+	background-color: white; /* Green */
+	background-image: "pin2.png";
+	border: none;
+	border-radius:20%;
+	position: absolute;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	font-size: 16px;
+	margin: 0px 590px;
+    cursor: pointer;
+}
+.button:active {
+	background-color:white;
+	box-shadow: 0 4px #666;
+	transform: translateY(4px);
+  }
+.button:hover {
+background-color:#C0C0C0;
+}
+.button2 {
+	background-color: white;/* Blue */
+	margin: 0px 650px;
+	border: none;
+	border-radius:20%;
+	position: absolute;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	font-size: 16px;
+    cursor: pointer;
+}
+.button2:active {
+	background-color: white;
+	box-shadow: 0 4px #666;
+	transform: translateY(4px);
+  }
+.button2:hover {
+background-color:#C0C0C0;
+}
+
+
+
+
 
 #linesvg .axis {
 	font: 10px sans-serif;
