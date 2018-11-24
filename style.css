@@ -136,7 +136,7 @@ background-color:#C0C0C0;
 #linesvg .line {
   fill: none;
   stroke: #EE3E64;
-  stroke-width: 5px;
+  stroke-width: 3px;
 }
 
 #linesvg .overlay {
@@ -148,7 +148,7 @@ background-color:#C0C0C0;
 #linesvg .focus circle {
   fill: #EE3E64;
   stroke: #EE3E64;
-  stroke-width: 5px;
+  stroke-width: 2px;
 }
   
 #linesvg .hover-line {
