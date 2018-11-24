@@ -71,8 +71,17 @@ h1 {
 	padding: 0 1% 0 1%;
 } 
 
-.button {
-	background-color: white; /* Green */
+img{
+	width:40px;
+	height: 40px;
+	background-color:white; 
+	border-radius:20%;
+	z-index:90px;
+	
+	}
+
+#pin{
+	background-color: none; 
 	background-image: "pin2.png";
 	border: none;
 	border-radius:20%;
@@ -85,37 +94,53 @@ h1 {
 	font-size: 16px;
 	margin: 0px 590px;
     cursor: pointer;
+
 }
+
+.button {
+	box-shadow: 
+	  inset 0 3px 2px rgba(34, 33, 33, 0.22), 
+	  inset 0 -3px 2px rgba(0,0,0,.17), 
+	  inset 0 20px 10px rgba(255,255,255,.12), 
+	  0 0 4px 1px rgba(0,0,0,.1), 
+	  0 3px 2px rgba(0,0,0,.2);
+  }
+
 .button:active {
-	background-color:white;
+	background-color:#C0C0C0;
 	box-shadow: 0 4px #666;
 	transform: translateY(4px);
   }
-.button:hover {
-background-color:#C0C0C0;
-}
-.button2 {
-	background-color: white;/* Blue */
+
+#world{
+	background-color: none;
 	margin: 0px 650px;
 	border: none;
 	border-radius:20%;
 	position: absolute;
-    color: white;
-    padding: 5px 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+	color: white;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
 	font-size: 16px;
-    cursor: pointer;
+	cursor: pointer;
 }
+.button2 {
+	box-shadow: 
+		inset 0 3px 2px rgba(34, 33, 33, 0.22), 
+		inset 0 -3px 2px rgba(0,0,0,.17), 
+		inset 0 20px 10px rgba(255,255,255,.12), 
+		0 0 4px 1px rgba(0,0,0,.1), 
+		0 3px 2px rgba(0,0,0,.2);
+	}
+
 .button2:active {
-	background-color: white;
+	background-color: #C0C0C0;
 	box-shadow: 0 4px #666;
 	transform: translateY(4px);
-  }
-.button2:hover {
-background-color:#C0C0C0;
 }
+
 
 
 

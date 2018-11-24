@@ -20,7 +20,7 @@
 
 
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="//resources/demos/style.css">
+  <link rel="stylesheet" href="https://resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="slide.js"></script>
@@ -87,15 +87,39 @@
 
 <!-------------- Line Chart --------------->
 <div id="linechart" >
-		<img class="button" src="pin4.png" width="40" height="40">
-		<img class="button2" src="world2.png" width="40" height="40">
+	<div id="pin">
+		<img class="button" id="img1" src="pin4.png" onclick="colorchange(this.id)">
+	</div>
+	<div id="world">
+		<img class="button2" id="img2" src="world2.png" onclick="colorchange(this.id)">
+	</div>
+		<script>	
+		function colorchange(id) {
+			var background = document.getElementById(id).style.backgroundColor;
+			var world = "world"; 
+			var pin = "pin";
+
+			if (id == "pin" && background == "white") {
+				document.getElementById(id).style.background = "#C0C0C0";
+				document.getElementById(world).style.background = "white";
+			} 
+			if (id == "pin" && background == "#C0C0C0"){
+				document.getElementById(id).style.background = "white";
+				document.getElementById(world).style.background ="#C0C0C0";
+			}
+			if (id == "world" && background == "white") {
+				document.getElementById(id).style.background = "#C0C0C0";
+				document.getElementById(pin).style.background = "white";
+			} 
+			if (id == "world" && background == "#C0C0C0") {
+				document.getElementById(id).style.background = "white";
+				document.getElementById(world).style.background = "#C0C0C0";
+			}
+	   }		
+	</script>
 	<h1>Mortality Rate: chosen countries</h1>
 	<svg id="linesvg" width="740" height="370"></svg>
 </div>
-
-
-
-
 <br>
 
 
