@@ -94,8 +94,12 @@ var svg = d3.select("#linesvg"),
               .on("mouseout", function() { focus.style("display", "none"); })
               .on("mousemove", mousemove)
               .on("click", function(){
-                  console.log("OLAAAAA");
-                //$( "#current_year" ).val(dx);
+                  var xPosition = x.invert(d3.mouse(this)[0])
+                  var str = String(xPosition);
+                  var res = str.split(" ");
+                  var year = res[3];
+                  console.log(year);
+                  $( "#current_year" ).val(year);
               });
 
           function mousemove() {
