@@ -186,7 +186,7 @@ background-color:#C0C0C0;
 	position: relative;
 	display: inline-block;
 	width: 35%;
-	height: 45vh;
+	height: 41vh;
 	float: left;
 	border-right: #787985 dashed 1px;
 	text-align: justify;
@@ -220,6 +220,8 @@ background-color:#C0C0C0;
 }
 
 
+
+
 #selectionmenu2 {
 	position: relative;
 	display: inline-block;
@@ -235,7 +237,7 @@ background-color:#C0C0C0;
 	position: relative;
 	display: inline-block;
 	width: 35%;
-	height: 45vh;
+	height: 41vh;
 	float: right;
 	border-left: #787985 dashed 1px;
 	text-align: justify;
