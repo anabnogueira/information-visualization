@@ -10,14 +10,31 @@ const margin_map = {top: 0, right: 0, bottom: 0, left: 0};
 const width_map = 500;
 const height_map = 400;
 
+var colors = ['rgb(204, 0, 153)', 
+          'rgb(255, 80, 80)', 
+          'rgb(255, 153, 51)', 
+          'rgb(51, 51, 255)', 
+          'rgb(0, 204, 153)', 
+          'rgb(204, 102, 255)', 
+          'rgb(255, 0, 102)',
+          'rgb(51, 204, 51)',
+          'rgb(0, 255, 204)',
+          'rgb(230, 153, 0)'];
+
 const color = d3.scaleThreshold()
   .domain([
     1,
     3,
     5,
+    6,
+    7,
     8,
+    9,
     10,
     12,
+    13,
+    14,
+    15,
     16,
     20,
     23,
@@ -34,7 +51,10 @@ const color = d3.scaleThreshold()
     'rgb(158,202,225)',
     'rgb(107,174,214)',
     'rgb(66,146,198)',
+    'rgb(55, 135, 187)',
+    'rgb(44, 124, 176)',
     'rgb(33,113,181)',
+    'rgb(22, 102, 170)',
     'rgb(8,81,156)',
     'rgb(8,48,107)',
     'rgb(3,19,43)'
@@ -159,7 +179,7 @@ function ready(error, data, population) {
               return;
             }  
             var sc = document.getElementById("selectedCountry")
-            var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+            var hue = decide_color();
             var j = d.properties.name;
 
             sc.innerHTML += "<li>"+ d.properties.name + "<span class=" + "close" + ">" + "&times;"+ "</span>" + "<span class=" + "coloring" + " style=\"background-color:" + hue + ";\">" + "</span>"+ "</li>"; 
@@ -193,9 +213,6 @@ function ready(error, data, population) {
     .attr('d', path);
 }
 
-/*
-d3.select("worldmap")
-  .html(d => `<strong>Country: </strong><span class='details'>${d.properties.name}<br></span><strong>Mortality Rate: </strong><span class='details'>${format(d.population)}</span>`)
-  .on("click", function(d){
-    console.log(d.properties.name);
-  }); */
+function decide_color(){
+  
+}

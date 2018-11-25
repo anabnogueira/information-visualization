@@ -6,6 +6,8 @@ var svg = d3.select("#linesvg"),
       var parseTime = d3.timeParse("%Y")
           bisectDate = d3.bisector(function(d) { return d.year; }).left;
 
+      var country = "Portugal";
+
       var x = d3.scaleTime()    
                 .range([0, width]);
       var y = d3.scaleLinear()
@@ -18,16 +20,27 @@ var svg = d3.select("#linesvg"),
       var g = svg.append("g")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-      d3.json("data.json", function(error, data) {
+      d3.json("mortalityratenotsorted.json", function(error, data) {
           if (error) throw error;
+          var ret = data.filter(function(d) {
+            if( "Portugal" === d.name )
+                  return d;
+            });
 
-          data.forEach(function(d) {
-            d.year = parseTime(d.year);
-            d.value = +d.value;
+          ret.forEach(function(d) {
+            d.name = d.name;
+            d.values.forEach(function(d1){
+                d1.year = parseTime(d1.year);
+                d1.value = +d1.value;
+            });
           });
 
-          x.domain(d3.extent(data, function(d) { return d.year; }));
-          y.domain([d3.min(data, function(d) { return d.value; }) / 1.005, d3.max(data, function(d) { return d.value; }) * 1.005]);
+          console.log(ret);
+          
+          
+           
+          x.domain(d3.extent(ret, function(d) { return d.values.year; }));
+          y.domain([d3.min(ret, function(d) { return d.values.value; }) / 1.005, d3.max(ret, function(d) { return d.values.value; }) * 1.005]);
 
             var axisY = d3.axisLeft(y)
                 .tickValues([]);
@@ -60,9 +73,9 @@ var svg = d3.select("#linesvg"),
               .text("Rate");
 
           g.append("path")
-              .datum(data)
+              .datum(ret)
               .attr("class", "line")
-              .attr("d", line);
+              .attr("d1", line);
 
           var focus = g.append("g")
               .attr("class", "focus")
@@ -142,9 +155,9 @@ var svg = d3.select("#linesvg"),
 
           function mousemove() {
             var x0 = x.invert(d3.mouse(this)[0]),
-                i = bisectDate(data, x0, 1),
-                d0 = data[i - 1],
-                d1 = data[i],
+                i = bisectDate(ret, x0, 1),
+                d0 = ret[i - 1],
+                d1 = ret[i],
                 d = x0 - d0.year > d1.year - x0 ? d1 : d0;
             focus.attr("transform", "translate(" + x(d.year) + "," + y(d.value) + ")");
             focus.select("text").text(function() { return d.value; });
