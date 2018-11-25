@@ -98,9 +98,14 @@ var svg = d3.select("#linesvg"),
                   var str = String(xPosition);
                   var res = str.split(" ");
                   var year = res[3];
-                  console.log(year);
                   $( "#current_year" ).val(year);
-              });
+                  $( "#slider-range-max" ).slider({
+                      value: year,
+                      slide: function() {
+                        current_year = $( "#slider-range-max" ).slider( "value" ) ;
+                      }
+                      });
+                });
 
           function mousemove() {
             var x0 = x.invert(d3.mouse(this)[0]),
