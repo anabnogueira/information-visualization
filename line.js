@@ -100,39 +100,36 @@ var svg = d3.select("#linesvg"),
                   var year = res[3];
                   $( "#current_year" ).val(year);
                   $( "#slider-range-max" ).slider({
-                      value: year,
-                      slide: function() {
-                        current_year = $( "#slider-range-max" ).slider( "value" ) ;
-                        
-                      }
+                      value: year
                   });
-                      changeWorldMap2();
+                  current_year = $( "#slider-range-max" ).slider( "value" ) ;
+                      changeWorldMap2(year);
                 });
 
 
-        function changeWorldMap2(){
+        function changeWorldMap2(yr){
             console.log("chegueiiii");
-            if (1990 <= current_year && current_year <= 1994) {
+            if (1990 <= yr && current_year <= 1994) {
                 filename = filename_template + "1990.tsv";
                 console.log(filename);
             }
             
-            if (1995 <= current_year && current_year <= 1999) {
+            if (1995 <= yr && yr <= 1999) {
                 filename = filename_template + "1995.tsv";
                 console.log(filename);
             }
             
-            if (2000 <= current_year && current_year <= 2004) {
+            if (2000 <= yr && yr <= 2004) {
                 filename = filename_template + "2000.tsv";
                 console.log(filename);
             }
             
-            if (2005 <= current_year && current_year <= 2009) {
+            if (2005 <= yr && yr <= 2009) {
                 filename = filename_template + "2005.tsv";
                 console.log(filename);
             }
             
-            if (2010 <= current_year && current_year <= 2015) {
+            if (2010 <= yr && yr <= 2015) {
                 filename = filename_template + "2010.tsv";
                 console.log(filename);
             }
@@ -141,7 +138,7 @@ var svg = d3.select("#linesvg"),
                 .defer(d3.json, 'world_countries.json')
                 .defer(d3.tsv, filename)
                 .await(ready);
-            };
+            }
 
           function mousemove() {
             var x0 = x.invert(d3.mouse(this)[0]),

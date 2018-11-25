@@ -126,10 +126,12 @@ function changeWorldMap(){
       .defer(d3.json, 'world_countries.json')
       .defer(d3.tsv, filename)
       .await(ready);
-};
+}
 
 
 function ready(error, data, population) {
+
+  console.log("OIOIOIOI")
   const populationById = {};
 
   population.forEach(d => { populationById[d.id] = +d.population; });
