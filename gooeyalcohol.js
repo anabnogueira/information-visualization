@@ -43,7 +43,7 @@ filter.append("feColorMatrix")
   .attr("result","gooey");
 
 // Foci
-var color1 = "#EE3E64";
+var color1 = "#ff8000";
 var foci = {
     "beer": { x: 150, y: 150, color: color1 },
     "wine": { x: 400, y: 150, color: color1 },
