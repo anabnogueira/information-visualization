@@ -194,10 +194,10 @@ function ready(error, data, population) {
               for (i = 0; i < closebtns.length; i++) {
                 closebtns[i].addEventListener("click", function() {
                   this.parentElement.style.display = 'none';
-                  console.log(countriesSelected.indexOf(j));
-                  countriesSelected.splice(countriesSelected.indexOf(j), 1);
+                  s = this.parentElement.firstChild.data;
+                  countriesSelected.splice(countriesSelected.indexOf(s), 1);
                   $(document).trigger('countriesSelected', {countriesSelected});
-                  countries.push(j);    
+                  countries.push(s);   
                 });
               }
 
