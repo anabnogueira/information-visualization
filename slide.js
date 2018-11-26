@@ -11,7 +11,7 @@ $( function() {
     range: "max",
     min: 1990,
     max: 2015,
-    value: 1990,
+    value: 2015,
     slide: function( event, ui ) {
       $( "#current_year" ).val( ui.value);
       current_year = $( "#slider-range-max" ).slider( "value" ) ;

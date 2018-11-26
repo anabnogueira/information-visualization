@@ -185,8 +185,111 @@ function changeLines(countriesSelected) {
 
 
 
+var focus = g.append("g")
+              .attr("class", "focus")
+              .style("display", "none");
+
+          focus.append("line")
+              .attr("class", "x-hover-line hover-line")
+              .attr("y1", 0)
+              .attr("y2", height);
+
+          focus.append("line")
+              .attr("class", "y-hover-line hover-line")
+              .attr("x1", width)
+              .attr("x2", width);
+
+          
+
+          focus.append("text")
+              .attr("x", 15)
+              .attr("dy", ".31em");
+
+
+          svg.append("rect")
+              .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+              .attr("class", "overlay")
+              .attr("width", width)
+              .attr("height", height)
+              .on("mouseover", function() { focus.style("display", null); })
+              .on("mouseout", function() { focus.style("display", "none"); })
+              .on("mousemove", mousemove)
+              .on("click", function(){
+                  var coord = d3.mouse(this);
+
+                  var xPosition = Math.round(x.invert(d3.mouse(this)[0]));
+
+                  var str = String(xPosition);
+
+                  var res = str.split(" ");
+                  console.log(res);
+                  var year = res[0];
+                  console.log(year);
+                  $( "#current_year" ).val(year);
+                  $( "#slider-range-max" ).slider({
+                      value: year
+                  });
+                  current_year = $( "#slider-range-max" ).slider( "value" ) ;
+                      changeWorldMap2(year);
+                });
+
+
+        function changeWorldMap2(yr){
+            console.log("chegueiiii");
+            if (1990 <= yr && current_year <= 1994) {
+                filename = filename_template + "1990.tsv";
+                console.log(filename);
+            }
+            
+            if (1995 <= yr && yr <= 1999) {
+                filename = filename_template + "1995.tsv";
+                console.log(filename);
+            }
+            
+            if (2000 <= yr && yr <= 2004) {
+                filename = filename_template + "2000.tsv";
+                console.log(filename);
+            }
+            
+            if (2005 <= yr && yr <= 2009) {
+                filename = filename_template + "2005.tsv";
+                console.log(filename);
+            }
+            
+            if (2010 <= yr && yr <= 2015) {
+                filename = filename_template + "2010.tsv";
+                console.log(filename);
+            }
+            
+            queue()
+                .defer(d3.json, 'world_countries.json')
+                .defer(d3.tsv, filename)
+                .await(ready);
+        }
+
+          function mousemove() {
+            for (a=0; a < ret.length; a++) {
+              var x0 = x.invert(d3.mouse(this)[0]),
+                  i = bisectDate(ret[a].values, x0, 1),
+                  d0 = ret[a].values[i - 1],
+                  d1 = ret[a].values[i],
+                  d = x0 - d0.year > d1.year - x0 ? d1 : d0;
+              focus.attr("transform", "translate(" + x(d.year) + "," + 0 + ")");
+              //focus.select("text").text(function() { return d.value; });
+              focus.select(".x-hover-line").attr("y2", height);
+              focus.select(".y-hover-line").attr("x2", width + width);
+            }
+          }
+
+
 
 }
+
+
+
+
+
+
 
 
          

@@ -177,9 +177,9 @@ img{
 }
   
 #linesvg .hover-line {
-  stroke: #EE3E64;
-  stroke-width: 2px;
-  stroke-dasharray: 3,3;
+  stroke: #F5F5F5;
+  stroke-width: 3px;
+  stroke-dasharray: 6;
 }
 
 #slider-container {

@@ -21,12 +21,12 @@ d3.csv("datasets/mortality_rate_sorted_cc.csv", function(data) {
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 // radar chart - causes of death
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-
+/*
 var causes_sorted;
 
 var selectedYear = "2015";
 var selectedCountry = "Portugal";
-
+*/
 /*
 
 d3.json("datasets/causes_of_death_sorted.json", function(data) {
