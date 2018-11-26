@@ -1,4 +1,4 @@
-var margin = {top: 30, right: 30, bottom: 30, left: 60};
+var margin = {top: 30, right: 30, bottom: 40, left: 60};
 var width = $("#linesvg").width() - margin.left - margin.right;
 var height = $("#linesvg").height() - margin.top - margin.bottom;
 var svg = d3.select("#linesvg").append('svg')
@@ -7,8 +7,6 @@ var svg = d3.select("#linesvg").append('svg')
 
 var parseTime = d3.timeParse("%Y")
 bisectDate = d3.bisector(function(d) { return d.year; }).left;
-
-var country = "Portugal";
 
 var x = d3.scaleTime()    
     .range([0, width]);
@@ -106,6 +104,9 @@ function changeLines(countriesSelected) {
     y.domain([yMin * 0.9, yMax]);
 
   
+    if(countriesSelected.length == 0){
+        y.domain([0, 100]);
+    }
 
     g.select('.axis.axis--y')
         .transition()
@@ -235,7 +236,6 @@ var focus = g.append("g")
 
 
         function changeWorldMap2(yr){
-            console.log("chegueiiii");
             if (1990 <= yr && current_year <= 1994) {
                 filename = filename_template + "1990.tsv";
                 console.log(filename);

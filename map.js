@@ -98,7 +98,7 @@ var colorScale = d3.scaleThreshold()
 // Legend
 var g = svg_map.append("g")
             .attr("class", "legendThreshold")
-            .attr("transform", "translate(530,0)");
+            .attr("transform", "translate(560,0)");
 g.append("text")
     .attr("class", "caption")
     .attr("x", 0)
@@ -227,6 +227,7 @@ function ready(error, data, population) {
               closebtns[i].addEventListener("click", function() {
                 this.parentElement.style.display = 'none';
                 countriesSelected.splice(countriesSelected.indexOf(j), 1);
+                $(document).trigger('countriesSelected', {countriesSelected});
                 countries.push(j);    
               });
             }
