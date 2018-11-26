@@ -63,6 +63,7 @@ function autocomplete(inp, arr, box) {
               /*close the list of autocompleted values,
               (or any other open lists of autocompleted values:*/
               countriesSelected.push(this.getElementsByTagName("input")[0].value);
+              $(document).trigger('countriesSelected', {countriesSelected});
               countries.splice(countries.indexOf(this.getElementsByTagName("input")[0].value), 1);
               
               
