@@ -10,7 +10,7 @@ const margin_map = {top: 0, right: 0, bottom: 0, left: 0};
 const width_map = 500;
 const height_map = 400;
 
-var colors = ['rgb(204, 0, 153)', 
+const colors = ['rgb(204, 0, 153)', 
           'rgb(255, 80, 80)', 
           'rgb(255, 153, 51)', 
           'rgb(51, 51, 255)', 
@@ -179,7 +179,7 @@ function ready(error, data, population) {
               return;
             }  
             var sc = document.getElementById("selectedCountry")
-            var hue = decide_color();
+            var hue = colors[Math.floor(Math.random()*colors.length)];;
             var j = d.properties.name;
 
             sc.innerHTML += "<li>"+ d.properties.name + "<span class=" + "close" + ">" + "&times;"+ "</span>" + "<span class=" + "coloring" + " style=\"background-color:" + hue + ";\">" + "</span>"+ "</li>"; 
