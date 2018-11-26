@@ -1,7 +1,9 @@
-var svg = d3.select("#linesvg"),
-          margin = {top: 20, right: 30, bottom: 30, left: 60},
-          width = +svg.attr("width") - margin.left - margin.right,
-          height = +svg.attr("height") - margin.top - margin.bottom;
+var margin = {top: 20, right: 30, bottom: 30, left: 60};
+var width = $("#linesvg").width() - margin.left - margin.right;
+var height = $("#linesvg").height() - margin.top - margin.bottom;
+var svg = d3.select("#linesvg").append('svg')
+            .attr("width",  width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom);
 
       var parseTime = d3.timeParse("%Y")
           bisectDate = d3.bisector(function(d) { return d.year; }).left;
@@ -27,20 +29,50 @@ var svg = d3.select("#linesvg"),
                   return d;
             });
 
+            var xMin = 99999;
+            var xMax = 0;
+            var yMin = 99999999999999;
+            var yMax = 0;
+
           ret.forEach(function(d) {
             d.name = d.name;
             d.values.forEach(function(d1){
-                d1.year = parseTime(d1.year);
+                if (xMin > d1.year) {
+                    xMin = d1.year;
+                }
+                if (xMax < d1.year) {
+                    xMax = d1.year;
+                }
+                if (yMin > d1.value ) {
+                    yMin = d1.value;
+                }
+                if (yMax < d1.value) {
+                    yMax = d1.value;
+                }
                 d1.value = +d1.value;
             });
           });
 
-          console.log(ret);
-          
-          
-           
-          x.domain(d3.extent(ret, function(d) { return d.values.year; }));
-          y.domain([d3.min(ret, function(d) { return d.values.value; }) / 1.005, d3.max(ret, function(d) { return d.values.value; }) * 1.005]);
+          x.domain([xMin, xMax]);
+          y.domain([yMin, yMax]);
+
+
+          const lineWrapper = g.selectAll('.line-wrapper')
+          .data(ret, function(d) {
+              return d.name;
+          })
+          .enter().append("g")
+          .attr("class", "line-wrapper");
+
+        
+        lineWrapper.append("path")
+            .attr("class", "line")
+            .attr("stroke", "#00FF00")
+            .attr("stroke-width", "3px")
+            .attr("d", function(d) {
+                return line(d.values);
+            });
+
 
             var axisY = d3.axisLeft(y)
                 .tickValues([]);
@@ -71,11 +103,6 @@ var svg = d3.select("#linesvg"),
               .style("font-weight", "lighter")
               .attr("fill", "#5D6971")
               .text("Rate");
-
-          g.append("path")
-              .datum(ret)
-              .attr("class", "line")
-              .attr("d1", line);
 
           var focus = g.append("g")
               .attr("class", "focus")
