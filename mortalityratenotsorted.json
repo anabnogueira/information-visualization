@@ -1,6 +1,7 @@
 [
   {
     "name": "Afghanistan",
+    "color": "#3957ff",
     "values": [
       {
         "year": "1990",
@@ -110,6 +111,7 @@
   },
   {
     "name": "Albania",
+    "color": "#d3fe14",
     "values": [
       {
         "year": "1990",
@@ -219,6 +221,7 @@
   },
   {
     "name": "Algeria",
+    "color": "#c9080a",
     "values": [
       {
         "year": "1990",
@@ -328,6 +331,7 @@
   },
   {
     "name": "Angola",
+    "color": "#fec7f8",
     "values": [
       {
         "year": "1990",
@@ -437,6 +441,7 @@
   },
   {
     "name": "Antigua and Barbuda",
+    "color": "#0b7b3e",
     "values": [
       {
         "year": "1990",
@@ -546,6 +551,7 @@
   },
   {
     "name": "Argentina",
+    "color": "#0bf0e9",
     "values": [
       {
         "year": "1990",
@@ -655,6 +661,7 @@
   },
   {
     "name": "Armenia",
+    "color": "#c203c8",
     "values": [
       {
         "year": "1990",
@@ -764,6 +771,7 @@
   },
   {
     "name": "Australia",
+    "color": "#fd9b39",
     "values": [
       {
         "year": "1990",
@@ -873,6 +881,7 @@
   },
   {
     "name": "Austria",
+    "color": "#888593",
     "values": [
       {
         "year": "1990",
@@ -982,6 +991,7 @@
   },
   {
     "name": "Azerbaijan",
+    "color": "#906407",
     "values": [
       {
         "year": "1990",
@@ -1091,6 +1101,7 @@
   },
   {
     "name": "Bahamas",
+    "color": "#98ba7f",
     "values": [
       {
         "year": "1990",
@@ -1200,6 +1211,7 @@
   },
   {
     "name": "Bahrain",
+    "color": "#fe6794",
     "values": [
       {
         "year": "1990",
@@ -1309,6 +1321,7 @@
   },
   {
     "name": "Bangladesh",
+    "color": "#10b0ff",
     "values": [
       {
         "year": "1990",
@@ -1418,6 +1431,7 @@
   },
   {
     "name": "Barbados",
+    "color": "#ac7bff",
     "values": [
       {
         "year": "1990",
@@ -1527,6 +1541,7 @@
   },
   {
     "name": "Belarus",
+    "color": "#fee7c0",
     "values": [
       {
         "year": "1990",
@@ -1636,6 +1651,7 @@
   },
   {
     "name": "Belgium",
+    "color": "#964c63",
     "values": [
       {
         "year": "1990",
@@ -1745,6 +1761,7 @@
   },
   {
     "name": "Belize",
+    "color": "#1da49c",
     "values": [
       {
         "year": "1990",
@@ -1854,6 +1871,7 @@
   },
   {
     "name": "Benin",
+    "color": "#0ad811",
     "values": [
       {
         "year": "1990",
@@ -1963,6 +1981,7 @@
   },
   {
     "name": "Bhutan",
+    "color": "#bbd9fd",
     "values": [
       {
         "year": "1990",
@@ -2072,6 +2091,7 @@
   },
   {
     "name": "Bolivia",
+    "color": "#fe6cfe",
     "values": [
       {
         "year": "1990",
@@ -2181,6 +2201,7 @@
   },
   {
     "name": "Bosnia and Herzegovina",
+    "color": "#297192",
     "values": [
       {
         "year": "1990",
@@ -2290,6 +2311,7 @@
   },
   {
     "name": "Botswana",
+    "color": "#d1a09c",
     "values": [
       {
         "year": "1990",
@@ -2399,6 +2421,7 @@
   },
   {
     "name": "Brazil",
+    "color": "#78579e",
     "values": [
       {
         "year": "1990",
@@ -2508,6 +2531,7 @@
   },
   {
     "name": "Brunei",
+    "color": "#81ffad",
     "values": [
       {
         "year": "1990",
@@ -2617,6 +2641,7 @@
   },
   {
     "name": "Bulgaria",
+    "color": "#739400",
     "values": [
       {
         "year": "1990",
@@ -2726,6 +2751,7 @@
   },
   {
     "name": "Burkina Faso",
+    "color": "#ca6949",
     "values": [
       {
         "year": "1990",
@@ -2835,6 +2861,7 @@
   },
   {
     "name": "Burundi",
+    "color": "#d9bf01",
     "values": [
       {
         "year": "1990",
@@ -2944,6 +2971,7 @@
   },
   {
     "name": "Cambodia",
+    "color": "#646a58",
     "values": [
       {
         "year": "1990",
@@ -3053,6 +3081,7 @@
   },
   {
     "name": "Cameroon",
+    "color": "#d5097e",
     "values": [
       {
         "year": "1990",
@@ -3162,6 +3191,7 @@
   },
   {
     "name": "Canada",
+    "color": "#bb73a9",
     "values": [
       {
         "year": "1990",
@@ -3271,6 +3301,7 @@
   },
   {
     "name": "Cape Verde",
+    "color": "#ccf6e9",
     "values": [
       {
         "year": "1990",
@@ -3380,6 +3411,7 @@
   },
   {
     "name": "Central African Republic",
+    "color": "#9cb4b6",
     "values": [
       {
         "year": "1990",
@@ -3489,6 +3521,7 @@
   },
   {
     "name": "Chad",
+    "color": "#b6a7d4",
     "values": [
       {
         "year": "1990",
@@ -3598,6 +3631,7 @@
   },
   {
     "name": "Chile",
+    "color": "#9e8c62",
     "values": [
       {
         "year": "1990",
@@ -3707,6 +3741,7 @@
   },
   {
     "name": "China",
+    "color": "#6e83c8",
     "values": [
       {
         "year": "1990",
@@ -3816,6 +3851,7 @@
   },
   {
     "name": "Colombia",
+    "color": "#01af64",
     "values": [
       {
         "year": "1990",
@@ -3925,6 +3961,7 @@
   },
   {
     "name": "Comoros",
+    "color": "#a71afd",
     "values": [
       {
         "year": "1990",
@@ -4034,6 +4071,7 @@
   },
   {
     "name": "Congo",
+    "color": "#cfe589",
     "values": [
       {
         "year": "1990",
@@ -4143,6 +4181,7 @@
   },
   {
     "name": "Costa Rica",
+    "color": "#d4ccd1",
     "values": [
       {
         "year": "1990",
@@ -4252,6 +4291,7 @@
   },
   {
     "name": "Côte d'Ivoire",
+    "color": "#fd4109",
     "values": [
       {
         "year": "1990",
@@ -4361,6 +4401,7 @@
   },
   {
     "name": "Croatia",
+    "color": "#bf8f0e",
     "values": [
       {
         "year": "1990",
@@ -4470,6 +4511,7 @@
   },
   {
     "name": "Cuba",
+    "color": "#2f786e",
     "values": [
       {
         "year": "1990",
@@ -4579,6 +4621,7 @@
   },
   {
     "name": "Cyprus",
+    "color": "#4ed1a5",
     "values": [
       {
         "year": "1990",
@@ -4688,6 +4731,7 @@
   },
   {
     "name": "Czech Republic",
+    "color": "#d8bb7d",
     "values": [
       {
         "year": "1990",
@@ -4797,6 +4841,7 @@
   },
   {
     "name": "Democratic Republic of Congo",
+    "color": "#a54509",
     "values": [
       {
         "year": "1990",
@@ -4906,6 +4951,7 @@
   },
   {
     "name": "Denmark",
+    "color": "#6a9276",
     "values": [
       {
         "year": "1990",
@@ -5015,6 +5061,7 @@
   },
   {
     "name": "Djibouti",
+    "color": "#a4777a",
     "values": [
       {
         "year": "1990",
@@ -5124,6 +5171,7 @@
   },
   {
     "name": "Dominican Republic",
+    "color": "#fc12c9",
     "values": [
       {
         "year": "1990",
@@ -5233,6 +5281,7 @@
   },
   {
     "name": "Ecuador",
+    "color": "#606f15",
     "values": [
       {
         "year": "1990",
@@ -5342,6 +5391,7 @@
   },
   {
     "name": "Egypt",
+    "color": "#3cc4d9",
     "values": [
       {
         "year": "1990",
@@ -5451,6 +5501,7 @@
   },
   {
     "name": "El Salvador",
+    "color": "#f31c4e",
     "values": [
       {
         "year": "1990",
@@ -5560,6 +5611,7 @@
   },
   {
     "name": "Eritrea",
+    "color": "#73616f",
     "values": [
       {
         "year": "1990",
@@ -5669,6 +5721,7 @@
   },
   {
     "name": "Estonia",
+    "color": "#f097c6",
     "values": [
       {
         "year": "1990",
@@ -5778,6 +5831,7 @@
   },
   {
     "name": "Ethiopia",
+    "color": "#fc8772",
     "values": [
       {
         "year": "1990",
@@ -5887,6 +5941,7 @@
   },
   {
     "name": "Fiji",
+    "color": "#92a6fe",
     "values": [
       {
         "year": "1990",
@@ -5996,6 +6051,7 @@
   },
   {
     "name": "Finland",
+    "color": "#875b44",
     "values": [
       {
         "year": "1990",
@@ -6105,6 +6161,7 @@
   },
   {
     "name": "France",
+    "color": "#699ab3",
     "values": [
       {
         "year": "1990",
@@ -6214,6 +6271,7 @@
   },
   {
     "name": "Gabon",
+    "color": "#94bc19",
     "values": [
       {
         "year": "1990",
@@ -6323,6 +6381,7 @@
   },
   {
     "name": "Gambia",
+    "color": "#7d5bf0",
     "values": [
       {
         "year": "1990",
@@ -6432,6 +6491,7 @@
   },
   {
     "name": "Georgia",
+    "color": "#d24dfe",
     "values": [
       {
         "year": "1990",
@@ -6541,6 +6601,7 @@
   },
   {
     "name": "Germany",
+    "color": "#c85b74",
     "values": [
       {
         "year": "1990",
@@ -6650,6 +6711,7 @@
   },
   {
     "name": "Ghana",
+    "color": "#68ff57",
     "values": [
       {
         "year": "1990",
@@ -6759,6 +6821,7 @@
   },
   {
     "name": "Greece",
+    "color": "#b62347",
     "values": [
       {
         "year": "1990",
@@ -6868,6 +6931,7 @@
   },
   {
     "name": "Grenada",
+    "color": "#994b91",
     "values": [
       {
         "year": "1990",
@@ -6977,6 +7041,7 @@
   },
   {
     "name": "Guam",
+    "color": "#646b8c",
     "values": [
       {
         "year": "1990",
@@ -7086,6 +7151,7 @@
   },
   {
     "name": "Guatemala",
+    "color": "#977ab4",
     "values": [
       {
         "year": "1990",
@@ -7195,6 +7261,7 @@
   },
   {
     "name": "Guinea",
+    "color": "#d694fd",
     "values": [
       {
         "year": "1990",
@@ -7304,6 +7371,7 @@
   },
   {
     "name": "Guinea-Bissau",
+    "color": "#c4d5b5",
     "values": [
       {
         "year": "1990",
@@ -7413,6 +7481,7 @@
   },
   {
     "name": "Guyana",
+    "color": "#fdc4bd",
     "values": [
       {
         "year": "1990",
@@ -7522,6 +7591,7 @@
   },
   {
     "name": "Haiti",
+    "color": "#1cae05",
     "values": [
       {
         "year": "1990",
@@ -7631,6 +7701,7 @@
   },
   {
     "name": "Honduras",
+    "color": "#7bd972",
     "values": [
       {
         "year": "1990",
@@ -7740,6 +7811,7 @@
   },
   {
     "name": "Hungary",
+    "color": "#e9700a",
     "values": [
       {
         "year": "1990",
@@ -7849,6 +7921,7 @@
   },
   {
     "name": "Iceland",
+    "color": "#d08f5d",
     "values": [
       {
         "year": "1990",
@@ -7958,6 +8031,7 @@
   },
   {
     "name": "India",
+    "color": "#8bb9e1",
     "values": [
       {
         "year": "1990",
@@ -8067,6 +8141,7 @@
   },
   {
     "name": "Indonesia",
+    "color": "#fde945",
     "values": [
       {
         "year": "1990",
@@ -8176,6 +8251,7 @@
   },
   {
     "name": "Iran",
+    "color": "#a29d98",
     "values": [
       {
         "year": "1990",
@@ -8285,6 +8361,7 @@
   },
   {
     "name": "Iraq",
+    "color": "#1682fb",
     "values": [
       {
         "year": "1990",
@@ -8394,6 +8471,7 @@
   },
   {
     "name": "Ireland",
+    "color": "#9ad9e0",
     "values": [
       {
         "year": "1990",
@@ -8503,6 +8581,7 @@
   },
   {
     "name": "Israel",
+    "color": "#d6cafe",
     "values": [
       {
         "year": "1990",
@@ -8612,6 +8691,7 @@
   },
   {
     "name": "Italy",
+    "color": "#8d8328",
     "values": [
       {
         "year": "1990",
@@ -8721,6 +8801,7 @@
   },
   {
     "name": "Jamaica",
+    "color": "#b091a7",
     "values": [
       {
         "year": "1990",
@@ -8830,6 +8911,7 @@
   },
   {
     "name": "Japan",
+    "color": "#647579",
     "values": [
       {
         "year": "1990",
@@ -8939,6 +9021,7 @@
   },
   {
     "name": "Jordan",
+    "color": "#1f8d11",
     "values": [
       {
         "year": "1990",
@@ -9048,6 +9131,7 @@
   },
   {
     "name": "Kazakhstan",
+    "color": "#e7eafd",
     "values": [
       {
         "year": "1990",
@@ -9157,6 +9241,7 @@
   },
   {
     "name": "Kenya",
+    "color": "#b9660b",
     "values": [
       {
         "year": "1990",
@@ -9266,6 +9351,7 @@
   },
   {
     "name": "Kiribati",
+    "color": "#a4a644",
     "values": [
       {
         "year": "1990",
@@ -9375,6 +9461,7 @@
   },
   {
     "name": "Kuwait",
+    "color": "#fec24c",
     "values": [
       {
         "year": "1990",
@@ -9484,6 +9571,7 @@
   },
   {
     "name": "Kyrgyzstan",
+    "color": "#b1168c",
     "values": [
       {
         "year": "1990",
@@ -9593,6 +9681,7 @@
   },
   {
     "name": "Laos",
+    "color": "#188cc1",
     "values": [
       {
         "year": "1990",
@@ -9702,6 +9791,7 @@
   },
   {
     "name": "Latvia",
+    "color": "#7ab297",
     "values": [
       {
         "year": "1990",
@@ -9811,6 +9901,7 @@
   },
   {
     "name": "Lebanon",
+    "color": "#4468ae",
     "values": [
       {
         "year": "1990",
@@ -9920,6 +10011,7 @@
   },
   {
     "name": "Lesotho",
+    "color": "#c949a6",
     "values": [
       {
         "year": "1990",
@@ -10029,6 +10121,7 @@
   },
   {
     "name": "Liberia",
+    "color": "#d48295",
     "values": [
       {
         "year": "1990",
@@ -10138,6 +10231,7 @@
   },
   {
     "name": "Libya",
+    "color": "#eb6dc2",
     "values": [
       {
         "year": "1990",
@@ -10247,6 +10341,7 @@
   },
   {
     "name": "Lithuania",
+    "color": "#d5b0cb",
     "values": [
       {
         "year": "1990",
@@ -10356,6 +10451,7 @@
   },
   {
     "name": "Luxembourg",
+    "color": "#ff9ffb",
     "values": [
       {
         "year": "1990",
@@ -10465,6 +10561,7 @@
   },
   {
     "name": "Macedonia",
+    "color": "#fdb082",
     "values": [
       {
         "year": "1990",
@@ -10574,6 +10671,7 @@
   },
   {
     "name": "Madagascar",
+    "color": "#af4d44",
     "values": [
       {
         "year": "1990",
@@ -10683,6 +10781,7 @@
   },
   {
     "name": "Malawi",
+    "color": "#a759c4",
     "values": [
       {
         "year": "1990",
@@ -10792,6 +10891,7 @@
   },
   {
     "name": "Malaysia",
+    "color": "#a9e03a",
     "values": [
       {
         "year": "1990",
@@ -10901,6 +11001,7 @@
   },
   {
     "name": "Maldives",
+    "color": "#0d906b",
     "values": [
       {
         "year": "1990",
@@ -11010,6 +11111,7 @@
   },
   {
     "name": "Mali",
+    "color": "#9ee3bd",
     "values": [
       {
         "year": "1990",
@@ -11119,6 +11221,7 @@
   },
   {
     "name": "Malta",
+    "color": "#5b8846",
     "values": [
       {
         "year": "1990",
@@ -11228,6 +11331,7 @@
   },
   {
     "name": "Mauritania",
+    "color": "#0d8995",
     "values": [
       {
         "year": "1990",
@@ -11337,6 +11441,7 @@
   },
   {
     "name": "Mauritius",
+    "color": "#f25c58",
     "values": [
       {
         "year": "1990",
@@ -11446,6 +11551,7 @@
   },
   {
     "name": "Mexico",
+    "color": "#70ae4f",
     "values": [
       {
         "year": "1990",
@@ -11555,6 +11661,7 @@
   },
   {
     "name": "Micronesia",
+    "color": "#847f74",
     "values": [
       {
         "year": "1990",
@@ -11664,6 +11771,7 @@
   },
   {
     "name": "Moldova",
+    "color": "#9094bb",
     "values": [
       {
         "year": "1990",
@@ -11773,6 +11881,7 @@
   },
   {
     "name": "Mongolia",
+    "color": "#ffe2f1",
     "values": [
       {
         "year": "1990",
@@ -11882,6 +11991,7 @@
   },
   {
     "name": "Montenegro",
+    "color": "#a67149",
     "values": [
       {
         "year": "1990",
@@ -11991,6 +12101,7 @@
   },
   {
     "name": "Morocco",
+    "color": "#936c8e",
     "values": [
       {
         "year": "1990",
@@ -12100,6 +12211,7 @@
   },
   {
     "name": "Mozambique",
+    "color": "#d04907",
     "values": [
       {
         "year": "1990",
@@ -12209,6 +12321,7 @@
   },
   {
     "name": "Myanmar",
+    "color": "#c3b8a6",
     "values": [
       {
         "year": "1990",
@@ -12318,6 +12431,7 @@
   },
   {
     "name": "Namibia",
+    "color": "#cef8c4",
     "values": [
       {
         "year": "1990",
@@ -12427,6 +12541,7 @@
   },
   {
     "name": "Nepal",
+    "color": "#7a9293",
     "values": [
       {
         "year": "1990",
@@ -12536,6 +12651,7 @@
   },
   {
     "name": "Netherlands",
+    "color": "#fda2ab",
     "values": [
       {
         "year": "1990",
@@ -12645,6 +12761,7 @@
   },
   {
     "name": "New Zealand",
+    "color": "#2ef6c5",
     "values": [
       {
         "year": "1990",
@@ -12754,6 +12871,7 @@
   },
   {
     "name": "Nicaragua",
+    "color": "#807242",
     "values": [
       {
         "year": "1990",
@@ -12863,6 +12981,7 @@
   },
   {
     "name": "Niger",
+    "color": "#cb94cc",
     "values": [
       {
         "year": "1990",
@@ -12972,6 +13091,7 @@
   },
   {
     "name": "Nigeria",
+    "color": "#b6bdd0",
     "values": [
       {
         "year": "1990",
@@ -13081,6 +13201,7 @@
   },
   {
     "name": "North Korea",
+    "color": "#b5c75d",
     "values": [
       {
         "year": "1990",
@@ -13190,6 +13311,7 @@
   },
   {
     "name": "Norway",
+    "color": "#fde189",
     "values": [
       {
         "year": "1990",
@@ -13299,6 +13421,7 @@
   },
   {
     "name": "Oman",
+    "color": "#b7ff80",
     "values": [
       {
         "year": "1990",
@@ -13408,6 +13531,7 @@
   },
   {
     "name": "Pakistan",
+    "color": "#fa2d8e",
     "values": [
       {
         "year": "1990",
@@ -13517,6 +13641,7 @@
   },
   {
     "name": "Panama",
+    "color": "#839a5f",
     "values": [
       {
         "year": "1990",
@@ -13626,6 +13751,7 @@
   },
   {
     "name": "Papua New Guinea",
+    "color": "#28c2b5",
     "values": [
       {
         "year": "1990",
@@ -13735,6 +13861,7 @@
   },
   {
     "name": "Paraguay",
+    "color": "#e5e9e1",
     "values": [
       {
         "year": "1990",
@@ -13844,6 +13971,7 @@
   },
   {
     "name": "Peru",
+    "color": "#bc79d8",
     "values": [
       {
         "year": "1990",
@@ -13953,6 +14081,7 @@
   },
   {
     "name": "Philippines",
+    "color": "#7ed8fe",
     "values": [
       {
         "year": "1990",
@@ -14062,6 +14191,7 @@
   },
   {
     "name": "Poland",
+    "color": "#9f20c3",
     "values": [
       {
         "year": "1990",
@@ -14171,6 +14301,7 @@
   },
   {
     "name": "Portugal",
+    "color": "#4f7a5b",
     "values": [
       {
         "year": "1990",
@@ -14280,6 +14411,7 @@
   },
   {
     "name": "Puerto Rico",
+    "color": "#f511fd",
     "values": [
       {
         "year": "1990",
@@ -14389,6 +14521,7 @@
   },
   {
     "name": "Qatar",
+    "color": "#09c959",
     "values": [
       {
         "year": "1990",
@@ -14498,6 +14631,7 @@
   },
   {
     "name": "Romania",
+    "color": "#bcd0ce",
     "values": [
       {
         "year": "1990",
@@ -14607,6 +14741,7 @@
   },
   {
     "name": "Russia",
+    "color": "#8685fd",
     "values": [
       {
         "year": "1990",
@@ -14716,6 +14851,7 @@
   },
   {
     "name": "Rwanda",
+    "color": "#98fcff",
     "values": [
       {
         "year": "1990",
@@ -14825,6 +14961,7 @@
   },
   {
     "name": "Saint Lucia",
+    "color": "#afbff9",
     "values": [
       {
         "year": "1990",
@@ -14934,6 +15071,7 @@
   },
   {
     "name": "Saint Vincent and the Grenadines",
+    "color": "#6d69b4",
     "values": [
       {
         "year": "1990",
@@ -15043,6 +15181,7 @@
   },
   {
     "name": "Samoa",
+    "color": "#5f99fd",
     "values": [
       {
         "year": "1990",
@@ -15152,6 +15291,7 @@
   },
   {
     "name": "Sao Tome and Principe",
+    "color": "#aaa87e",
     "values": [
       {
         "year": "1990",
@@ -15261,6 +15401,7 @@
   },
   {
     "name": "Saudi Arabia",
+    "color": "#b59dfb",
     "values": [
       {
         "year": "1990",
@@ -15370,6 +15511,7 @@
   },
   {
     "name": "Senegal",
+    "color": "#5d809d",
     "values": [
       {
         "year": "1990",
@@ -15479,6 +15621,7 @@
   },
   {
     "name": "Serbia",
+    "color": "#d9a742",
     "values": [
       {
         "year": "1990",
@@ -15588,6 +15731,7 @@
   },
   {
     "name": "Seychelles",
+    "color": "#ac5c86",
     "values": [
       {
         "year": "1990",
@@ -15697,6 +15841,7 @@
   },
   {
     "name": "Sierra Leone",
+    "color": "#9468d5",
     "values": [
       {
         "year": "1990",
@@ -15806,6 +15951,7 @@
   },
   {
     "name": "Singapore",
+    "color": "#a4a2b2",
     "values": [
       {
         "year": "1990",
@@ -15915,6 +16061,7 @@
   },
   {
     "name": "Slovakia",
+    "color": "#b1376e",
     "values": [
       {
         "year": "1990",
@@ -16024,6 +16171,7 @@
   },
   {
     "name": "Slovenia",
+    "color": "#d43f3d",
     "values": [
       {
         "year": "1990",
@@ -16133,6 +16281,7 @@
   },
   {
     "name": "Solomon Islands",
+    "color": "#05a9d1",
     "values": [
       {
         "year": "1990",
@@ -16242,6 +16391,7 @@
   },
   {
     "name": "Somalia",
+    "color": "#c38375",
     "values": [
       {
         "year": "1990",
@@ -16351,6 +16501,7 @@
   },
   {
     "name": "South Africa",
+    "color": "#24b58e",
     "values": [
       {
         "year": "1990",
@@ -16460,6 +16611,7 @@
   },
   {
     "name": "South Korea",
+    "color": "#6eabaf",
     "values": [
       {
         "year": "1990",
@@ -16569,6 +16721,7 @@
   },
   {
     "name": "Spain",
+    "color": "#66bf7f",
     "values": [
       {
         "year": "1990",
@@ -16678,6 +16831,7 @@
   },
   {
     "name": "Sri Lanka",
+    "color": "#92cbbb",
     "values": [
       {
         "year": "1990",
@@ -16787,6 +16941,7 @@
   },
   {
     "name": "Sudan",
+    "color": "#ddb1ee",
     "values": [
       {
         "year": "1990",
@@ -16896,6 +17051,7 @@
   },
   {
     "name": "Suriname",
+    "color": "#1be895",
     "values": [
       {
         "year": "1990",
@@ -17005,6 +17161,7 @@
   },
   {
     "name": "Swaziland",
+    "color": "#c7ecf9",
     "values": [
       {
         "year": "1990",
@@ -17114,6 +17271,7 @@
   },
   {
     "name": "Sweden",
+    "color": "#a6baa6",
     "values": [
       {
         "year": "1990",
@@ -17223,6 +17381,7 @@
   },
   {
     "name": "Switzerland",
+    "color": "#8045cd",
     "values": [
       {
         "year": "1990",
@@ -17332,6 +17491,7 @@
   },
   {
     "name": "Syria",
+    "color": "#5f70f1",
     "values": [
       {
         "year": "1990",
@@ -17441,6 +17601,7 @@
   },
   {
     "name": "Taiwan",
+    "color": "#a9d796",
     "values": [
       {
         "year": "1990",
@@ -17550,6 +17711,7 @@
   },
   {
     "name": "Tajikistan",
+    "color": "#ce62cb",
     "values": [
       {
         "year": "1990",
@@ -17659,6 +17821,7 @@
   },
   {
     "name": "Tanzania",
+    "color": "#0e954d",
     "values": [
       {
         "year": "1990",
@@ -17768,6 +17931,7 @@
   },
   {
     "name": "Thailand",
+    "color": "#a97d2f",
     "values": [
       {
         "year": "1990",
@@ -17877,6 +18041,7 @@
   },
   {
     "name": "Timor",
+    "color": "#fcb8d3",
     "values": [
       {
         "year": "1990",
@@ -17986,6 +18151,7 @@
   },
   {
     "name": "Togo",
+    "color": "#9bfee3",
     "values": [
       {
         "year": "1990",
@@ -18095,6 +18261,7 @@
   },
   {
     "name": "Tonga",
+    "color": "#4e8d84",
     "values": [
       {
         "year": "1990",
@@ -18204,6 +18371,7 @@
   },
   {
     "name": "Trinidad and Tobago",
+    "color": "#fc6d3f",
     "values": [
       {
         "year": "1990",
@@ -18313,6 +18481,7 @@
   },
   {
     "name": "Tunisia",
+    "color": "#7b9fd4",
     "values": [
       {
         "year": "1990",
@@ -18422,6 +18591,7 @@
   },
   {
     "name": "Turkey",
+    "color": "#8c6165",
     "values": [
       {
         "year": "1990",
@@ -18531,6 +18701,7 @@
   },
   {
     "name": "Turkmenistan",
+    "color": "#72805e",
     "values": [
       {
         "year": "1990",
@@ -18640,6 +18811,7 @@
   },
   {
     "name": "Uganda",
+    "color": "#d53762",
     "values": [
       {
         "year": "1990",
@@ -18749,6 +18921,7 @@
   },
   {
     "name": "Ukraine",
+    "color": "#f00a1b",
     "values": [
       {
         "year": "1990",
@@ -18858,6 +19031,7 @@
   },
   {
     "name": "United Arab Emirates",
+    "color": "#de5c97",
     "values": [
       {
         "year": "1990",
@@ -18967,6 +19141,7 @@
   },
   {
     "name": "United Kingdom",
+    "color": "#8ea28b",
     "values": [
       {
         "year": "1990",
@@ -19076,6 +19251,7 @@
   },
   {
     "name": "United States",
+    "color": "#fccd95",
     "values": [
       {
         "year": "1990",
@@ -19185,6 +19361,7 @@
   },
   {
     "name": "United States Virgin Islands",
+    "color": "#ba9c57",
     "values": [
       {
         "year": "1990",
@@ -19294,6 +19471,7 @@
   },
   {
     "name": "Uruguay",
+    "color": "#b79a82",
     "values": [
       {
         "year": "1990",
@@ -19403,6 +19581,7 @@
   },
   {
     "name": "Uzbekistan",
+    "color": "#7c5a82",
     "values": [
       {
         "year": "1990",
@@ -19512,6 +19691,7 @@
   },
   {
     "name": "Vanuatu",
+    "color": "#7d7ca4",
     "values": [
       {
         "year": "1990",
@@ -19621,6 +19801,7 @@
   },
   {
     "name": "Venezuela",
+    "color": "#958ad6",
     "values": [
       {
         "year": "1990",
@@ -19730,6 +19911,7 @@
   },
   {
     "name": "Vietnam",
+    "color": "#cd8126",
     "values": [
       {
         "year": "1990",
@@ -19839,6 +20021,7 @@
   },
   {
     "name": "Yemen",
+    "color": "#bdb0b7",
     "values": [
       {
         "year": "1990",
@@ -19948,6 +20131,7 @@
   },
   {
     "name": "Zambia",
+    "color": "#10e0f8",
     "values": [
       {
         "year": "1990",
@@ -20057,6 +20241,7 @@
   },
   {
     "name": "Zimbabwe",
+    "color": "#dccc69",
     "values": [
       {
         "year": "1990",
