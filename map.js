@@ -10,24 +10,16 @@ const margin_map = {top: 0, right: 0, bottom: 0, left: 0};
 const width_map = 500;
 const height_map = 400;
 
-// Data and color scale
-var data = d3.map();
-var colorScheme = d3.schemeReds[6];
-colorScheme.unshift("#eee")
-var colorScale = d3.scaleThreshold()
-                    .domain([1, 6, 11, 26, 101, 1001])
-                    .range(colorScheme);
-
-const colors = ['rgb(204, 0, 153)', 
-          'rgb(255, 80, 80)', 
-          'rgb(255, 153, 51)', 
-          'rgb(51, 51, 255)', 
-          'rgb(0, 204, 153)', 
-          'rgb(204, 102, 255)', 
-          'rgb(255, 0, 102)',
-          'rgb(51, 204, 51)',
-          'rgb(0, 255, 204)',
-          'rgb(230, 153, 0)'];
+// const colors = ['rgb(204, 0, 153)', 
+//           'rgb(255, 80, 80)', 
+//           'rgb(255, 153, 51)', 
+//           'rgb(51, 51, 255)', 
+//           'rgb(0, 204, 153)', 
+//           'rgb(204, 102, 255)', 
+//           'rgb(255, 0, 102)',
+//           'rgb(51, 204, 51)',
+//           'rgb(0, 255, 204)',
+//           'rgb(230, 153, 0)'];
 /*
 const color = d3.scaleThreshold()
   .domain([
@@ -85,15 +77,16 @@ const projection = d3.geoRobinson()
 
 const path = d3.geoPath().projection(projection);
 
-svg_map.call(tip);
-
 // Data and color scale
 var data = d3.map();
 var colorScheme = d3.schemeBlues[9];
 colorScheme.unshift("#ddd")
 var colorScale = d3.scaleThreshold()
-    .domain([1, 3, 5, 7, 10, 13, 16, 19, 23])
-    .range(colorScheme);
+                  .domain([1, 3, 5, 7, 10, 13, 16, 19, 23])
+                  .range(colorScheme);
+
+svg_map.call(tip);
+
 
 // Legend
 var g = svg_map.append("g")
