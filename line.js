@@ -1,4 +1,4 @@
-var margin = {top: 30, right: 30, bottom: 40, left: 60};
+var margin = {top: 30, right: 40, bottom: 40, left: 60};
 var width = $("#linesvg").width() - margin.left - margin.right;
 var height = $("#linesvg").height() - margin.top - margin.bottom;
 var svg = d3.select("#linesvg").append('svg')
@@ -100,7 +100,7 @@ function changeLines(countriesSelected) {
     });
 
     x.domain([1990, 2015]);
-    y.domain([yMin * 0.9, yMax]);
+    y.domain([yMin * 0.9, yMax* 1.1]);
 
   
     if(countriesSelected.length == 0){
