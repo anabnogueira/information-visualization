@@ -197,6 +197,7 @@ function ready(error, data, population) {
             /*close the list of autocompleted values,
             (or any other open lists of autocompleted values:*/
             countriesSelected.push(d.properties.name);
+            $(document).trigger('countriesSelected', {countriesSelected});
             countries.splice(countries.indexOf(d.properties.name), 1);
           });
       })

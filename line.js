@@ -53,7 +53,7 @@ g.append("g")
     .style("text-anchor", "end")
     .style("font-size", "14px")
     .style("font-weight", "lighter")
-    .attr("fill", "#5D6971")
+    //.attr("fill", "#5D6971")
     .text("Rate");
 
 
@@ -71,11 +71,12 @@ $(document).on('countriesSelected', function(e, args) {
 })
        
 function changeLines(countriesSelected) {
-    console.log("OLAAAAAA");
+    console.log("#1");
 
     var ret = lineData.filter(function(d) {
         return countriesSelected.includes(d.name);
     });
+
 
     var xMin = 99999;
     var xMax = 0;
@@ -104,29 +105,86 @@ function changeLines(countriesSelected) {
     x.domain([1990, 2015]);
     y.domain([yMin * 0.9, yMax]);
 
+  
+
     g.select('.axis.axis--y')
         .transition()
         .duration(800)
         .call(axisY)
 
 
+// const lineWrapper = g.selectAll('.line-wrapper')
+//         .data(ret, function(d) {
+//             return d.name;
+//         })
+//         .enter().append("g")
+//         .attr("class", "line-wrapper");
+ 
+ 
+//     lineWrapper.append("path")
+//         .attr("class", "line")
+//         .attr("stroke", function(d) {
+//             return d.color;
+//         })
+//         .attr("stroke-width", "3px")
+//         .attr("d", function(d) {
+//             return line(d.values);
+//         });
+
     const lineWrapper = g.selectAll('.line-wrapper')
         .data(ret, function(d) {
             return d.name;
-        })
-        .enter().append("g")
-        .attr("class", "line-wrapper");
+        });
 
 
-    lineWrapper.append("path")
-        .attr("class", "line")
-        .attr("stroke", function(d) {
-            return d.color;
+    lineWrapper.exit()
+      .transition()
+      .duration(800)
+      .style("opacity", "0")
+      .style("stroke-width", "0")
+      .remove();
+
+
+    lineWrapper.enter()
+        .append("g")
+        .attr("class", "line-wrapper")
+        .append("path")
+        .style("fill", "none")
+        .style("opacity", "0")
+        .style("stroke-width", "0");
+
+    g.selectAll('.line-wrapper path')
+        .transition()
+        .duration(800)
+        .style("stroke", function(d) {
+          return d.color;
         })
-        .attr("stroke-width", "3px")
         .attr("d", function(d) {
             return line(d.values);
-        });
+        })
+        .style("opacity", "1")
+        .style("stroke-width", "3px");
+
+    // const lineWrapper = g.selectAll('.line-wrapper')
+    //     .data(ret, function(d) {
+    //         return d.name;
+    //     })
+    //     .enter().append("g")
+    //     .attr("class", "line-wrapper");
+
+
+    // lineWrapper.append("path")
+    //     .attr("class", "line")
+    //     .attr("stroke", function(d) {
+    //         return d.color;
+    //     })
+    //     .attr("stroke-width", "3px")
+    //     .attr("d", function(d) {
+    //         return line(d.values);
+    //     });
+
+
+
 
 }
 
