@@ -57,26 +57,27 @@ function autocomplete(inp, arr, box) {
               /*insert the value for the autocomplete text field:*/
               inp.value = "";
               
-              var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+             
             
               var j = this.getElementsByTagName("input")[0].value;
-              box.innerHTML += "<li>"+ this.getElementsByTagName("input")[0].value + "<span class=" + "close" + ">" + "&times;"+ "</span>" + "<span class=" + "coloring" + " style=\"background-color:" + hue + ";\">" + "</span>"+ "</li>";
+              box.innerHTML += "<li>"+ j + "<span class=" + "close" + ">" + "&times;"+ "</span>" + "<span class=" + "coloring" +">" + "</span>"+ "</li>";
                                                                     
               var closebtns = document.getElementsByClassName("close");
               var i;
+              var s;
 
               for (i = 0; i < closebtns.length; i++) {
                 closebtns[i].addEventListener("click", function() {
                   this.parentElement.style.display = 'none';
-                  countriesSelected.splice(countriesSelected.indexOf(j), 1);
+                  s = this.parentElement.firstChild.data;
+                  countriesSelected.splice(countriesSelected.indexOf(s), 1);
                   $(document).trigger('countriesSelected', {countriesSelected});
-                  countries.push(j);
+                  countries.push(s);
                 });
               }
 
               /*close the list of autocompleted values,
               (or any other open lists of autocompleted values:*/
-
               
                 countriesSelected.push(this.getElementsByTagName("input")[0].value);
                 $(document).trigger('countriesSelected', {countriesSelected});
@@ -90,48 +91,7 @@ function autocomplete(inp, arr, box) {
       }
   });
 
- 
-  /*execute a function presses a key on the keyboard:*/
-  inp.addEventListener("keydown", function(e) {
-      var x = document.getElementById(this.id + "autocomplete-list");
-      if (x) x = x.getElementsByTagName("div");
-      if (e.keyCode == 40) {
-        /*If the arrow DOWN key is pressed,
-        increase the currentFocus variable:*/
-        currentFocus++;
-        /*and and make the current item more visible:*/
-        addActive(x);
-      } else if (e.keyCode == 38) { //up
-        /*If the arrow UP key is pressed,
-        decrease the currentFocus variable:*/
-        currentFocus--;
-        /*and and make the current item more visible:*/
-        addActive(x);
-      } else if (e.keyCode == 13) {
-        /*If the ENTER key is pressed, prevent the form from being submitted,*/
-        e.preventDefault();
-        if (currentFocus > -1) {
-          /*and simulate a click on the "active" item:*/
-          if (x) x[currentFocus].click();
-        }
-      }
-  });
-  function addActive(x) {
-    /*a function to classify an item as "active":*/
-    if (!x) return false;
-    /*start by removing the "active" class on all items:*/
-    removeActive(x);
-    if (currentFocus >= x.length) currentFocus = 0;
-    if (currentFocus < 0) currentFocus = (x.length - 1);
-    /*add class "autocomplete-active":*/
-    x[currentFocus].classList.add("autocomplete-active");
-  }
-  function removeActive(x) {
-    /*a function to remove the "active" class from all autocomplete items:*/
-    for (var i = 0; i < x.length; i++) {
-      x[i].classList.remove("autocomplete-active");
-    }
-  }
+
   function closeAllLists(elmnt) {
     /*close all autocomplete lists in the document,
     except the one passed as an argument:*/

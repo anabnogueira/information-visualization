@@ -69,7 +69,6 @@ $(document).on('countriesSelected', function(e, args) {
 })
        
 function changeLines(countriesSelected) {
-    console.log("#1");
 
     var ret = lineData.filter(function(d) {
         return countriesSelected.includes(d.name);
@@ -149,9 +148,6 @@ function changeLines(countriesSelected) {
         })
         .style("opacity", "1")
         .style("stroke-width", "3px");
-
-
-
 
 
 var focus = g.append("g")
