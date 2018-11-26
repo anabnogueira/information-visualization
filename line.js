@@ -140,7 +140,9 @@ function changeLines(countriesSelected) {
         .transition()
         .duration(800)
         .style("stroke", function(d) {
+          $( "#selectedCountry" ).find("li:contains('" + d.name + "')").find("span.coloring").css( "background-color", d.color );
           return d.color;
+
         })
         .attr("d", function(d) {
             return line(d.values);
