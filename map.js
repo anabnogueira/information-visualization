@@ -151,27 +151,27 @@ $( function() {
 function changeWorldMap(){
   if (1990 <= current_year && current_year <= 1994) {
     filename = filename_template + "1990.tsv";
-    console.log(filename);
+
   }
 
   if (1995 <= current_year && current_year <= 1999) {
     filename = filename_template + "1995.tsv";
-    console.log(filename);
+
   }
 
   if (2000 <= current_year && current_year <= 2004) {
     filename = filename_template + "2000.tsv";
-    console.log(filename);
+
   }
 
   if (2005 <= current_year && current_year <= 2009) {
     filename = filename_template + "2005.tsv";
-    console.log(filename);
+
   }
 
   if (2010 <= current_year && current_year <= 2015) {
     filename = filename_template + "2010.tsv";
-    console.log(filename);
+
   }
 
   queue()
@@ -183,7 +183,7 @@ function changeWorldMap(){
 
 function ready(error, data, population) {
 
-  console.log("OIOIOIOI")
+
   const populationById = {};
 
   population.forEach(d => { populationById[d.id] = +d.population; });
@@ -215,28 +215,42 @@ function ready(error, data, population) {
             if(countriesSelected.includes(d.properties.name)){
               return;
             }  
-            var sc = document.getElementById("selectedCountry")
-            var hue = colors[Math.floor(Math.random()*colors.length)];;
-            var j = d.properties.name;
-
-            sc.innerHTML += "<li>"+ d.properties.name + "<span class=" + "close" + ">" + "&times;"+ "</span>" + "<span class=" + "coloring" + " style=\"background-color:" + hue + ";\">" + "</span>"+ "</li>"; 
-            var closebtns = document.getElementsByClassName("close");
-            var i;
-
-            for (i = 0; i < closebtns.length; i++) {
-              closebtns[i].addEventListener("click", function() {
-                this.parentElement.style.display = 'none';
-                countriesSelected.splice(countriesSelected.indexOf(j), 1);
-                $(document).trigger('countriesSelected', {countriesSelected});
-                countries.push(j);    
-              });
-            }
+            
 
             /*close the list of autocompleted values,
             (or any other open lists of autocompleted values:*/
-            countriesSelected.push(d.properties.name);
-            $(document).trigger('countriesSelected', {countriesSelected});
-            countries.splice(countries.indexOf(d.properties.name), 1);
+
+            if (d.population == null) {
+
+                return;
+              }
+            else {
+              var sc = document.getElementById("selectedCountry")
+              var hue = colors[Math.floor(Math.random()*colors.length)];;
+              var j = d.properties.name;
+
+              sc.innerHTML += "<li>"+ d.properties.name + "<span class=" + "close" + ">" + "&times;"+ "</span>" + "<span class=" + "coloring" + " style=\"background-color:" + hue + ";\">" + "</span>"+ "</li>"; 
+              var closebtns = document.getElementsByClassName("close");
+              var i;
+
+              for (i = 0; i < closebtns.length; i++) {
+                closebtns[i].addEventListener("click", function() {
+                  this.parentElement.style.display = 'none';
+                  countriesSelected.splice(countriesSelected.indexOf(j), 1);
+                  $(document).trigger('countriesSelected', {countriesSelected});
+                  countries.push(j);    
+                });
+              }
+
+
+              countriesSelected.push(d.properties.name);
+              $(document).trigger('countriesSelected', {countriesSelected});
+              countries.splice(countries.indexOf(d.properties.name), 1);
+            }
+
+
+
+
           });
       })
       .on('mouseout', function(d){
