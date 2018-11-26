@@ -10,6 +10,14 @@ const margin_map = {top: 0, right: 0, bottom: 0, left: 0};
 const width_map = 500;
 const height_map = 400;
 
+// Data and color scale
+var data = d3.map();
+var colorScheme = d3.schemeReds[6];
+colorScheme.unshift("#eee")
+var colorScale = d3.scaleThreshold()
+                    .domain([1, 6, 11, 26, 101, 1001])
+                    .range(colorScheme);
+
 const colors = ['rgb(204, 0, 153)', 
           'rgb(255, 80, 80)', 
           'rgb(255, 153, 51)', 
@@ -20,7 +28,7 @@ const colors = ['rgb(204, 0, 153)',
           'rgb(51, 204, 51)',
           'rgb(0, 255, 204)',
           'rgb(230, 153, 0)'];
-
+/*
 const color = d3.scaleThreshold()
   .domain([
     1,
@@ -58,7 +66,7 @@ const color = d3.scaleThreshold()
     'rgb(8,81,156)',
     'rgb(8,48,107)',
     'rgb(3,19,43)'
-  ]);
+  ]); */
 
 const svg_map = d3.select('#worldmap')
   .append('svg')
@@ -79,6 +87,30 @@ const path = d3.geoPath().projection(projection);
 
 svg_map.call(tip);
 
+// Data and color scale
+var data = d3.map();
+var colorScheme = d3.schemeBlues[9];
+colorScheme.unshift("#ddd")
+var colorScale = d3.scaleThreshold()
+    .domain([1, 3, 5, 7, 10, 13, 16, 19, 23])
+    .range(colorScheme);
+
+// Legend
+var g = svg_map.append("g")
+            .attr("class", "legendThreshold")
+            .attr("transform", "translate(530,0)");
+g.append("text")
+    .attr("class", "caption")
+    .attr("x", 0)
+    .attr("y", -6)
+    .text("Mortality values");
+var labels = ['0', '1-2', '3-4', '5-6', '7-9', '10-12', '13-15','16-18', '19-22','> 23'];
+var legend = d3.legendColor()
+    .labels(function (d) { return labels[d.i]; })
+    .shapePadding(4)
+    .scale(colorScale);
+svg_map.select(".legendThreshold")
+    .call(legend);
 
 
 
@@ -161,9 +193,14 @@ function ready(error, data, population) {
     .attr('class', 'countries')
     .selectAll('path')
     .data(data.features)
-    .enter().append('path')
+    .enter().append("path")
+            .attr("fill", function (d){
+                // Pull data for this country
+                d.total = populationById[d.id] || 0;
+                // Set the color
+                return colorScale(d.total);
+            })
       .attr('d', path)
-      .style('fill', d => color(populationById[d.id]))
       .style('stroke', 'white')
       .style('opacity', 0.8)
       .style('stroke-width', 0.3)

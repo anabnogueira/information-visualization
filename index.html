@@ -5,23 +5,23 @@
 
 <link rel="stylesheet" href="style.css"/>
 <link rel="stylesheet" type="text/css" href="map.css"/>
-<script src="jquery.min.js"></script>
+<script src="libs/jquery.min.js"></script>
 
-<script src="d3.v5.min.js"></script>
-<script src="queue.v1.min.js"></script>
-<script src="topojson.v1.min.js"></script>
-<script src="crossfilter.min.js"></script>
-<script src="d3.tip.v0.6.3.js"></script>
-<script src="jquery.min.js"></script>
+<script src="libs/d3.v5.min.js"></script>
+<script src="libs/queue.v1.min.js"></script>
+<script src="libs/topojson.v1.min.js"></script>
+<script src="libs/crossfilter.min.js"></script>
+<script src="libs/d3.tip.v0.6.3.js"></script>
+<script src="libs/jquery.min.js"></script>
 
 <script src="selectCountry.js"></script>
 
 <!--<script src="script.js"></script>-->
 
 
-  <link rel="stylesheet" href="jquery-ui.css">
-  <script src="jquery-1.12.4.js"></script>
-  <script src="jquery-ui.js"></script>
+  <link rel="stylesheet" href="libs/jquery-ui.css">
+  <script src="libs/jquery-1.12.4.js"></script>
+  <script src="libs/jquery-ui.js"></script>
   <!--<script src="slide.js"></script>-->
 
 </head>
@@ -34,12 +34,15 @@
 <div id="worldmap">
 	<h1>World Map</h1>
 
-	<script src="d3.v4.min.js"></script>
-	<script src="queue.v1.min.js"></script>
-	<script src="topojson.v1.min.js"></script>
-	<script src="d3-geo-projection.v1.min.js"></script>
-	<script src="d3-tip.js"></script>
-	<script src='babel.min.js'></script>
+	<script src="libs/d3.v4.min.js"></script>
+	<script src="libs/queue.v1.min.js"></script>
+	<script src="libs/topojson.v1.min.js"></script>
+	<script src="libs/d3-geo-projection.v1.min.js"></script>
+	<script src="libs/d3-tip.js"></script>
+	<script src='libs/babel.min.js'></script>
+	<script src="libs/d3-scale-chromatic.v1.min.js"></script>
+	<script src="libs/d3-geo-projection.v2.min.js"></script>
+	<script src="libs/d3-legend.js"></script>
 
 	<!-- Map -->
 	<script src="map.js"></script>
@@ -87,10 +90,10 @@
 <!-------------- Line Chart --------------->
 <div id="linechart" >
 	<div id="pin">
-		<img class="button" id="img1" src="pin4.png" onclick="colorchange1(this.id)">
+		<img class="button" id="img1" src="icons/pin4.png" onclick="colorchange1(this.id)">
 	</div>
 	<div id="world">
-		<img class="button2" id="img2" src="world2.png" onclick="colorchange2(this.id)">
+		<img class="button2" id="img2" src="icons/world2.png" onclick="colorchange2(this.id)">
 	</div>
 		<script>	
 		function colorchange1(id) {
@@ -368,7 +371,7 @@
 
 
 </div>
-<script src="d3.v4.min.js"></script>
+<script src="libs/d3.v4.min.js"></script>
 <div id="gooey">
 	<h1>Factor chosen</h1>
 	<div id="gooeychart">
@@ -382,16 +385,16 @@
 </div>
 
 
-<link href="css.css" rel="stylesheet">
+<link href="libs/css.css" rel="stylesheet">
 
-<script src="d3-3-5-5.min.js"></script>
+<script src="libs/d3-3-5-5.min.js"></script>
 	<script src="gooeyalcohol.js"></script>
 
-<script src="d3.v3.min.js"></script>
+<script src="libs/d3.v3.min.js"></script>
 <script>autocomplete(document.getElementById("search"), countries, document.getElementById("selectedCountry"));</script>
 <script src="radar-chart-extra.js"></script>
 
-<script src="d3.v4.min.js"></script>
+<script src="libs/d3.v4.min.js"></script>
 <script src="line.js"></script>
 
 </body>

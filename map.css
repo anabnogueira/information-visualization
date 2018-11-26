@@ -4,6 +4,12 @@
   stroke-linejoin: round;
 }
 
+.legendThreshold {
+      font-size: 12px;
+      font-family: sans-serif;
+      margin: 0px 0px;
+  }
+
 /* Tooltip CSS */
 .d3-tip {
   line-height: 1.5;
