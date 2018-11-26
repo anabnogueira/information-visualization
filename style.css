@@ -160,7 +160,7 @@ img{
 
 #linesvg .line {
   fill: none;
-  stroke: #EE3E64;
+  /* stroke: #EE3E64; */
   stroke-width: 3px;
 }
 

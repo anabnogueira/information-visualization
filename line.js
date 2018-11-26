@@ -16,8 +16,9 @@ var svg = d3.select("#linesvg").append('svg')
                 .range([height, 0]);
 
       var line = d3.line()
-					.x(function(d) { return x(d.year); })
-          .y(function(d) { return y(d.value); });
+            .x(function(d) { return x(d.year); })
+            .y(function(d) { return y(d.value); })
+            .curve(d3.curveMonotoneX);
 
       var g = svg.append("g")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -25,7 +26,7 @@ var svg = d3.select("#linesvg").append('svg')
       d3.json("mortalityratenotsorted.json", function(error, data) {
           if (error) throw error;
           var ret = data.filter(function(d) {
-            if( "Portugal" === d.name )
+            if( "Portugal" === d.name || "Albania" === d.name )
                   return d;
             });
 
@@ -43,10 +44,10 @@ var svg = d3.select("#linesvg").append('svg')
                 if (xMax < d1.year) {
                     xMax = d1.year;
                 }
-                if (yMin > d1.value ) {
+                if (yMin > +d1.value ) {
                     yMin = d1.value;
                 }
-                if (yMax < d1.value) {
+                if (yMax < +d1.value) {
                     yMax = d1.value;
                 }
                 d1.value = +d1.value;
@@ -54,7 +55,7 @@ var svg = d3.select("#linesvg").append('svg')
           });
 
           x.domain([xMin, xMax]);
-          y.domain([yMin, yMax]);
+          y.domain([yMin * 0.9, yMax]);
 
 
           const lineWrapper = g.selectAll('.line-wrapper')
@@ -67,7 +68,9 @@ var svg = d3.select("#linesvg").append('svg')
         
         lineWrapper.append("path")
             .attr("class", "line")
-            .attr("stroke", "#00FF00")
+            .attr("stroke", function(d) {
+                return d.color || "#FF0000";
+            })
             .attr("stroke-width", "3px")
             .attr("d", function(d) {
                 return line(d.values);
@@ -75,7 +78,7 @@ var svg = d3.select("#linesvg").append('svg')
 
 
             var axisY = d3.axisLeft(y)
-                .tickValues([]);
+                //.tickValues([]);
 
           g.append("g")
               .attr("class", "axis axis--x")
@@ -105,7 +108,7 @@ var svg = d3.select("#linesvg").append('svg')
               .text("Rate");
 
           var focus = g.append("g")
-              .attr("class", "focus")
+              .attr("class", "foc8us")
               .style("display", "none");
 
           focus.append("line")
