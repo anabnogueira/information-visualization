@@ -1,5 +1,7 @@
 const format = d3.format(',');
 
+
+
 // Set tooltips
 const tip = d3.tip()
   .attr('class', 'd3-tip')
@@ -9,6 +11,8 @@ const tip = d3.tip()
 const margin_map = {top: 0, right: 0, bottom: 0, left: 0};
 const width_map = 500;
 const height_map = 400;
+
+
 
 // const colors = ['rgb(204, 0, 153)', 
 //           'rgb(255, 80, 80)', 
@@ -20,45 +24,6 @@ const height_map = 400;
 //           'rgb(51, 204, 51)',
 //           'rgb(0, 255, 204)',
 //           'rgb(230, 153, 0)'];
-/*
-const color = d3.scaleThreshold()
-  .domain([
-    1,
-    3,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    12,
-    13,
-    14,
-    15,
-    16,
-    20,
-    23,
-    25,
-    30,
-    35,
-    40,
-    45
-  ])
-  .range([
-    'rgb(247,251,255)',
-    'rgb(222,235,247)', 
-    'rgb(198,219,239)', 
-    'rgb(158,202,225)',
-    'rgb(107,174,214)',
-    'rgb(66,146,198)',
-    'rgb(55, 135, 187)',
-    'rgb(44, 124, 176)',
-    'rgb(33,113,181)',
-    'rgb(22, 102, 170)',
-    'rgb(8,81,156)',
-    'rgb(8,48,107)',
-    'rgb(3,19,43)'
-  ]); */
 
 const svg_map = d3.select('#worldmap')
   .append('svg')
@@ -77,6 +42,8 @@ const projection = d3.geoRobinson()
 
 const path = d3.geoPath().projection(projection);
 
+svg_map.call(tip);
+
 // Data and color scale
 var data = d3.map();
 var colorScheme = d3.schemeBlues[9];
@@ -84,8 +51,6 @@ colorScheme.unshift("#ddd")
 var colorScale = d3.scaleThreshold()
                   .domain([1, 3, 5, 7, 10, 13, 16, 19, 23])
                   .range(colorScheme);
-
-svg_map.call(tip);
 
 
 // Legend
@@ -219,10 +184,10 @@ function ready(error, data, population) {
               }
             else {
               var sc = document.getElementById("selectedCountry")
-              var hue = colors[Math.floor(Math.random()*colors.length)];;
+              //var hue = colors[Math.floor(Math.random()*colors.length)];;
               var j = d.properties.name;
 
-              sc.innerHTML += "<li>"+ d.properties.name + "<span class=" + "close" + ">" + "&times;"+ "</span>" + "<span class=" + "coloring" + " style=\"background-color:" + hue + ";\">" + "</span>"+ "</li>"; 
+              sc.innerHTML += "<li>"+ d.properties.name + "<span class=" + "close" + ">" + "&times;"+ "</span>" + "<span class=" + "coloring" +">" + "</span>"+ "</li>"; 
               var closebtns = document.getElementsByClassName("close");
               var i;
 

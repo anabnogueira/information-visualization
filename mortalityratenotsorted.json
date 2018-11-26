@@ -2421,7 +2421,7 @@
   },
   {
     "name": "Brazil",
-    "color": "#78579e",
+    "color": "#ffff00",
     "values": [
       {
         "year": "1990",
@@ -3741,7 +3741,7 @@
   },
   {
     "name": "China",
-    "color": "#6e83c8",
+    "color": "#ff0000",
     "values": [
       {
         "year": "1990",
@@ -8031,7 +8031,7 @@
   },
   {
     "name": "India",
-    "color": "#8bb9e1",
+    "color": "#99ff66",
     "values": [
       {
         "year": "1990",
@@ -14301,7 +14301,7 @@
   },
   {
     "name": "Portugal",
-    "color": "#4f7a5b",
+    "color": "#ff8000",
     "values": [
       {
         "year": "1990",
