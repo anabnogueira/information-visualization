@@ -16,10 +16,11 @@ var fake_data = {
 };
 
 
-var svg = d3.select("#gooeychart").append("svg")
+var svg = d3.select("#gooeychart").append('svg')
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-  .append("g")
+
+var g = svg.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 ///////////////////////////////////////////////////////////////////////////
@@ -166,10 +167,12 @@ circle.transition()
     //
     //     timer();
     // })
-
-
+        
     svg.on("mousemove", function() {
         var p1 = d3.mouse(this);
+        
+        //console.log( d3.event.pageX, d3.event.pageY ) // log the mouse x,y position
+        
         root.px = p1[0];
         root.py = p1[1];
         force.resume();
@@ -304,4 +307,4 @@ function type(d, i) {
   });
   return d;
 
-}
+} 
