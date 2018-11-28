@@ -46,10 +46,11 @@ svg_map.call(tip);
 
 // Data and color scale
 var data = d3.map();
-var colorScheme = d3.schemeBlues[9];
-colorScheme.unshift("#ddd")
+var colorScheme = ['#b3b3cc', '#ffffff', '#b3d1ff', '#66b3ff', '#1a8cff', '#0059b3', '#004080', '#00264d'];
+//var colorScheme =d3.schemeBlues[8];
+//colorScheme.unshift("#ddd")
 var colorScale = d3.scaleThreshold()
-                  .domain([1, 3, 5, 7, 10, 13, 16, 19, 23])
+                  .domain([1, 5, 7, 10, 13, 16, 23])
                   .range(colorScheme);
 
 
@@ -62,7 +63,7 @@ g.append("text")
     .attr("x", 0)
     .attr("y", -6)
     .text("Mortality values");
-var labels = ['0', '1-2', '3-4', '5-6', '7-9', '10-12', '13-15','16-18', '19-22','> 23'];
+var labels = ['0', '1-4','5-6', '7-9', '10-12', '13-15','16-22','> 23'];
 var legend = d3.legendColor()
     .labels(function (d) { return labels[d.i]; })
     .shapePadding(4)
@@ -170,6 +171,9 @@ function ready(error, data, population) {
           .style('stroke-width', 3)
           .html(d => d)
           .on("click", function(d){
+            /*   d3.select(this)
+                .style("stroke", "bisque")
+                .style("stroke-width", "2.5") */
             if(countriesSelected.includes(d.properties.name)){
               return;
             }  
