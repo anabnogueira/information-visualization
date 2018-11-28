@@ -328,49 +328,65 @@
 <div id="selectionmenu2">
 	<h2 id="causesod">Factors</h2>
 <label class="factors">
-	<input type="checkbox" checked>
+	<input type="checkbox" value="1" name="fooby[1][]">
 	<span class="checkmark"></span>
 	Access to water	
 </label>
 
 <label class="factors">
-	<input type="checkbox" checked>
+	<input type="checkbox" value="1" name="fooby[1][]">
 	<span class="checkmark"></span>
 	Calory Intake
 </label>
 
 <label class="factors">
-	<input type="checkbox">
+	<input type="checkbox" value="1" name="fooby[1][]">
 	<span class="checkmark"></span>
 	CO2 emissions
 </label>
 
 <label class="factors">
-	<input type="checkbox" checked>
+	<input type="checkbox" value="1" name="fooby[1][]">
 	<span class="checkmark"></span>
 	GDP
 </label>
 
 <label class="factors">
-	<input type="checkbox">
+	<input type="checkbox" value="1" name="fooby[1][]">
 	<span class="checkmark"></span>
 	HDI
 </label>
 
 <label class="factors">
-	<input type="checkbox" checked>
+	<input type="checkbox" value="1" name="fooby[1][]">
 	<span class="checkmark"></span>
 	Smoking Prevalence
 </label>
 
 <label class="factors">
-	<input type="checkbox" checked>
+	<input type="checkbox" value="1" name="fooby[1][]">
 	<span class="checkmark"></span>
 	Vaccination
 </label>
+<script>
 
+$("input:checkbox").on('click', function() {
+  var $box = $(this);
+  if ($box.is(":checked")) {
+    var group = "input:checkbox[name='" + $box.attr("name") + "']";
+    $(group).prop("checked", false);
+    $box.prop("checked", true);
+    } 
+  else {
+    $box.prop("checked", false);
+  }
+});
+
+</script>
 
 </div>
+
+
 <script src="libs/d3.v4.min.js"></script>
 <div id="gooey">
 	<h1>CO2 Emissions</h1>
