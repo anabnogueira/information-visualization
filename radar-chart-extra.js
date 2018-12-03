@@ -48,7 +48,18 @@ var d = [
 				{axis:"Kidney Disease",value:0.5},
 				{axis:"Liver Disease",value:0.74},
 				{axis:"Natural Disasters",value:0.11}
-		  ]
+		  ],[
+				{axis:"Cancers",value:0.9},
+				{axis:"Cardiovascular Diseases",value:0.6},
+				{axis:"Conflict",value:0.12},
+				{axis:"Dementia",value:0.34},
+				{axis:"Diabetes",value:0.48},
+				{axis:"HIV/AIDS",value:0.14},
+				{axis:"Homicide",value:0.11},
+				{axis:"Kidney Disease",value:0.05},
+				{axis:"Liver Disease",value:0.07},
+				{axis:"Natural Disasters",value:0.12}
+				]
 		];
 
 //Options for the Radar chart, other than default

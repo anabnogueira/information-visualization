@@ -29,6 +29,8 @@ var g = svg.append("g")
 
 //SVG filter for the gooey effect
 //Code taken from http://tympanus.net/codrops/2015/03/10/creative-gooey-effects/
+
+
 var defs = svg.append("defs");
 var filter = defs.append("filter").attr("id","gooeyCodeFilter");
 filter.append("feGaussianBlur")
