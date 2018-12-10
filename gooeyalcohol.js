@@ -3,13 +3,13 @@ var USER_YEAR = '2015'; // default user year
 
 
 // var cells = [[10,10], [93,10], [176,10], [259,10], [342,10],
-//          [10,93], [93,93], [176,93], [259,93], [342,93],
+//          [10,93], [93,93], [176,93], [259,93], [342,93],
 //          [10,176], [93,176], [176,176], [259,176], [342,176],
 //          [10,259], [93,259], [176,259], [259,259], [342,259]]
 
-var cells = [[152,152], [322,152], [237,322], [237,67], [67,322], [407,67], [407,322], [67,67],
-              [152,322], [237,237], [152,67], [407,237], [67,152], [152,237], [322,237], [322,67],
-              [322,322], [67,237], [407,152], [237,152]]
+var cells = [[407,152], [322,152], [237,322], [237,67], [67,322], [415,67], [407,322], [67,67],
+            [67,152], [237,237], [152,67], [407,237], [152,322], [152,237], [322,237], [322,67],
+              [322,322], [67,237], [152,152], [237,152]]
 
 
 
@@ -60,8 +60,8 @@ var foci = {
 };
 
 // SAMPLE COUNTRIES
-var s_countries = ["Antigua and Barbuda", "Comoros", "Russia", "Spain", "Portugal", "France", "Denmark", "Sweden", "China", "Germany",
-                    "Ghana"]
+var s_countries = ["Antigua and Barbuda","Denmark", "China", "Russia", "Spain", "Portugal", "France",  "Ghana", "Sweden", , "Germany",
+  "Comoros"]
 // USA does not work - probably because there are two things with USA on the TSV, US and US virgin islands
 
 var root;
@@ -84,50 +84,27 @@ d3.tsv(DATA_FILE_LOC, type, function(error, data) {
 
         if (str != "year") {
           console.log(s_countries);
-          d3.range(0, 8 * year_data[USER_YEAR][str]).map(function(o, i) {
+          if (s_countries.includes(str)) {
+            var pos = cells[0];
+            foci[str] = { 
+              x : pos[0],
+              y : pos[1],
+              color : 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')'
+            };  
+            cells.splice(0, 1);
+            d3.range(0, 20 * year_data[USER_YEAR][str]).map(function(o, i) {
 
               nodes_so_far += 1;
 
-              // colours are generating randomly but we should get them from the other vector
-              foci[str] = { 
-                x : 25 + 475 * Math.random(),
-                y : 25 + 325 * Math.random(),
-                color : 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')'
-              };
-
-
-              if (s_countries.includes(str)) {
-                console.log(str);
-                if (cells.length > 0 && s_countries.length > 0) {
-
-                  var pos = cells[0];
-                  console.log("AQUI 1");
-                  console.log(pos);
-                  cells.splice(0, 1);
-                  console.log("AQUI 2");
-                  console.log(cells);
-
-                  foci[str] = { 
-                    x : pos[0],
-                    y : pos[1],
-                    color : 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')'
-                  };                  
-                }
-
-                
-                //s_countries.splice(s_countries.indexOf(str), 1);
-                console.log(s_countries);
-
                 nodes.push({
                     id: "node" + nodes_so_far,
-                    x: foci[str].x ,
-                    y: foci[str].y ,
+                    x: foci[str].x + Math.random(),
+                    y: foci[str].y + Math.random(),
                     radius: node_radius,
                     choice: str
                 });
-              }
           });
-
+        }
         }
     });
 
@@ -185,8 +162,9 @@ circle.transition()
                 .attr("data-choice", d)
                 .attr("x", foci[d].x)
                 .attr("y", foci[d].y)
-                .attr("text-anchor", "middle")
-           //     .text(year_data[USER_YEAR][d] + "%");
+                .style("font-weight", "lighter")
+               // .attr("text-anchor", "middle")
+                .text(year_data[USER_YEAR][d]);
         }
     
     });
@@ -357,4 +335,4 @@ function type(d, i) {
   });
   return d;
 
-} 
+}
