@@ -12,8 +12,6 @@ var cells = [[407,152], [322,152], [237,322], [237,67], [67,322], [415,67], [407
               [322,322], [67,237], [152,152], [237,152]]
 
 
-
-
 var margin = {top: 10, right: 10, bottom: 10, left: 10},
     width = 600 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
@@ -163,6 +161,7 @@ circle.transition()
                 .attr("x", foci[d].x)
                 .attr("y", foci[d].y)
                 .style("font-weight", "lighter")
+                .style("font-family", "sans serif")
                // .attr("text-anchor", "middle")
                 .text(year_data[USER_YEAR][d]);
         }
