@@ -1,19 +1,27 @@
-var DATA_FILE_LOC = 'drinks.tsv';
-var USER_COUNTRY = 'United States of America';
+var DATA_FILE_LOC = 'sanitation_gooey_format.tsv';
+var USER_YEAR = '2015'; // default user year
+
+
+// var cells = [[10,10], [93,10], [176,10], [259,10], [342,10],
+//          [10,93], [93,93], [176,93], [259,93], [342,93],
+//          [10,176], [93,176], [176,176], [259,176], [342,176],
+//          [10,259], [93,259], [176,259], [259,259], [342,259]]
+
+var cells = [[152,152], [322,152], [237,322], [237,67], [67,322], [407,67], [407,322], [67,67],
+              [152,322], [237,237], [152,67], [407,237], [67,152], [152,237], [322,237], [322,67],
+              [322,322], [67,237], [407,152], [237,152]]
+
+
+
 
 var margin = {top: 10, right: 10, bottom: 10, left: 10},
-    width = 500 - margin.left - margin.right,
-    height = 300 - margin.top - margin.bottom;
+    width = 600 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
     
 var node_radius = 13,
     padding = 1,
     cluster_padding = 1,
     num_nodes = 100;
-
-var fake_data = {
-    usa: { beer: 25, wine: 25, other: 25, spirits: 25 },
-    australia: { beer: 5, wine: 15, other: 15, spirits: 65 },
-};
 
 
 var svg = d3.select("#gooeychart").append('svg')
@@ -48,21 +56,22 @@ filter.append("feColorMatrix")
 // Foci
 var color1 = "#ff8000";
 var foci = {
-    "beer": { x: 150, y: 150, color: color1 },
-    "wine": { x: 400, y: 150, color: color1 },
-    "spirits": { x: 150, y: 400, color: color1 },
-    "other": { x: 400, y: 400, color: color1 },
-    "dragger": { x: 0, y: 0, color: color1 },
+    "dragger": { x: 0, y: 0, color: color1 }
 };
+
+// SAMPLE COUNTRIES
+var s_countries = ["Antigua and Barbuda", "Comoros", "Russia", "Spain", "Portugal", "France", "Denmark", "Sweden", "China", "Germany",
+                    "Ghana"]
+// USA does not work - probably because there are two things with USA on the TSV, US and US virgin islands
 
 var root;
 
-var country_data = {};
+var year_data = {};
 d3.tsv(DATA_FILE_LOC, type, function(error, data) {
   if (error) throw error;
 
   data.forEach(function(d) {
-        country_data[d.country] = d;
+        year_data[d.year] = d;
   });
 
     // Create node objects
@@ -70,17 +79,56 @@ d3.tsv(DATA_FILE_LOC, type, function(error, data) {
     root = nodes[0];
 
     var nodes_so_far = 1;
-    d3.keys(country_data[USER_COUNTRY]).forEach(function(c) {
-        d3.range(0, country_data[USER_COUNTRY][c]).map(function(o, i) {
-            nodes_so_far += 1;
-            nodes.push({
-                id: "node" + nodes_so_far,
-                x: foci[c].x + Math.random(),
-                y: foci[c].y + Math.random(),
-                radius: node_radius,
-                choice: c,
-            });
-        });
+    d3.keys(year_data[USER_YEAR]).forEach(function(c) {
+        var str = String(c);
+
+        if (str != "year") {
+          console.log(s_countries);
+          d3.range(0, 8 * year_data[USER_YEAR][str]).map(function(o, i) {
+
+              nodes_so_far += 1;
+
+              // colours are generating randomly but we should get them from the other vector
+              foci[str] = { 
+                x : 25 + 475 * Math.random(),
+                y : 25 + 325 * Math.random(),
+                color : 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')'
+              };
+
+
+              if (s_countries.includes(str)) {
+                console.log(str);
+                if (cells.length > 0 && s_countries.length > 0) {
+
+                  var pos = cells[0];
+                  console.log("AQUI 1");
+                  console.log(pos);
+                  cells.splice(0, 1);
+                  console.log("AQUI 2");
+                  console.log(cells);
+
+                  foci[str] = { 
+                    x : pos[0],
+                    y : pos[1],
+                    color : 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')'
+                  };                  
+                }
+
+                
+                //s_countries.splice(s_countries.indexOf(str), 1);
+                console.log(s_countries);
+
+                nodes.push({
+                    id: "node" + nodes_so_far,
+                    x: foci[str].x ,
+                    y: foci[str].y ,
+                    radius: node_radius,
+                    choice: str
+                });
+              }
+          });
+
+        }
     });
 
 
@@ -138,34 +186,34 @@ circle.transition()
                 .attr("x", foci[d].x)
                 .attr("y", foci[d].y)
                 .attr("text-anchor", "middle")
-           //     .text(country_data[USER_COUNTRY][d] + "%");
+           //     .text(year_data[USER_YEAR][d] + "%");
         }
     
     });
 
     // Country dropdown menu
-    d3.select("#dropdown_title").html(USER_COUNTRY);
+    d3.select("#dropdown_title").html(USER_YEAR);
     d3.select(".dropdown-menu").selectAll("li")
         .data(data)
       .enter().append("li").append("a")
-        .text(function(d) { return d.country; })
+        .text(function(d) { return d.year; })
         .on("click", function() {
             var selText = d3.select(this).text();
             d3.select("#dropdown_title").html(selText);
             
-            USER_COUNTRY = selText;
+            USER_YEAR = selText;
             timer();
         });
 
         
 
     // d3.select("#button").on("click", function(d) {
-    //     if (USER_COUNTRY == "usa") {
-    //         USER_COUNTRY = "Australia";
+    //     if (USER_YEAR == "usa") {
+    //         USER_YEAR = "Australia";
     //     } else {
-    //         USER_COUNTRY = "Paraguay";
+    //         USER_YEAR = "Paraguay";
     //     }
-    //     console.log(USER_COUNTRY);
+    //     console.log(USER_YEAR);
     //
     //     timer();
     // })
@@ -187,9 +235,9 @@ circle.transition()
     function timer() {
     
         nodes_so_far = 1;
-        d3.keys(country_data[USER_COUNTRY]).forEach(function(c) {
-            if (country_data[USER_COUNTRY][c] > 0) {
-                d3.range(0, country_data[USER_COUNTRY][c]).map(function(o, i) {
+        d3.keys(year_data[USER_YEAR]).forEach(function(c) {
+            if (year_data[USER_YEAR][c] > 0) {
+                d3.range(0, year_data[USER_YEAR][c]).map(function(o, i) {
                     if (nodes_so_far <= 100) {
                         nodes[nodes_so_far].choice = c;
                         nodes_so_far += 1;
@@ -219,7 +267,7 @@ circle.transition()
               }
     
             var choice = d3.select(this).attr("data-choice");
-            var new_pct = country_data[USER_COUNTRY][choice];
+            var new_pct = year_data[USER_YEAR][choice];
             console.log(choice);
         
             var i = d3.interpolate(just_number, new_pct);
