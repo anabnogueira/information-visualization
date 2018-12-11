@@ -7,10 +7,11 @@ var USER_YEAR = '2015'; // default user year
 //          [10,176], [93,176], [176,176], [259,176], [342,176],
 //          [10,259], [93,259], [176,259], [259,259], [342,259]]
 
-var cells = [[407,152], [322,152], [237,322], [237,67], [67,322], [415,67], [407,322], [67,67],
+var cells_orig = [[407,152], [322,152], [237,322], [237,67], [67,322], [415,67], [407,322], [67,67],
             [67,152], [237,237], [152,67], [407,237], [152,322], [152,237], [322,237], [322,67],
               [322,322], [67,237], [152,152], [237,152]]
 
+var cells = cells_orig;
 
 var margin = {top: 10, right: 10, bottom: 10, left: 10},
     width = 600 - margin.left - margin.right,
@@ -22,11 +23,11 @@ var node_radius = 13,
     num_nodes = 100;
 
 
-var svg = d3.select("#gooeychart").append('svg')
+var svgGooey = d3v3.select("#gooeychart").append('svg')
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
 
-var g = svg.append("g")
+var g = svgGooey.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 ///////////////////////////////////////////////////////////////////////////
@@ -37,7 +38,7 @@ var g = svg.append("g")
 //Code taken from http://tympanus.net/codrops/2015/03/10/creative-gooey-effects/
 
 
-var defs = svg.append("defs");
+var defs = svgGooey.append("defs");
 var filter = defs.append("filter").attr("id","gooeyCodeFilter");
 filter.append("feGaussianBlur")
   .attr("in","SourceGraphic")
@@ -58,31 +59,54 @@ var foci = {
 };
 
 // SAMPLE COUNTRIES
-var s_countries = ["Antigua and Barbuda","Denmark", "China", "Russia", "Spain", "Portugal", "France",  "Ghana", "Sweden", , "Germany",
+var s_countries = ["Antigua and Barbuda","Denmark", "China", "Russia", "Spain", "Portugal", "France",  "Ghana", "Sweden", "Germany",
   "Comoros"]
 // USA does not work - probably because there are two things with USA on the TSV, US and US virgin islands
 
 var root;
 
 var year_data = {};
-d3.tsv(DATA_FILE_LOC, type, function(error, data) {
+
+var gooeyData;
+d3v3.tsv(DATA_FILE_LOC, type, function(error, info) {
   if (error) throw error;
 
-  data.forEach(function(d) {
+  gooeyData = info;
+  //drawGooey("countriesSelected");
+
+});
+
+var circleWrapper = svgGooey.append("g")
+.attr("class", "circleWrapper")
+.style("filter", "url(#gooeyCodeFilter)");
+
+
+
+$(document).on('countriesSelected', function(e, args) {
+    const { countriesSelected } = args;
+    drawGooey(countriesSelected);
+})
+
+
+
+
+
+function drawGooey(countriesSelected) {
+
+  gooeyData.forEach(function(d) {
         year_data[d.year] = d;
   });
 
     // Create node objects
-    var nodes = [{ radius: 0, fixed: true, choice: "dragger" }];
+    var nodes = [{ radius: 0, fixed: true, choice: "dragger", idd: "root" }];
     root = nodes[0];
 
-    var nodes_so_far = 1;
-    d3.keys(year_data[USER_YEAR]).forEach(function(c) {
+    var nodes_so_far;
+    d3v3.keys(year_data[USER_YEAR]).forEach(function(c) {
         var str = String(c);
 
         if (str != "year") {
-          console.log(s_countries);
-          if (s_countries.includes(str)) {
+          if (countriesSelected.includes(str)) {
             var pos = cells[0];
             foci[str] = { 
               x : pos[0],
@@ -90,16 +114,18 @@ d3.tsv(DATA_FILE_LOC, type, function(error, data) {
               color : 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')'
             };  
             cells.splice(0, 1);
-            d3.range(0, 20 * year_data[USER_YEAR][str]).map(function(o, i) {
+            d3v3.range(0, 20 * year_data[USER_YEAR][str]).map(function(o, i) {
 
               nodes_so_far += 1;
+              console.log(str)
 
                 nodes.push({
                     id: "node" + nodes_so_far,
                     x: foci[str].x + Math.random(),
                     y: foci[str].y + Math.random(),
                     radius: node_radius,
-                    choice: str
+                    choice: str,
+                    idd: str + i
                 });
           });
         }
@@ -108,7 +134,7 @@ d3.tsv(DATA_FILE_LOC, type, function(error, data) {
 
 
     // Force-directed layout
-    var force = d3.layout.force()
+    var force = d3v3.layout.force()
       .nodes(nodes)
       .size([width, height])
         .gravity(0)
@@ -117,17 +143,18 @@ d3.tsv(DATA_FILE_LOC, type, function(error, data) {
       .on("tick", tick)
       .start();
 
-    var circleWrapper = svg.append("g")
-      .attr("class", "circleWrapper")
-      .style("filter", "url(#gooeyCodeFilter)");
-
-
 
 // Draw circle for each node.
-var circle = circleWrapper.selectAll("circle")
-  .data(nodes)
-  .enter().append("circle")
-  .attr("id", function(d) { return d.id; })
+var circleData = circleWrapper.selectAll("circle")
+  .data(nodes, function(d) {
+    console.log(d.idd);
+    return d.idd;
+  });
+
+  circleData.exit().remove()
+
+  var circle = circleData.enter().append("circle")
+  .attr("id", function(d) { return d.idd; })
   .attr("class", "node")
   .style("fill", function(d) { return foci[d.choice].color; });    
 
@@ -136,25 +163,20 @@ circle.transition()
   .duration(900)
   .delay(function(d,i) { return i * 5; })
   .attrTween("r", function(d) {
-    var i = d3.interpolate(0, d.radius);
+    var i = d3v3.interpolate(0, d.radius);
     return function(t) { return d.radius = i(t); };
   });
 
 
     // Labels etc
-    d3.keys(foci).forEach(function(d) {
-    
+    d3v3.keys(foci).forEach(function(d) {
+
+      
         if (d != "dragger") {
             // Headers
-            svg.append("text")
-                .attr("class", "header")
-                .attr("x", foci[d].x)
-                .attr("y", foci[d].y-80)
-                .attr("text-anchor", "middle")
-            //    .text(d);
 
             // Counters
-            svg.append("text")
+            svgGooey.append("text")
                 .attr("id", "counter"+d)
                 .attr("class", "counter")
                 .attr("data-choice", d)
@@ -169,22 +191,22 @@ circle.transition()
     });
 
     // Country dropdown menu
-    d3.select("#dropdown_title").html(USER_YEAR);
-    d3.select(".dropdown-menu").selectAll("li")
-        .data(data)
+    d3v3.select("#dropdown_title").html(USER_YEAR);
+    d3v3.select(".dropdown-menu").selectAll("li")
+        .data(gooeyData)
       .enter().append("li").append("a")
         .text(function(d) { return d.year; })
         .on("click", function() {
-            var selText = d3.select(this).text();
-            d3.select("#dropdown_title").html(selText);
+            var selText = d3v3.select(this).text();
+            d3v3.select("#dropdown_title").html(selText);
             
             USER_YEAR = selText;
-            timer();
+           // timer();
         });
 
         
 
-    // d3.select("#button").on("click", function(d) {
+    // d3v3.select("#button").on("click", function(d) {
     //     if (USER_YEAR == "usa") {
     //         USER_YEAR = "Australia";
     //     } else {
@@ -195,10 +217,10 @@ circle.transition()
     //     timer();
     // })
         
-    svg.on("mousemove", function() {
-        var p1 = d3.mouse(this);
+    svgGooey.on("mousemove", function() {
+        var p1 = d3v3.mouse(this);
         
-        //console.log( d3.event.pageX, d3.event.pageY ) // log the mouse x,y position
+        //console.log( d3v3.event.pageX, d3v3.event.pageY ) // log the mouse x,y position
         
         root.px = p1[0];
         root.py = p1[1];
@@ -212,9 +234,9 @@ circle.transition()
     function timer() {
     
         nodes_so_far = 1;
-        d3.keys(year_data[USER_YEAR]).forEach(function(c) {
+        d3v3.keys(year_data[USER_YEAR]).forEach(function(c) {
             if (year_data[USER_YEAR][c] > 0) {
-                d3.range(0, year_data[USER_YEAR][c]).map(function(o, i) {
+                d3v3.range(0, year_data[USER_YEAR][c]).map(function(o, i) {
                     if (nodes_so_far <= 100) {
                         nodes[nodes_so_far].choice = c;
                         nodes_so_far += 1;
@@ -228,7 +250,7 @@ circle.transition()
         force.resume();
     
     
-        d3.selectAll("text.counter")
+        d3v3.selectAll("text.counter")
           .transition()
           .duration(600)
           .tween("text", function(d) {
@@ -243,11 +265,11 @@ circle.transition()
                 var just_number = 0;
               }
     
-            var choice = d3.select(this).attr("data-choice");
+            var choice = d3v3.select(this).attr("data-choice");
             var new_pct = year_data[USER_YEAR][choice];
             console.log(choice);
         
-            var i = d3.interpolate(just_number, new_pct);
+            var i = d3v3.interpolate(just_number, new_pct);
             return function(t) {
                 if (i(t) < 1 && i(t) > 0) {
                   this.textContent = "<1%";
@@ -291,7 +313,7 @@ circle.transition()
 
     // Resolve collisions between nodes.
     function collide(alpha) {
-      var quadtree = d3.geom.quadtree(nodes);
+      var quadtree = d3v3.geom.quadtree(nodes);
       return function(d) {
         var r = d.radius + node_radius + Math.max(padding, cluster_padding),
             nx1 = d.x - r,
@@ -315,8 +337,10 @@ circle.transition()
           return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
         });
       };
-    }    
-}); // @end d3.tsv()
+    }
+
+    cells = cells_orig;
+} // @end d3v3.tsv()
 
 
 
@@ -327,7 +351,7 @@ circle.transition()
 
 function type(d, i) {
   
-  d3.keys(d).map(function(key) {
+  d3v3.keys(d).map(function(key) {
         if (key != "country") {
             d[key] = +d[key];
         }

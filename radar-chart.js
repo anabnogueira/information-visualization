@@ -25,7 +25,7 @@ var RadarChart = {
 	 TranslateY: 30,
 	 ExtraWidthX: 0,
 	 ExtraWidthY: 100,
-	 color: d3.scale.category10()
+	 color: d3v3.scale.category10()
 	};
 	
 	if('undefined' !== typeof options){
@@ -35,14 +35,14 @@ var RadarChart = {
 		}
 	  }
 	}
-	cfg.maxValue = Math.max(cfg.maxValue, d3.max(d, function(i){return d3.max(i.map(function(o){return o.value;}))}));
+	cfg.maxValue = Math.max(cfg.maxValue, d3v3.max(d, function(i){return d3v3.max(i.map(function(o){return o.value;}))}));
 	var allAxis = (d[0].map(function(i, j){return i.axis}));
 	var total = allAxis.length;
 	var radius = cfg.factor*Math.min(cfg.w/2, cfg.h/2);
-	var Format = d3.format('%');
-	d3.select(id).select("svg").remove();
+	var Format = d3v3.format('%');
+	d3v3.select(id).select("svg").remove();
 	
-	var g = d3.select(id)
+	var g = d3v3.select(id)
 			.append("svg")
 			.attr("width", cfg.w+cfg.ExtraWidthX)
 			.attr("height", cfg.h+cfg.ExtraWidthY)
@@ -146,7 +146,7 @@ var RadarChart = {
 					 .style("fill", function(j, i){return cfg.color(series)})
 					 .style("fill-opacity", cfg.opacityArea)
 					 .on('mouseover', function (d){
-										z = "polygon."+d3.select(this).attr("class");
+										z = "polygon."+d3v3.select(this).attr("class");
 										g.selectAll("polygon")
 										 .transition(200)
 										 .style("fill-opacity", 0.1); 
@@ -184,8 +184,8 @@ var RadarChart = {
 		.attr("data-id", function(j){return j.axis})
 		.style("fill", cfg.color(series)).style("fill-opacity", .9)
 		.on('mouseover', function (d){
-					newX =  parseFloat(d3.select(this).attr('cx')) - 10;
-					newY =  parseFloat(d3.select(this).attr('cy')) - 5;
+					newX =  parseFloat(d3v3.select(this).attr('cx')) - 10;
+					newY =  parseFloat(d3v3.select(this).attr('cy')) - 5;
 					
 					tooltip
 						.attr('x', newX)
@@ -194,7 +194,7 @@ var RadarChart = {
 						.transition(200)
 						.style('opacity', 1);
 						
-					z = "polygon."+d3.select(this).attr("class");
+					z = "polygon."+d3v3.select(this).attr("class");
 					g.selectAll("polygon")
 						.transition(200)
 						.style("fill-opacity", 0.1); 
