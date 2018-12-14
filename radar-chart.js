@@ -36,7 +36,13 @@ var RadarChart = {
 	  }
 	}
 	cfg.maxValue = Math.max(cfg.maxValue, d3v3.max(d, function(i){return d3v3.max(i.map(function(o){return o.value;}))}));
-	var allAxis = (d[0].map(function(i, j){return i.axis}));
+	var allAxisData = (d[0].map(function(i, j){return i.axis}));
+	var allAxis= [];
+	for(var k=0; k< 10; k++){
+		allAxis.push(allAxisData[k]);
+	}
+	
+	console.log(allAxis);
 	var total = allAxis.length;
 	var radius = cfg.factor*Math.min(cfg.w/2, cfg.h/2);
 	var Format = d3v3.format('%');
@@ -71,22 +77,22 @@ var RadarChart = {
 	}
 
 	//Text indicating at what % each level is
-	for(var j=0; j<cfg.levels; j++){
-	  var levelFactor = cfg.factor*radius*((j+1)/cfg.levels);
-	  g.selectAll(".levels")
-	   .data([1]) //dummy data
-	   .enter()
-	   .append("svg:text")
-	   .attr("x", function(d){return levelFactor*(1-cfg.factor*Math.sin(0));})
-	   .attr("y", function(d){return levelFactor*(1-cfg.factor*Math.cos(0));})
-	   .attr("class", "legend")
-	   .style("font-family", "sans-serif")
-	   .style("font-size", "10px")
-	   .attr("transform", "translate(" + (cfg.w/2-levelFactor + cfg.ToRight) + ", " + (cfg.h/2-levelFactor) + ")")
-	   .attr("fill", "white")
-	   .style('font-weight', 'lighter')
-	   .text(Format((j+1)*cfg.maxValue/cfg.levels));
-	}
+	// for(var j=0; j<cfg.levels; j++){
+	//   var levelFactor = cfg.factor*radius*((j+1)/cfg.levels);
+	//   g.selectAll(".levels")
+	//    .data([1]) //dummy data
+	//    .enter()
+	//    .append("svg:text")
+	//    .attr("x", function(d){return levelFactor*(1-cfg.factor*Math.sin(0));})
+	//    .attr("y", function(d){return levelFactor*(1-cfg.factor*Math.cos(0));})
+	//    .attr("class", "legend")
+	//    .style("font-family", "sans-serif")
+	//    .style("font-size", "10px")
+	//    .attr("transform", "translate(" + (cfg.w/2-levelFactor + cfg.ToRight) + ", " + (cfg.h/2-levelFactor) + ")")
+	//    .attr("fill", "white")
+	//    .style('font-weight', 'lighter')
+	//    .text(Format((j+1)*cfg.maxValue/cfg.levels));
+	// }
 	
 	series = 0;
 
@@ -118,7 +124,7 @@ var RadarChart = {
 		.attr("x", function(d, i){return cfg.w/2*(1-cfg.factorLegend*Math.sin(i*cfg.radians/total))-60*Math.sin(i*cfg.radians/total);})
 		.attr("y", function(d, i){return cfg.h/2*(1-Math.cos(i*cfg.radians/total))-20*Math.cos(i*cfg.radians/total);});
 
- 
+
 	d.forEach(function(y, x){
 	  dataValues = [];
 	  g.selectAll(".nodes")
@@ -165,6 +171,9 @@ var RadarChart = {
 
 
 	d.forEach(function(y, x){
+		// if(counter >10){
+		// 	return;
+		// }
 	  g.selectAll(".nodes")
 		.data(y).enter()
 		.append("svg:circle")

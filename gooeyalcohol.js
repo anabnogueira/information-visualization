@@ -107,10 +107,14 @@ function drawGooey(countriesSelected) {
 
         if (str != "year") {
           if (countriesSelected.includes(str)) {
+            //var col = $( "#selectedCountry" ).find("li:contains('" + str + "')").find("span.coloring").css( "background-color");
+            //var sc = document.getElementById("selectedCountry");
+            //console.log(col);
             var pos = cells[0];
             foci[str] = { 
               x : pos[0],
               y : pos[1],
+              //color: col
               color : 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')'
             };  
             cells.splice(0, 1);
