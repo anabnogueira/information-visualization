@@ -13,6 +13,33 @@ var w = 250,
 //Legend titles
 var LegendOptions = ['Smartphone','Tablet'];
 
+var a = [
+	[
+	{axis:"Cardiovascular diseases (%)",value:0},
+	{axis:"Cancers (%)",value:0},
+	{axis:"Respiratory diseases (%)",value:0},
+	{axis:"Diabetes (%)",value:0},
+	{axis:"Dementia (%)",value:0},
+	{axis:"Lower respiratory infections (%)",value:0},
+	{axis:"Neonatal deaths (%)",value:0},
+	{axis:"Diarrheal diseases (%)",value:0},
+	{axis:"Road incidents (%)",value:0},
+	{axis:"Liver disease (%)",value:0}
+	]
+]; 
+
+var mycfga = {
+	w: w,
+	h: h,
+	maxValue: 0.6,
+	levels: 6,
+	ExtraWidthX: 300
+	}
+	
+
+
+RadarChart.draw("#chart", a, mycfga);
+
 
 var countriesAlreadySelected;
 var selectedYear = "2015";

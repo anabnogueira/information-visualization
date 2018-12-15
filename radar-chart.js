@@ -114,13 +114,14 @@ var RadarChart = {
 	axis.append("text")
 		.attr("class", "legend")
 		.text(function(d){return d})
-		//.style("font-family", "sans-serif")
-		.style("font-size", "10px")
+		.style("font-family", "sans-serif")
+		.style("font-size", "12px")
 		.attr("text-anchor", "middle")
 		.attr("dy", "1.5em")
 		.style("color", "white")
 		.style("font-weight", "lighter")
-		.attr("transform", function(d, i){return "translate(0, -10)"})
+		.style("padding", "10px")
+		.attr("transform", function(d, i){return "translate(0, -15)"})
 		.attr("x", function(d, i){return cfg.w/2*(1-cfg.factorLegend*Math.sin(i*cfg.radians/total))-60*Math.sin(i*cfg.radians/total);})
 		.attr("y", function(d, i){return cfg.h/2*(1-Math.cos(i*cfg.radians/total))-20*Math.cos(i*cfg.radians/total);});
 
