@@ -4,7 +4,7 @@
 
 
 
-var color = {
+var colorToCountries = {
 	"Afghanistan": "#3957ff",
 	"Albania": "#d3fe14",
 	"Algeria": "#c9080a",
@@ -227,7 +227,7 @@ var mycfga = {
 	
 
 
-RadarChart.draw("#chart", a, mycfga);
+RadarChart.draw("#chart", a, mycfga, []);
 
 
 var countriesAlreadySelected;
@@ -247,6 +247,7 @@ d3v3.csv(dataToLoad, function(data) {
 
 var country_data = {};
 var e = [];
+var colorstoRadar = [];
 
 $(document).on('countriesSelected', function(e, args) {
 	const { countriesSelected } = args;
@@ -256,6 +257,7 @@ $(document).on('countriesSelected', function(e, args) {
 
 
 function drawRadar(countriesSelected){
+	colorstoRadar =[]; 
 	//var e = [];
 	var c = [];
 	radarData.forEach(function(d) {
@@ -277,6 +279,10 @@ function drawRadar(countriesSelected){
 		}
 		
 });
+
+	for (var i = 0; i < countriesSelected.length; i++) {
+		colorstoRadar.push(colorToCountries[countriesSelected[i]]);
+	}
 	//console.log(c);
 	e.push(c);
 //console.log(e);
@@ -333,7 +339,7 @@ ExtraWidthX: 300
 
 //Call function to draw the Radar chart
 //Will expect that data is in %'s
-RadarChart.draw("#chart", e, mycfg);
+RadarChart.draw("#chart", e, mycfg, colorstoRadar);
 
 }
 
