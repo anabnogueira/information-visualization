@@ -252,7 +252,7 @@ var colorstoRadar = [];
 $(document).on('countriesSelected', function(e, args) {
 	const { countriesSelected } = args;
 	drawRadar(countriesSelected);
-	console.log("CAPTEI O CLICK");
+	//console.log("CAPTEI O CLICK");
 })
 
 
@@ -261,7 +261,7 @@ function drawRadar(countriesSelected){
 	//var e = [];
 	var c = [];
 
-	if(!clone.includes(countriesSelected[countriesSelected.length -1])){
+	if(countriesSelected.length > clone.length){
 
 		clone.push(countriesSelected[countriesSelected.length -1]);
 
@@ -277,8 +277,8 @@ function drawRadar(countriesSelected){
 		});
 
 	}
-	console.log("cloneeeeeeeeee");
-	console.log(clone);
+//	console.log("cloneeeeeeeeee");
+	//console.log(clone);
 	
 
 	for (var i = 0; i < countriesSelected.length; i++) {
@@ -286,7 +286,65 @@ function drawRadar(countriesSelected){
 	}
 	//console.log(c);
 	e.push(c);
-console.log(e);
+	//console.log(e);
+
+
+	function drawRadarAfterDelete (country, diff){
+		// console.log("DIFF");
+		// console.log(diff);
+		clone = clone.filter(x => !diff.includes(x)).concat(diff.filter(x => !clone.includes(x)));
+
+		// console.log("CLONEEEE");
+		// console.log(clone);
+		
+		radarData.forEach(function(d) {
+			if(d.Country == country){
+				c.push({
+					axis: d.cause,
+					value: +d.percentage 
+				});
+			}
+	
+			
+		});
+
+		return c;
+
+	}
+
+	if(countriesSelected.length < clone.length){
+		var diff = clone.filter(x => !countriesSelected.includes(x)).concat(countriesSelected.filter(x => !clone.includes(x)));
+		
+		
+		e = [ 
+			[
+			{axis:"Cardiovascular diseases (%)",value:0},
+			{axis:"Cancers (%)",value:0},
+			{axis:"Respiratory diseases (%)",value:0},
+			{axis:"Diabetes (%)",value:0},
+			{axis:"Dementia (%)",value:0},
+			{axis:"Lower respiratory infections (%)",value:0},
+			{axis:"Neonatal deaths (%)",value:0},
+			{axis:"Diarrheal diseases (%)",value:0},
+			{axis:"Road incidents (%)",value:0},
+			{axis:"Liver disease (%)",value:0}
+			]
+		];
+
+			
+		if(diff.length != 0) {
+			e=[];
+			colorstoRadar=[];
+			for(var j=0; j < countriesSelected.length; j++){
+				var draw = drawRadarAfterDelete(countriesSelected[j], diff);
+				e.push(draw);
+				colorstoRadar.push(colorToCountries[countriesSelected[j]]);
+			}
+		}
+
+	}
+
+
 
 //console.log("FIM");
 
@@ -341,6 +399,11 @@ ExtraWidthX: 300
 
 //Call function to draw the Radar chart
 //Will expect that data is in %'s
+console.log("VETOR COM VALORES DOS PAISES");
+console.log(e);
+console.log("CORES PARA PAISES");
+console.log(colorstoRadar);
+
 RadarChart.draw("#chart", e, mycfg, colorstoRadar);
 
 }
