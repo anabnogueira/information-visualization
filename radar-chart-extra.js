@@ -290,6 +290,8 @@ function drawRadar(countriesSelected){
 
 
 	function drawRadarAfterDelete (country, diff){
+		console.log("ENTREI NA FUNÇÃO AUXILIAR");
+		c=[];
 		// console.log("DIFF");
 		// console.log(diff);
 		clone = clone.filter(x => !diff.includes(x)).concat(diff.filter(x => !clone.includes(x)));
@@ -307,39 +309,41 @@ function drawRadar(countriesSelected){
 	
 			
 		});
-
+	//	console.log(c);
 		return c;
 
 	}
 
 	if(countriesSelected.length < clone.length){
 		var diff = clone.filter(x => !countriesSelected.includes(x)).concat(countriesSelected.filter(x => !clone.includes(x)));
-		
-		
-		e = [ 
-			[
-			{axis:"Cardiovascular diseases (%)",value:0},
-			{axis:"Cancers (%)",value:0},
-			{axis:"Respiratory diseases (%)",value:0},
-			{axis:"Diabetes (%)",value:0},
-			{axis:"Dementia (%)",value:0},
-			{axis:"Lower respiratory infections (%)",value:0},
-			{axis:"Neonatal deaths (%)",value:0},
-			{axis:"Diarrheal diseases (%)",value:0},
-			{axis:"Road incidents (%)",value:0},
-			{axis:"Liver disease (%)",value:0}
-			]
-		];
 
 			
-		if(diff.length != 0) {
+		if(diff.length > 1) {
 			e=[];
 			colorstoRadar=[];
 			for(var j=0; j < countriesSelected.length; j++){
+		//	console.log("CHAMEI A FUNÇÃO");
 				var draw = drawRadarAfterDelete(countriesSelected[j], diff);
 				e.push(draw);
 				colorstoRadar.push(colorToCountries[countriesSelected[j]]);
 			}
+		}
+
+		else {
+			e = [ 
+				[
+				{axis:"Cardiovascular diseases (%)",value:0},
+				{axis:"Cancers (%)",value:0},
+				{axis:"Respiratory diseases (%)",value:0},
+				{axis:"Diabetes (%)",value:0},
+				{axis:"Dementia (%)",value:0},
+				{axis:"Lower respiratory infections (%)",value:0},
+				{axis:"Neonatal deaths (%)",value:0},
+				{axis:"Diarrheal diseases (%)",value:0},
+				{axis:"Road incidents (%)",value:0},
+				{axis:"Liver disease (%)",value:0}
+				]
+			];
 		}
 
 	}
@@ -401,8 +405,6 @@ ExtraWidthX: 300
 //Will expect that data is in %'s
 console.log("VETOR COM VALORES DOS PAISES");
 console.log(e);
-console.log("CORES PARA PAISES");
-console.log(colorstoRadar);
 
 RadarChart.draw("#chart", e, mycfg, colorstoRadar);
 
