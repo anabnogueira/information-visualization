@@ -193,7 +193,7 @@ var colorToCountries = {
 };
 
 
-
+var clone = [];
 var w = 450,
 	h = 350;
 
@@ -260,32 +260,34 @@ function drawRadar(countriesSelected){
 	colorstoRadar =[]; 
 	//var e = [];
 	var c = [];
-	radarData.forEach(function(d) {
-		//console.log(d.Country);
 
-		for (var i = 0; i < countriesSelected.length; i++) {
-			if(d.Country == countriesSelected[i]){
-				// console.log("OLAAAAA");
-				// console.log(String(d.cause));
-				// console.log(d.percentage);
-				c.push({
-					axis: d.cause,
-					value: +d.percentage 
-				});
-			}
-			//e += c;
+	if(!clone.includes(countriesSelected[countriesSelected.length -1])){
 
-			//console.log(e);
-		}
-		
-});
+		clone.push(countriesSelected[countriesSelected.length -1]);
+
+		radarData.forEach(function(d) {
+				if(d.Country == countriesSelected[countriesSelected.length -1]){
+					c.push({
+						axis: d.cause,
+						value: +d.percentage 
+					});
+				}
+	
+			
+		});
+
+	}
+	console.log("cloneeeeeeeeee");
+	console.log(clone);
+	
 
 	for (var i = 0; i < countriesSelected.length; i++) {
 		colorstoRadar.push(colorToCountries[countriesSelected[i]]);
 	}
 	//console.log(c);
 	e.push(c);
-//console.log(e);
+console.log(e);
+
 //console.log("FIM");
 
 	/*
