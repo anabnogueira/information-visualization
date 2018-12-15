@@ -197,7 +197,6 @@ var clone = [];
 var w = 450,
 	h = 350;
 
-//var colorscale = d3.scale.category10();
 
 //Legend titles
 var LegendOptions = ['Smartphone','Tablet'];
@@ -232,15 +231,12 @@ RadarChart.draw("#chart", a, mycfga, []);
 
 var countriesAlreadySelected;
 var selectedYear = "2015";
-countriesAlreadySelected = ["Portugal"];
-//var selectedCountry = "Portugal";
 
 var dataToLoad = "/datasets/causes" + selectedYear + ".csv";
 
 var radarData;
 
 d3v3.csv(dataToLoad, function(data) {
-	//console.log(data);
 	radarData = data;
 });
 
@@ -252,13 +248,11 @@ var colorstoRadar = [];
 $(document).on('countriesSelected', function(e, args) {
 	const { countriesSelected } = args;
 	drawRadar(countriesSelected);
-	//console.log("CAPTEI O CLICK");
 })
 
 
 function drawRadar(countriesSelected){
 	colorstoRadar =[]; 
-	//var e = [];
 	var c = [];
 
 	if(countriesSelected.length > clone.length){
@@ -277,27 +271,21 @@ function drawRadar(countriesSelected){
 		});
 
 	}
-//	console.log("cloneeeeeeeeee");
-	//console.log(clone);
+
 	
 
 	for (var i = 0; i < countriesSelected.length; i++) {
 		colorstoRadar.push(colorToCountries[countriesSelected[i]]);
 	}
-	//console.log(c);
+
 	e.push(c);
-	//console.log(e);
 
 
 	function drawRadarAfterDelete (country, diff){
-		console.log("ENTREI NA FUNÇÃO AUXILIAR");
 		c=[];
-		// console.log("DIFF");
-		// console.log(diff);
+
 		clone = clone.filter(x => !diff.includes(x)).concat(diff.filter(x => !clone.includes(x)));
 
-		// console.log("CLONEEEE");
-		// console.log(clone);
 		
 		radarData.forEach(function(d) {
 			if(d.Country == country){
@@ -309,7 +297,6 @@ function drawRadar(countriesSelected){
 	
 			
 		});
-	//	console.log(c);
 		return c;
 
 	}
@@ -318,80 +305,46 @@ function drawRadar(countriesSelected){
 		var diff = clone.filter(x => !countriesSelected.includes(x)).concat(countriesSelected.filter(x => !clone.includes(x)));
 
 			
-		if(diff.length > 1) {
+		if(diff.length > 0) {
 			e=[];
 			colorstoRadar=[];
+			if(countriesSelected.length == 0){
+				e = [ 
+							[
+							{axis:"Cardiovascular diseases (%)",value:0},
+							{axis:"Cancers (%)",value:0},
+							{axis:"Respiratory diseases (%)",value:0},
+							{axis:"Diabetes (%)",value:0},
+							{axis:"Dementia (%)",value:0},
+							{axis:"Lower respiratory infections (%)",value:0},
+							{axis:"Neonatal deaths (%)",value:0},
+							{axis:"Diarrheal diseases (%)",value:0},
+							{axis:"Road incidents (%)",value:0},
+							{axis:"Liver disease (%)",value:0}
+							]
+						]; 
+					
+						clone=[];
+						var mycfg = {
+							w: w,
+							h: h,
+							maxValue: 0.6,
+							levels: 6,
+							ExtraWidthX: 300
+							}
+						RadarChart.draw("#chart", e, mycfg, colorstoRadar);
+					return;
+			}
 			for(var j=0; j < countriesSelected.length; j++){
-		//	console.log("CHAMEI A FUNÇÃO");
 				var draw = drawRadarAfterDelete(countriesSelected[j], diff);
 				e.push(draw);
 				colorstoRadar.push(colorToCountries[countriesSelected[j]]);
 			}
 		}
 
-		else {
-			e = [ 
-				[
-				{axis:"Cardiovascular diseases (%)",value:0},
-				{axis:"Cancers (%)",value:0},
-				{axis:"Respiratory diseases (%)",value:0},
-				{axis:"Diabetes (%)",value:0},
-				{axis:"Dementia (%)",value:0},
-				{axis:"Lower respiratory infections (%)",value:0},
-				{axis:"Neonatal deaths (%)",value:0},
-				{axis:"Diarrheal diseases (%)",value:0},
-				{axis:"Road incidents (%)",value:0},
-				{axis:"Liver disease (%)",value:0}
-				]
-			];
-		}
-
 	}
 
 
-
-//console.log("FIM");
-
-	/*
-//Data
-var d = [
-	[
-	{axis:"Cancers",value:0.59},
-	{axis:"Cardiovascular Diseases",value:0.56},
-	{axis:"Conflict",value:0.42},
-	{axis:"Dementia",value:0.34},
-	{axis:"Diabetes",value:0.48},
-	{axis:"HIV/AIDS",value:0.14},
-	{axis:"Homicide",value:0.11},
-	{axis:"Kidney Disease",value:0.05},
-	{axis:"Liver Disease",value:0.07},
-	{axis:"Natural Disasters",value:0.12}
-	],[
-		{axis:"Cancers",value:0.5},
-		{axis:"Cardiovascular Diseases",value:0.5},
-		{axis:"Conflict",value:0.42},
-		{axis:"Dementia",value:0.34},
-		{axis:"Diabetes",value:0.02},
-		{axis:"HIV/AIDS",value:0.4},
-		{axis:"Homicide",value:0.18},
-		{axis:"Kidney Disease",value:0.5},
-		{axis:"Liver Disease",value:0.74},
-		{axis:"Natural Disasters",value:0.11}
-	],[
-		{axis:"Cancers",value:0.9},
-		{axis:"Cardiovascular Diseases",value:0.6},
-		{axis:"Conflict",value:0.12},
-		{axis:"Dementia",value:0.34},
-		{axis:"Diabetes",value:0.48},
-		{axis:"HIV/AIDS",value:0.14},
-		{axis:"Homicide",value:0.11},
-		{axis:"Kidney Disease",value:0.05},
-		{axis:"Liver Disease",value:0.07},
-		{axis:"Natural Disasters",value:0.12}
-		]
-]; */
-
-//Options for the Radar chart, other than default
 var mycfg = {
 w: w,
 h: h,
@@ -399,12 +352,6 @@ maxValue: 0.6,
 levels: 6,
 ExtraWidthX: 300
 }
-
-
-//Call function to draw the Radar chart
-//Will expect that data is in %'s
-console.log("VETOR COM VALORES DOS PAISES");
-console.log(e);
 
 RadarChart.draw("#chart", e, mycfg, colorstoRadar);
 
