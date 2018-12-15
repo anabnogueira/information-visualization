@@ -9,7 +9,7 @@
 //http://nbremer.blogspot.nl/2013/09/making-d3-radar-chart-look-bit-better.html
 
 var RadarChart = {
-  draw: function(id, d, options){
+  draw: function(id, d, options, colorsfromExtra){
   var cfg = {
 	 radius: 5,
 	 w: 300,
@@ -28,8 +28,10 @@ var RadarChart = {
 	 //color: d3v3.scale.category10()
 	};
 	
+	var colorRadar = [];
 
-	var colorRadar = ["pink", "black", "orange", "yellow", "red", "gray"];
+	//colorRadar = ["pink", "black", "orange", "yellow", "red", "gray"];
+	colorRadar = colorsfromExtra;
 
 	if('undefined' !== typeof options){
 	  for(var i in options){
@@ -48,7 +50,7 @@ var RadarChart = {
 	console.log(allAxis);
 	var total = allAxis.length;
 	var radius = cfg.factor*Math.min(cfg.w/2, cfg.h/2);
-	var Format = d3v3.format('%');
+	//var Format = d3v3.format('%');
 	d3v3.select(id).select("svg").remove();
 	
 	var g = d3v3.select(id)
@@ -207,7 +209,7 @@ var RadarChart = {
 					tooltip
 						.attr('x', newX)
 						.attr('y', newY)
-						.text(Format(d.value))
+						.text(d.value)
 						.transition(200)
 						.style('opacity', 1);
 						
