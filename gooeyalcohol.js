@@ -90,7 +90,7 @@ $(document).on('countriesSelected', function(e, args) {
 
 
 
-
+var nodes= [];
 function drawGooey(countriesSelected) {
 
   gooeyData.forEach(function(d) {
@@ -98,7 +98,7 @@ function drawGooey(countriesSelected) {
   });
 
     // Create node objects
-    var nodes = [{ radius: 0, fixed: true, choice: "dragger", idd: "root" }];
+    nodes = [{ radius: 0, fixed: true, choice: "dragger", idd: "root" }];
     root = nodes[0];
 
     var nodes_so_far;
@@ -107,22 +107,26 @@ function drawGooey(countriesSelected) {
 
         if (str != "year") {
           if (countriesSelected.includes(str)) {
+            console.log("ENCONTREI PAÍS");
+            var col = colorToCountries[str];
             //var col = $( "#selectedCountry" ).find("li:contains('" + str + "')").find("span.coloring").css( "background-color");
             //var sc = document.getElementById("selectedCountry");
             //console.log(col);
-            var pos = cells[0];
+           // var pos = cells[0];
             foci[str] = { 
-              x : pos[0],
-              y : pos[1],
-              //color: col
-              color : 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')'
+              // x : pos[0],
+              // y : pos[1],
+              x : Math.floor(Math.random() * (550 - 50)) + 50,
+              y : Math.floor(Math.random() * (350 - 50)) + 50,
+              color: col
+              //color : 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')'
             };  
-            cells.splice(0, 1);
+           // cells.splice(0, 1);
             d3v3.range(0, 20 * year_data[USER_YEAR][str]).map(function(o, i) {
 
               nodes_so_far += 1;
-              console.log(str)
-
+              //console.log(str)
+                
                 nodes.push({
                     id: "node" + nodes_so_far,
                     x: foci[str].x + Math.random(),
@@ -151,7 +155,7 @@ function drawGooey(countriesSelected) {
 // Draw circle for each node.
 var circleData = circleWrapper.selectAll("circle")
   .data(nodes, function(d) {
-    console.log(d.idd);
+    //console.log(d.idd);
     return d.idd;
   });
 
@@ -190,23 +194,33 @@ circle.transition()
                 .style("font-family", "sans serif")
                // .attr("text-anchor", "middle")
                 .text(year_data[USER_YEAR][d]);
+
+            svgGooey.on("mousemove", function() {
+              var p1 = d3v3.mouse(this);
+              
+              //console.log( d3v3.event.pageX, d3v3.event.pageY ) // log the mouse x,y position
+              
+              root.px = p1[0];
+              root.py = p1[1];
+              force.resume();
+            });
         }
     
     });
 
-    // Country dropdown menu
-    d3v3.select("#dropdown_title").html(USER_YEAR);
-    d3v3.select(".dropdown-menu").selectAll("li")
-        .data(gooeyData)
-      .enter().append("li").append("a")
-        .text(function(d) { return d.year; })
-        .on("click", function() {
-            var selText = d3v3.select(this).text();
-            d3v3.select("#dropdown_title").html(selText);
+    // // Country dropdown menu
+    // d3v3.select("#dropdown_title").html(USER_YEAR);
+    // d3v3.select(".dropdown-menu").selectAll("li")
+    //     .data(gooeyData)
+    //   .enter().append("li").append("a")
+    //     .text(function(d) { return d.year; })
+    //     .on("click", function() {
+    //         var selText = d3v3.select(this).text();
+    //         d3v3.select("#dropdown_title").html(selText);
             
-            USER_YEAR = selText;
-           // timer();
-        });
+    //         USER_YEAR = selText;
+    //        // timer();
+    //     });
 
         
 
@@ -221,15 +235,15 @@ circle.transition()
     //     timer();
     // })
         
-    svgGooey.on("mousemove", function() {
-        var p1 = d3v3.mouse(this);
+    // svgGooey.on("mousemove", function() {
+    //     var p1 = d3v3.mouse(this);
         
-        //console.log( d3v3.event.pageX, d3v3.event.pageY ) // log the mouse x,y position
+    //     //console.log( d3v3.event.pageX, d3v3.event.pageY ) // log the mouse x,y position
         
-        root.px = p1[0];
-        root.py = p1[1];
-        force.resume();
-      });
+    //     root.px = p1[0];
+    //     root.py = p1[1];
+    //     force.resume();
+    //   });
 
 
 
@@ -271,7 +285,7 @@ circle.transition()
     
             var choice = d3v3.select(this).attr("data-choice");
             var new_pct = year_data[USER_YEAR][choice];
-            console.log(choice);
+            //console.log(choice);
         
             var i = d3v3.interpolate(just_number, new_pct);
             return function(t) {
@@ -343,7 +357,7 @@ circle.transition()
       };
     }
 
-    cells = cells_orig;
+   // cells = cells_orig;
 } // @end d3v3.tsv()
 
 
