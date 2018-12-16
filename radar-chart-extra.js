@@ -248,11 +248,26 @@ d3v3.csv(dataToLoad, function(data) {
 
 $(document).on('yearSelected', function(e, args) {
 	const { year, countriesSelected } = args;
-	console.log("CHEGUEEEEEEEEI");
+	
 	drawRadarAfterUpdate(year, countriesSelected);
 });
 
+$( function() {
+	$( "#slider-range-max" ).slider({
+	  range: "max",
+	  min: 1990,
+	  max: 2015,
+	  value: $( "#current_year" ).val(),
+	  slide: function( event, ui ) {
+		$( "#current_year" ).val(ui.value);
+		current_year = $( "#slider-range-max" ).slider( "value" );
+		drawRadarAfterUpdate(current_year, countriesSelected);
+	  }
+	});
+  });
+
 function drawRadarAfterUpdate(year, countriesSelected){
+	console.log("CHEGUEEEEEEEEI");
 	
 	dataToLoad = "/datasets/causes" + year + ".csv";
 	console.log(year);
@@ -268,22 +283,6 @@ function drawRadarAfterUpdate(year, countriesSelected){
 			ExtraWidthX: 300
 		}
 		colorstoRadar = [];
-
-		// e = [ 
-		// 	[
-		// 	{axis:"Cardiovascular diseases (%)",value:0},
-		// 	{axis:"Cancers (%)",value:0},
-		// 	{axis:"Respiratory diseases (%)",value:0},
-		// 	{axis:"Diabetes (%)",value:0},
-		// 	{axis:"Dementia (%)",value:0},
-		// 	{axis:"Lower respiratory infections (%)",value:0},
-		// 	{axis:"Neonatal deaths (%)",value:0},
-		// 	{axis:"Diarrheal diseases (%)",value:0},
-		// 	{axis:"Road incidents (%)",value:0},
-		// 	{axis:"Liver disease (%)",value:0}
-		// 	]
-		// ]; 
-		// RadarChart.draw("#chart", e, mycfgup, colorstoRadar);
 		
 		e=[];
 		

@@ -109,7 +109,6 @@ $( function() {
 });
 
 
-//  $(document).trigger('yearSelected', {y, countriesSelected});
 
 function changeWorldMap(){
   
