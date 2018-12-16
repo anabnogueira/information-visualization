@@ -344,6 +344,7 @@ function drawRadar(countriesSelected){
 							diff=[];
 						
 						RadarChart.draw("#chart", e, mcfg, colorstoRadar);
+						e=[];
 					return;
 			}
 			colorstoRadar=[];
