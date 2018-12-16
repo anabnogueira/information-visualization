@@ -197,6 +197,12 @@ var clone = [];
 var w = 450,
 	h = 350;
 
+var country_data = {};
+var e = [];
+var colorstoRadar = [];
+var diff = [];
+var mcfg;
+
 
 //Legend titles
 var LegendOptions = ['Smartphone','Tablet'];
@@ -240,12 +246,102 @@ d3v3.csv(dataToLoad, function(data) {
 	radarData = data;
 });
 
+$(document).on('yearSelected', function(e, args) {
+	const { year, countriesSelected } = args;
+	console.log("CHEGUEEEEEEEEI");
+	drawRadarAfterUpdate(year, countriesSelected);
+});
 
-var country_data = {};
-var e = [];
-var colorstoRadar = [];
-var diff = [];
-var mcfg;
+function drawRadarAfterUpdate(year, countriesSelected){
+	
+	dataToLoad = "/datasets/causes" + year + ".csv";
+	console.log(year);
+
+	d3v3.csv(dataToLoad, function(error, data) {
+		//if (error) throw error;
+
+		var mycfgup = {
+			w: w,
+			h: h,
+			maxValue: 0.6,
+			levels: 6,
+			ExtraWidthX: 300
+		}
+		colorstoRadar = [];
+
+		// e = [ 
+		// 	[
+		// 	{axis:"Cardiovascular diseases (%)",value:0},
+		// 	{axis:"Cancers (%)",value:0},
+		// 	{axis:"Respiratory diseases (%)",value:0},
+		// 	{axis:"Diabetes (%)",value:0},
+		// 	{axis:"Dementia (%)",value:0},
+		// 	{axis:"Lower respiratory infections (%)",value:0},
+		// 	{axis:"Neonatal deaths (%)",value:0},
+		// 	{axis:"Diarrheal diseases (%)",value:0},
+		// 	{axis:"Road incidents (%)",value:0},
+		// 	{axis:"Liver disease (%)",value:0}
+		// 	]
+		// ]; 
+		// RadarChart.draw("#chart", e, mycfgup, colorstoRadar);
+		
+		e=[];
+		
+		for(var k =0; k < countriesSelected.length; k++){
+			n =[];
+			data.forEach(function(d) {
+				if(d.Country == countriesSelected[k]){
+					n.push({
+						axis: d.cause,
+						value: +d.percentage 
+					});
+
+				}
+			
+			});
+			e.push(n);
+		}
+
+		for (var i = 0; i < countriesSelected.length; i++) {
+
+			colorstoRadar.push(colorToCountries[countriesSelected[i]]);
+		}
+	
+		console.log(e);
+		console.log(colorstoRadar);
+
+		RadarChart.draw("#chart", e, mycfgup, colorstoRadar);
+		return;
+
+
+  
+	}); 
+
+	// function type(d, i) {
+	
+	// 	d3.keys(d).map(function(key) {
+	// 		console.log(key);
+	// 		if (key != "Country" || key != "cause") {
+	// 			d[key] = +d[key];
+	// 		}
+	// 		else{
+	// 			d[key] = String(d[key]);
+	// 		}
+	// 	});
+	// 	return d;
+	
+	// }
+
+
+}
+
+
+
+
+
+
+
+
 
 $(document).on('countriesSelected', function(e, args) {
 	const { countriesSelected } = args;
@@ -258,14 +354,10 @@ function drawRadar(countriesSelected){
 	var c = [];
 
 	if(countriesSelected.length >= clone.length){
-		//colorstoRadar = [];
-		console.log("SELECTED >= CLONE");
-	//	console.log(colorstoRadar);
-
 		clone.push(countriesSelected[countriesSelected.length -1]);
-
 		radarData.forEach(function(d) {
 				if(d.Country == countriesSelected[countriesSelected.length -1]){
+					
 					c.push({
 						axis: d.cause,
 						value: +d.percentage 

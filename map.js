@@ -2,6 +2,7 @@ const format = d3.format(',');
 
 
 
+
 // Set tooltips
 const tip = d3.tip()
   .attr('class', 'd3-tip')
@@ -77,7 +78,7 @@ svg_map.select(".legendThreshold")
 
 // *****************  SLIDER TO SELECT CURRENT YEAR *************
 
-current_year = 1990;
+/*current_year = 1990;*/
 
 
 var filename_template = "mortality_rate_sorted";
@@ -98,8 +99,9 @@ $( function() {
     value: $( "#current_year" ).val(),
     slide: function( event, ui ) {
       $( "#current_year" ).val(ui.value);
-      current_year = $( "#slider-range-max" ).slider( "value" ) ;
+      current_year = $( "#slider-range-max" ).slider( "value" );
       changeWorldMap();
+      
     }
 
   });
@@ -107,7 +109,10 @@ $( function() {
 });
 
 
+//  $(document).trigger('yearSelected', {y, countriesSelected});
+
 function changeWorldMap(){
+  
   if (1990 <= current_year && current_year <= 1994) {
     filename = filename_template + "1990.tsv";
 
@@ -132,6 +137,7 @@ function changeWorldMap(){
     filename = filename_template + "2010.tsv";
 
   }
+
 
   queue()
       .defer(d3.json, 'world_countries.json')

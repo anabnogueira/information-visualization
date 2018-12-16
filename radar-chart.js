@@ -186,6 +186,7 @@ var RadarChart = {
 	series=0;
 
 
+
 	d.forEach(function(y, x){
 	  g.selectAll(".nodes")
 		.data(y).enter()
