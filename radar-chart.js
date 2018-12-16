@@ -29,9 +29,14 @@ var RadarChart = {
 	};
 	
 	var colorRadar = [];
-
+	//console.log(colorsfromExtra);
 	//colorRadar = ["pink", "black", "orange", "yellow", "red", "gray"];
 	colorRadar = colorsfromExtra;
+
+
+
+	//console.log(colorRadar);
+
 
 	if('undefined' !== typeof options){
 	  for(var i in options){
@@ -47,7 +52,7 @@ var RadarChart = {
 		allAxis.push(allAxisData[k]);
 	}
 	
-	console.log(allAxis);
+	//console.log(allAxis);
 	var total = allAxis.length;
 	var radius = cfg.factor*Math.min(cfg.w/2, cfg.h/2);
 	//var Format = d3v3.format('%');
@@ -140,6 +145,9 @@ var RadarChart = {
 			cfg.h/2*(1-(parseFloat(Math.max(j.value, 0))/cfg.maxValue)*cfg.factor*Math.cos(i*cfg.radians/total))
 		  ]);
 		});
+
+
+
 	  dataValues.push(dataValues[0]);
 	  g.selectAll(".area")
 					 .data([dataValues])
@@ -147,7 +155,6 @@ var RadarChart = {
 					 .append("polygon")
 					 .attr("class", "radar-chart-serie"+series)
 					 .style("stroke-width", "2px")
-					 //.style("stroke", cfg.color(series))
 					 .style("stroke", colorRadar[series])
 					 .attr("points",function(d) {
 						 var str="";
@@ -180,9 +187,6 @@ var RadarChart = {
 
 
 	d.forEach(function(y, x){
-		// if(counter >10){
-		// 	return;
-		// }
 	  g.selectAll(".nodes")
 		.data(y).enter()
 		.append("svg:circle")
@@ -201,6 +205,7 @@ var RadarChart = {
 		})
 		.attr("data-id", function(j){return j.axis})
 		//.style("fill", cfg.color(series)).style("fill-opacity", .9)
+		
 		.style("fill", colorRadar[series]).style("fill-opacity", .9)
 		.on('mouseover', function (d){
 					newX =  parseFloat(d3v3.select(this).attr('cx')) - 10;

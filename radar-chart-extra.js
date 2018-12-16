@@ -244,6 +244,8 @@ d3v3.csv(dataToLoad, function(data) {
 var country_data = {};
 var e = [];
 var colorstoRadar = [];
+var diff = [];
+var mcfg;
 
 $(document).on('countriesSelected', function(e, args) {
 	const { countriesSelected } = args;
@@ -252,12 +254,13 @@ $(document).on('countriesSelected', function(e, args) {
 
 
 function drawRadar(countriesSelected){
-	colorstoRadar =[]; 
+	colorstoRadar = [];
 	var c = [];
 
 	if(countriesSelected.length >= clone.length){
+		//colorstoRadar = [];
 		console.log("SELECTED >= CLONE");
-		console.log(colorstoRadar);
+	//	console.log(colorstoRadar);
 
 		clone.push(countriesSelected[countriesSelected.length -1]);
 
@@ -276,6 +279,7 @@ function drawRadar(countriesSelected){
 
 	
 	for (var i = 0; i < countriesSelected.length; i++) {
+
 		colorstoRadar.push(colorToCountries[countriesSelected[i]]);
 	}
 
@@ -284,8 +288,6 @@ function drawRadar(countriesSelected){
 
 	function drawRadarAfterDelete (country, diff){
 		c=[];
-
-		clone = clone.filter(x => !diff.includes(x)).concat(diff.filter(x => !clone.includes(x)));
 
 		
 		radarData.forEach(function(d) {
@@ -303,15 +305,17 @@ function drawRadar(countriesSelected){
 	}
 
 	if(countriesSelected.length < clone.length){
+		
 		console.log("SELECTED < CLONE");
-		console.log(colorstoRadar);
-		var diff = clone.filter(x => !countriesSelected.includes(x)).concat(countriesSelected.filter(x => !clone.includes(x)));
+	//	console.log(colorstoRadar);
+		diff = clone.filter(x => !countriesSelected.includes(x)).concat(countriesSelected.filter(x => !clone.includes(x)));
 
+		clone = clone.filter(x => !diff.includes(x)).concat(diff.filter(x => !clone.includes(x)));
 			
 		if(diff.length > 0) {
-			console.log(colorstoRadar);
+			//console.log(colorstoRadar);
 			e=[];
-			colorstoRadar=[];
+		
 			if(countriesSelected.length == 0){
 				e = [ 
 							[
@@ -329,17 +333,20 @@ function drawRadar(countriesSelected){
 						]; 
 					
 						clone=[];
-						var mycfg = {
+						 mcfg = {
 							w: w,
 							h: h,
 							maxValue: 0.6,
 							levels: 6,
 							ExtraWidthX: 300
 							}
-							colorstoRadar = [];
-						RadarChart.draw("#chart", e, mycfg, colorstoRadar);
+						//	colorstoRadar = [];
+							diff=[];
+						
+						RadarChart.draw("#chart", e, mcfg, colorstoRadar);
 					return;
 			}
+			colorstoRadar=[];
 			for(var j=0; j < countriesSelected.length; j++){
 				var draw = drawRadarAfterDelete(countriesSelected[j], diff);
 				e.push(draw);
@@ -358,6 +365,7 @@ levels: 6,
 ExtraWidthX: 300
 }
 
+console.log(e);
 RadarChart.draw("#chart", e, mycfg, colorstoRadar);
 
 }
