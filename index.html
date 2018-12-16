@@ -117,7 +117,7 @@
 <div id="radarplot">
 	<h1>Radar Plot</h1>
 	<div id="chart">
-		<script src="radar-chart.js"></script>
+		<!--<script src="radar-chart.js"></script>-->
 	</div>
 
 </div>
@@ -338,50 +338,50 @@
 
 <div id="countrymenu">
 	<h2 id="causesod">Factors</h2>
-<label class="factors">
+<label class="factors" id="ft1">
 	<input type="checkbox" value="1" name="fooby[1][]">
 	<span class="checkmark"></span>
-	Access to water	
+	<span id="fttitle1">Sanitation</span>
 </label>
 
-<label class="factors">
+<label class="factors" id="ft2">
 	<input type="checkbox" value="1" name="fooby[1][]">
 	<span class="checkmark"></span>
-	Calory Intake
+	<span id="fttitle2">Calory Intake</span>
 </label>
 
-<label class="factors">
+<label class="factors" id="ft3">
 	<input type="checkbox" value="1" name="fooby[1][]">
 	<span class="checkmark"></span>
-	CO2 emissions
+	<span id="fttitle3">CO2 emissions</span>
 </label>
 
-<label class="factors">
+<label class="factors" id="ft4">
 	<input type="checkbox" value="1" name="fooby[1][]">
 	<span class="checkmark"></span>
-	GDP
+	<span id="fttitle4">GDP</span>
 </label>
 
-<label class="factors">
+<label class="factors" id="ft5">
 	<input type="checkbox" value="1" name="fooby[1][]">
 	<span class="checkmark"></span>
-	HDI
+	<span id="fttitle5">HDI</span>
 </label>
 
-<label class="factors">
+<label class="factors" id="ft6">
 	<input type="checkbox" value="1" name="fooby[1][]">
 	<span class="checkmark"></span>
-	Smoking Prevalence
+	<span id="fttitle6">Smoking Prevalence</span>
 </label>
 
-<label class="factors">
+<label class="factors" id="ft7">
 	<input type="checkbox" value="1" name="fooby[1][]">
 	<span class="checkmark"></span>
-	Vaccination
+	<span id="fttitle7">Vaccination</span>
 </label>
 
 <h2 id="causesod">Description</h2>
-
+<div id="causedescription">Percentage of country's population that does not have access to clean water</div>
 
 
 
@@ -401,6 +401,60 @@ $("input:checkbox").on('click', function() {
   }
 });
 
+
+$("#ft1").on('click', function() {
+	var txt = $('#fttitle1').html();
+	$("#currentfactor").html(txt);
+	var desc = "Percentage of country's population that does not have access to clean water";
+	$("#causedescription").html(desc);
+});
+
+$("#ft2").on('click', function() {
+	var txt = $('#fttitle2').html();
+	$("#currentfactor").html(txt);
+	var desc = "Daily intake of calories";
+	$("#causedescription").html(desc);
+});
+
+$("#ft3").on('click', function() {
+	var txt = $('#fttitle3').html();
+	$("#currentfactor").html(txt);
+	var desc = "Number of CO2 emissions in million tonnes";
+	$("#causedescription").html(desc);
+});
+
+$("#ft4").on('click', function() {
+	var txt = $('#fttitle4').html();
+	$("#currentfactor").html(txt);
+	var desc = "Gross Domestic Product of Country";
+	$("#causedescription").html(desc);
+});
+
+$("#ft5").on('click', function() {
+	var txt = $('#fttitle5').html();
+	$("#currentfactor").html(txt);
+	var desc = "Human Development Index - a set of factors that define life in a country";
+	$("#causedescription").html(desc);
+});
+
+$("#ft6").on('click', function() {
+	var txt = $('#fttitle6').html();
+	$("#currentfactor").html(txt);
+	var desc = "Smoking prevalence on the population, by number of cigarrettes a day";
+	$("#causedescription").html(desc);
+});
+
+$("#ft7").on('click', function() {
+	var txt = $('#fttitle7').html();
+	$("#currentfactor").html(txt);
+	var desc = "Number of deaths prevented by vaccination";
+	$("#causedescription").html(desc);
+});
+
+
+
+
+
 </script>
 
 </div>
@@ -408,7 +462,7 @@ $("input:checkbox").on('click', function() {
 
 <script src="libs/d3.v4.min.js"></script>
 <div id="gooey">
-	<h1>CO2 Emissions</h1>
+	<h1 id="currentfactor">Sanitation</h1>
 	<div id="gooeychart">
 		
 	</div>
@@ -432,7 +486,7 @@ $("input:checkbox").on('click', function() {
 <script src="radar-chart-extra.js"></script>
 
 <!----script src="libs/d3-3-5-5.min.js"></script-->
-	<script src="gooeyalcohol.js"></script>
+<script src="gooeyalcohol.js"></script>
 
 <script src="libs/d3.v4.min.js"></script>
 <script src="line.js"></script>
