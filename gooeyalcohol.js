@@ -65,6 +65,37 @@ var root;
 
 var year_data = {};
 
+
+$(document).on('yearSelected', function(e, args) {
+  const { year, countriesSelected } = args;
+  USER_YEAR = year;
+  drawGooey(countriesSelected);
+});
+
+$( function() {
+  $( "#slider-range-max" ).slider({
+    range: "max",
+    min: 1990,
+    max: 2015,
+    value: $( "#current_year" ).val(),
+    slide: function( event, ui ) {
+      $( "#current_year" ).val(ui.value);
+      current_year = $( "#slider-range-max" ).slider( "value" ) ;
+      //console.log(current_year);
+      USER_YEAR = current_year;
+      console.log(USER_YEAR);
+      drawGooey(countriesSelected);
+
+    }
+
+  });
+
+});
+
+
+
+
+
 var gooeyData;
 d3v3.tsv(DATA_FILE_LOC, type, function(error, info) {
   if (error) throw error;
