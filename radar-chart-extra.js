@@ -255,7 +255,9 @@ function drawRadar(countriesSelected){
 	colorstoRadar =[]; 
 	var c = [];
 
-	if(countriesSelected.length > clone.length){
+	if(countriesSelected.length >= clone.length){
+		console.log("SELECTED >= CLONE");
+		console.log(colorstoRadar);
 
 		clone.push(countriesSelected[countriesSelected.length -1]);
 
@@ -273,7 +275,6 @@ function drawRadar(countriesSelected){
 	}
 
 	
-
 	for (var i = 0; i < countriesSelected.length; i++) {
 		colorstoRadar.push(colorToCountries[countriesSelected[i]]);
 	}
@@ -302,10 +303,13 @@ function drawRadar(countriesSelected){
 	}
 
 	if(countriesSelected.length < clone.length){
+		console.log("SELECTED < CLONE");
+		console.log(colorstoRadar);
 		var diff = clone.filter(x => !countriesSelected.includes(x)).concat(countriesSelected.filter(x => !clone.includes(x)));
 
 			
 		if(diff.length > 0) {
+			console.log(colorstoRadar);
 			e=[];
 			colorstoRadar=[];
 			if(countriesSelected.length == 0){
@@ -332,6 +336,7 @@ function drawRadar(countriesSelected){
 							levels: 6,
 							ExtraWidthX: 300
 							}
+							colorstoRadar = [];
 						RadarChart.draw("#chart", e, mycfg, colorstoRadar);
 					return;
 			}
