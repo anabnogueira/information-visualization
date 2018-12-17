@@ -257,7 +257,7 @@ svgGooey.on("mousemove", function() {
     });
 
     let dataCountries = countriesSelected.map((c) => {
-      return {country: c, id: c + file};
+      return {country: c, id: c + file + USER_YEAR};
     });
     
     const svgLabelsData = svgLabels.selectAll('text').data(dataCountries, function(d) {
