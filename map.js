@@ -91,22 +91,22 @@ queue()
 
 
 
-$( function() {
-  $( "#slider-range-max" ).slider({
-    range: "max",
-    min: 1990,
-    max: 2015,
-    value: $( "#current_year" ).val(),
-    slide: function( event, ui ) {
-      $( "#current_year" ).val(ui.value);
-      current_year = $( "#slider-range-max" ).slider( "value" );
-      changeWorldMap();
+// $( function() {
+//   $( "#slider-range-max" ).slider({
+//     range: "max",
+//     min: 1990,
+//     max: 2015,
+//     value: $( "#current_year" ).val(),
+//     slide: function( event, ui ) {
+//       $( "#current_year" ).val(ui.value);
+//       current_year = $( "#slider-range-max" ).slider( "value" );
+//       changeWorldMap();
       
-    }
+//     }
 
-  });
+//   });
 
-});
+// });
 
 
 

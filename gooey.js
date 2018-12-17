@@ -66,16 +66,52 @@ $( function() {
 		current_year = $( "#slider-range-max" ).slider( "value" ) ;
 	 
     USER_YEAR = current_year;
+    changeWorldMap3(current_year);
+    console.log("MAP DONE");
+    drawGooey(countriesSelected);
+    drawRadarAfterUpdate(current_year, countriesSelected);
     
-		drawGooey(countriesSelected);
-		
-		drawRadarAfterUpdate(current_year, countriesSelected);
+    
+   
+    
 
 	  }
   
 	});
   
   });
+
+  function changeWorldMap3(yr){
+    if (1990 <= yr && current_year <= 1994) {
+        filename = filename_template + "1990.tsv";
+
+    }
+    
+    if (1995 <= yr && yr <= 1999) {
+        filename = filename_template + "1995.tsv";
+
+    }
+    
+    if (2000 <= yr && yr <= 2004) {
+        filename = filename_template + "2000.tsv";
+
+    }
+    
+    if (2005 <= yr && yr <= 2009) {
+        filename = filename_template + "2005.tsv";
+
+    }
+    
+    if (2010 <= yr && yr <= 2015) {
+        filename = filename_template + "2010.tsv";
+
+    }
+    
+    queue()
+        .defer(d3.json, 'world_countries.json')
+        .defer(d3.tsv, filename)
+        .await(ready);
+}
 
 
 
@@ -189,16 +225,13 @@ function drawGooey(countriesSelected) {
         valueGooey= 1300* year_data[USER_YEAR][str]/ maxGooey;
       }
       if(file=="gdp"){
-        //valueGooey =  mulGooey*year_data[USER_YEAR][str]/ maxGooey;
-        valueGooey =  (year_data[USER_YEAR][str] * 0.0000000001)/1.5;
-
+        valueGooey =  mulGooey*year_data[USER_YEAR][str]/ maxGooey;
       }
       if(file=="hdi"){
         valueGooey = Math.exp(year_data[USER_YEAR][str]*3);
       }
       if(file=="co2_emissions"){
-        //valueGooey =  11*year_data[USER_YEAR][str]/ 10283.51;
-        valueGooey = Math.sqrt(year_data[USER_YEAR][str] *10)*0.6;
+        valueGooey =  11*year_data[USER_YEAR][str]/ maxGooey;
       }
 
 
@@ -281,7 +314,7 @@ svgGooey.on("mousemove", function() {
             return foci[d.country].x;
           })
           .attr("y",  function(d) {
-            return foci[d.country].y;
+            return foci[d.country].y -10 +  (foci[d.country].y/2);
           })
           .style("font-weight", "lighter")
           .style("font-family", "sans serif")

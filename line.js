@@ -190,7 +190,6 @@ var focus = g.append("g")
 
                   var year = res[0];
                   $(document).trigger('yearSelected', {year, countriesSelected});
-                 // $(document).trigger('yearSelected2', {year, countriesSelected});
 
                   $( "#current_year" ).val(year);
                   $( "#slider-range-max" ).slider({
