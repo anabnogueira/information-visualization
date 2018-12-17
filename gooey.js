@@ -278,7 +278,7 @@ svgGooey.on("mousemove", function() {
             return foci[d.country].x;
           })
           .attr("y",  function(d) {
-            return foci[d.country].y;
+            return foci[d.country].y + (foci[d.country].y/2);
           })
           .style("font-weight", "lighter")
           .style("font-family", "sans serif")
