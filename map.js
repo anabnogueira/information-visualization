@@ -1,8 +1,5 @@
 const format = d3.format(',');
 
-
-
-
 // Set tooltips
 const tip = d3.tip()
   .attr('class', 'd3-tip')
@@ -13,24 +10,10 @@ const margin_map = {top: 0, right: 0, bottom: 0, left: 0};
 const width_map = 500;
 const height_map = 400;
 
-
-
-// const colors = ['rgb(204, 0, 153)', 
-//           'rgb(255, 80, 80)', 
-//           'rgb(255, 153, 51)', 
-//           'rgb(51, 51, 255)', 
-//           'rgb(0, 204, 153)', 
-//           'rgb(204, 102, 255)', 
-//           'rgb(255, 0, 102)',
-//           'rgb(51, 204, 51)',
-//           'rgb(0, 255, 204)',
-//           'rgb(230, 153, 0)'];
-
 const svg_map = d3.select('#worldmap')
   .append('svg')
   .attr('width', '100%')
   .attr('height', '76%')
-  //.style('border', '1px solid white')
   .style('padding-left', '8vh')
   .style('margin-top', '1vh')
   .append('g')
@@ -48,8 +31,7 @@ svg_map.call(tip);
 // Data and color scale
 var data = d3.map();
 var colorScheme = ['#b3b3cc', '#ffffff', '#b3d1ff', '#66b3ff', '#1a8cff', '#0059b3', '#004080', '#00264d'];
-//var colorScheme =d3.schemeBlues[8];
-//colorScheme.unshift("#ddd")
+
 var colorScale = d3.scaleThreshold()
                   .domain([1, 5, 7, 10, 13, 16, 23])
                   .range(colorScheme);
@@ -88,25 +70,6 @@ queue()
   .defer(d3.json, 'world_countries.json')
   .defer(d3.tsv, filename_template + "1990.tsv")
   .await(ready);
-
-
-
-// $( function() {
-//   $( "#slider-range-max" ).slider({
-//     range: "max",
-//     min: 1990,
-//     max: 2015,
-//     value: $( "#current_year" ).val(),
-//     slide: function( event, ui ) {
-//       $( "#current_year" ).val(ui.value);
-//       current_year = $( "#slider-range-max" ).slider( "value" );
-//       changeWorldMap();
-      
-//     }
-
-//   });
-
-// });
 
 
 
@@ -176,9 +139,6 @@ function ready(error, data, population) {
           .style('stroke-width', 3)
           .html(d => d)
           .on("click", function(d){
-            /*   d3.select(this)
-                .style("stroke", "bisque")
-                .style("stroke-width", "2.5") */
             if(countriesSelected.includes(d.properties.name)){
               return;
             }  
@@ -193,7 +153,7 @@ function ready(error, data, population) {
               }
             else {
               var sc = document.getElementById("selectedCountry")
-              //var hue = colors[Math.floor(Math.random()*colors.length)];;
+             
               var j = d.properties.name;
 
               sc.innerHTML += "<li>"+ d.properties.name + "<span class=" + "close" + ">" + "&times;"+ "</span>" + "<span class=" + "coloring" +">" + "</span>"+ "</li>"; 
@@ -232,8 +192,4 @@ function ready(error, data, population) {
     .datum(topojson.mesh(data.features, (a, b) => a.id !== b.id))
     .attr('class', 'names')
     .attr('d', path);
-}
-
-function decide_color(){
-  
 }

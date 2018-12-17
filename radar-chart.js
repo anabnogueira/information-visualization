@@ -25,7 +25,6 @@ var RadarChart = {
 	 TranslateY: 30,
 	 ExtraWidthX: 0,
 	 ExtraWidthY: 100,
-	 //color: d3v3.scale.category10()
 	};
 	
 	var colorRadar = [];

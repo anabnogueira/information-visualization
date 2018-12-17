@@ -246,7 +246,7 @@ d3v3.csv(dataToLoad, function(data) {
 
 $(document).on('yearSelected', function(e, args) {
 	const { year, countriesSelected } = args;
-	console.log("entrei radar");
+	
 	drawRadarAfterUpdate(year, countriesSelected);
 });
 
@@ -259,9 +259,6 @@ function drawRadarAfterUpdate(year, countriesSelected){
 	
 
 	d3v3.csv(dataToLoad, function(error, data) {
-	//	if (error) throw error;
-	console.log(dataToLoad);
-
 		var mycfgup = {
 			w: w,
 			h: h,
@@ -293,31 +290,13 @@ function drawRadarAfterUpdate(year, countriesSelected){
 			colorstoRadar.push(colorToCountries[countriesSelected[i]]);
 		}
 	
-		console.log(e);
-		console.log(colorstoRadar);
-
+	
 		RadarChart.draw("#chart", e, mycfgup, colorstoRadar);
 		return;
 
 
   
 	}); 
-
-	// function type(d, i) {
-	
-	// 	d3.keys(d).map(function(key) {
-	// 		console.log(key);
-	// 		if (key != "Country" || key != "cause") {
-	// 			d[key] = +d[key];
-	// 		}
-	// 		else{
-	// 			d[key] = String(d[key]);
-	// 		}
-	// 	});
-	// 	return d;
-	
-	// }
-
 
 }
 
@@ -384,17 +363,12 @@ function drawRadar(countriesSelected){
 	}
 
 	if(countriesSelected.length < clone.length){
-		
-		console.log("SELECTED < CLONE");
-	//	console.log(colorstoRadar);
 		diff = clone.filter(x => !countriesSelected.includes(x)).concat(countriesSelected.filter(x => !clone.includes(x)));
 
 		clone = clone.filter(x => !diff.includes(x)).concat(diff.filter(x => !clone.includes(x)));
 			
 		if(diff.length > 0) {
-			//console.log(colorstoRadar);
 			e=[];
-		
 			if(countriesSelected.length == 0){
 				e = [ 
 							[
@@ -445,7 +419,6 @@ levels: 6,
 ExtraWidthX: 300
 }
 
-console.log(e);
 RadarChart.draw("#chart", e, mycfg, colorstoRadar);
 
 }
