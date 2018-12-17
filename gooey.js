@@ -225,13 +225,15 @@ function drawGooey(countriesSelected) {
         valueGooey= 1300* year_data[USER_YEAR][str]/ maxGooey;
       }
       if(file=="gdp"){
-        valueGooey =  mulGooey*year_data[USER_YEAR][str]/ maxGooey;
+        //valueGooey =  mulGooey*year_data[USER_YEAR][str]/ maxGooey;
+         valueGooey =  (year_data[USER_YEAR][str] * 0.0000000001)/1.5;
       }
       if(file=="hdi"){
         valueGooey = Math.exp(year_data[USER_YEAR][str]*3);
       }
       if(file=="co2_emissions"){
-        valueGooey =  11*year_data[USER_YEAR][str]/ maxGooey;
+        //valueGooey =  11*year_data[USER_YEAR][str]/ maxGooey;
+        valueGooey = Math.sqrt(year_data[USER_YEAR][str] *10)*0.6;
       }
 
 
@@ -314,7 +316,7 @@ svgGooey.on("mousemove", function() {
             return foci[d.country].x;
           })
           .attr("y",  function(d) {
-            return foci[d.country].y -10 +  (foci[d.country].y/2);
+            return foci[d.country].y;
           })
           .style("font-weight", "lighter")
           .style("font-family", "sans serif")
