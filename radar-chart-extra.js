@@ -252,20 +252,7 @@ $(document).on('yearSelected', function(e, args) {
 	drawRadarAfterUpdate(year, countriesSelected);
 });
 
-// $( function() {
-// 	$( "#slider-range-max" ).slider({
-// 	  range: "max",
-// 	  min: 1990,
-// 	  max: 2015,
-// 	  value: $( "#current_year" ).val(),
-// 	  slide: function( event, ui ) {
-// 		$( "#current_year" ).val(ui.value);
-// 		current_year = $( "#slider-range-max" ).slider( "value" );
-// 		console.log("entrei slider radar");
-// 		drawRadarAfterUpdate(current_year, countriesSelected);
-// 	  }
-// 	});
-//   });
+
 
 function drawRadarAfterUpdate(year, countriesSelected){
 	

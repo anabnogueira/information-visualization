@@ -69,7 +69,6 @@ var year_data = {};
 $(document).on('yearSelected2', function(e, args) {
   const { year, countriesSelected } = args;
   USER_YEAR = year;
-  console.log("entrei gooey");
   drawGooey(countriesSelected);
 });
 
@@ -82,9 +81,9 @@ $( function() {
     slide: function( event, ui ) {
       $( "#current_year" ).val(ui.value);
       current_year = $( "#slider-range-max" ).slider( "value" ) ;
-      //console.log(current_year);
+   
       USER_YEAR = current_year;
-      console.log("entrei slider gooey");
+     
       
       drawGooey(countriesSelected);
       drawRadarAfterUpdate(current_year, countriesSelected);
