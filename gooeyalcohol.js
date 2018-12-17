@@ -98,8 +98,6 @@ $( function() {
 
 
 
-
-
 var gooeyData;
 d3v3.tsv(DATA_FILE_LOC, type, function(error, info) {
   if (error) throw error;
@@ -117,6 +115,20 @@ $(document).on('countriesSelected', function(e, args) {
     const { countriesSelected } = args;
     drawGooey(countriesSelected);
 })
+
+
+function gooey_switch(args){
+  console.log("CAPTEI O FACTOR SELECTED2");
+  const { factorname } = args;
+  console.log(args);
+  DATA_FILE_LOC = "/datasets/" +args + ".tsv";
+  d3v3.tsv(DATA_FILE_LOC, type, function(error, info) {
+   console.log(DATA_FILE_LOC);
+    gooeyData = info;
+    drawGooey(countriesSelected);
+  });
+
+}
 
 const svgLabels = svgGooey.append("g").attr("class", "labels-container");
 //var nodes= [{ radius: 0, fixed: true, choice: "dragger", idd: "root" }];
