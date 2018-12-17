@@ -248,29 +248,30 @@ d3v3.csv(dataToLoad, function(data) {
 
 $(document).on('yearSelected', function(e, args) {
 	const { year, countriesSelected } = args;
-	
+	console.log("entrei radar");
 	drawRadarAfterUpdate(year, countriesSelected);
 });
 
-$( function() {
-	$( "#slider-range-max" ).slider({
-	  range: "max",
-	  min: 1990,
-	  max: 2015,
-	  value: $( "#current_year" ).val(),
-	  slide: function( event, ui ) {
-		$( "#current_year" ).val(ui.value);
-		current_year = $( "#slider-range-max" ).slider( "value" );
-		drawRadarAfterUpdate(current_year, countriesSelected);
-	  }
-	});
-  });
+// $( function() {
+// 	$( "#slider-range-max" ).slider({
+// 	  range: "max",
+// 	  min: 1990,
+// 	  max: 2015,
+// 	  value: $( "#current_year" ).val(),
+// 	  slide: function( event, ui ) {
+// 		$( "#current_year" ).val(ui.value);
+// 		current_year = $( "#slider-range-max" ).slider( "value" );
+// 		console.log("entrei slider radar");
+// 		drawRadarAfterUpdate(current_year, countriesSelected);
+// 	  }
+// 	});
+//   });
 
 function drawRadarAfterUpdate(year, countriesSelected){
-	console.log("CHEGUEEEEEEEEI");
+	
 	
 	dataToLoad = "/datasets/causes" + year + ".csv";
-	console.log(year);
+	
 
 	d3v3.csv(dataToLoad, function(error, data) {
 		//if (error) throw error;
