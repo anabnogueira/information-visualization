@@ -1,7 +1,7 @@
 
 var countries = ["Afghanistan","Albania","Algeria","Angola","Antigua and Barbuda","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh",
 "Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia","Bosnia and Herzegovina","Botswana","Brazil", "Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia",
-"Cameroon","Canada","Cape Verde","Central Arfrican Republic","Chad","Chile","China","Colombia", "Comoros","Congo","Costa Rica","Côte d'Ivoire","Croatia","Cuba",
+"Cameroon","Canada","Cape Verde","Central Arfrican Republic","Chad","Chile","China","Colombia", "Comoros","Congo","Costa Rica","Croatia","Cuba",
 "Cyprus","Czech Republic", "Democratic Republic of Congo","Denmark","Djibouti","Dominican Republic","Ecuador","Egypt","El Salvador","Eritrea","Estonia","Ethiopia",
 "Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Grenada","Guam","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary",
 "Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Kuwait","Kyrgyzstan","Laos","Latvia",
