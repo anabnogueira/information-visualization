@@ -66,7 +66,7 @@ var root;
 var year_data = {};
 
 
-$(document).on('yearSelected2', function(e, args) {
+$(document).on('yearSelected', function(e, args) {
   const { year, countriesSelected } = args;
   USER_YEAR = year;
   drawGooey(countriesSelected);
