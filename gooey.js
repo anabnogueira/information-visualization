@@ -67,14 +67,9 @@ $( function() {
 	 
     USER_YEAR = current_year;
     changeWorldMap3(current_year);
-    console.log("MAP DONE");
     drawGooey(countriesSelected);
     drawRadarAfterUpdate(current_year, countriesSelected);
     
-    
-   
-    
-
 	  }
   
 	});
@@ -165,7 +160,7 @@ function gooey_switch(args){
   if(args=="hdi"){
     file= "hdi";
     mulGooey = 10;
-    constGooey=10; //VEEEEEEER
+    constGooey=10; 
   }
   if(args=="co2_emissions"){
     file= "co2_emissions";
@@ -174,7 +169,6 @@ function gooey_switch(args){
   }
 
   d3v3.tsv(DATA_FILE_LOC, type, function(error, info) {
-   console.log(DATA_FILE_LOC);
     gooeyData = [];
     gooeyData = info;
     drawGooey(countriesSelected);
@@ -205,8 +199,8 @@ function drawGooey(countriesSelected) {
         
       if (foci[str] == null) {
         foci[str] = { 
-          x : Math.floor(Math.random() * (550 - 50)) + 50,
-          y : Math.floor(Math.random() * (300 - 50)) + 50,
+          x : Math.floor(Math.random() * (550 - 100)) + 100,
+          y : Math.floor(Math.random() * (300 - 100)) + 100,
           color: col
         };  
       }
@@ -253,8 +247,7 @@ function drawGooey(countriesSelected) {
     }
   });
 
-    
-  // Force-directed layout
+
   var force = d3v3.layout.force()
     .nodes(nodes)
     .size([width, height])
@@ -305,9 +298,6 @@ svgGooey.on("mousemove", function() {
     svgLabelsData.exit().remove();
     
     svgLabelsData.enter().append("text")
-          // .attr("id", function(d) {
-          //   return "counter"+d;
-          // })
           .attr("class", "counter")
           .attr("data-choice", function(d) {
             return d.country;
@@ -370,8 +360,7 @@ svgGooey.on("mousemove", function() {
         });
       };
     }
-} // @end d3v3.tsv()
-
+}
 
 function type(d, i) {
   
