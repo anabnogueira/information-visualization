@@ -2,8 +2,6 @@
 //	DATA SCRIPT FOR RADAR CHART
 //	* * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
-
-
 var colorToCountries = {
 	"Afghanistan": "#3957ff",
 	"Albania": "#d3fe14",
@@ -238,7 +236,7 @@ RadarChart.draw("#chart", a, mycfga, []);
 var countriesAlreadySelected;
 var selectedYear = "2015";
 
-var dataToLoad = "/datasets/causes" + selectedYear + ".csv";
+var dataToLoad = "/datasets/cause/causes" + selectedYear + ".csv";
 
 var radarData;
 
@@ -257,11 +255,12 @@ $(document).on('yearSelected', function(e, args) {
 function drawRadarAfterUpdate(year, countriesSelected){
 	
 	
-	dataToLoad = "/datasets/causes" + year + ".csv";
+	dataToLoad = "/datasets/cause/causes" + year + ".csv";
 	
 
 	d3v3.csv(dataToLoad, function(error, data) {
-		//if (error) throw error;
+	//	if (error) throw error;
+	console.log(dataToLoad);
 
 		var mycfgup = {
 			w: w,
@@ -336,6 +335,8 @@ $(document).on('countriesSelected', function(e, args) {
 })
 
 
+
+
 function drawRadar(countriesSelected){
 	colorstoRadar = [];
 	var c = [];
@@ -350,8 +351,7 @@ function drawRadar(countriesSelected){
 						value: +d.percentage 
 					});
 				}
-	
-			
+
 		});
 
 	}

@@ -339,7 +339,7 @@
 <div id="countrymenu">
 	<h2 id="causesod">Factors</h2>
 <label class="factors" id="ft1">
-	<input type="checkbox" value="1" name="fooby[1][]">
+	<input type="checkbox" value="1" name="fooby[1][]" checked>
 	<span class="checkmark"></span>
 	<span id="fttitle1">Sanitation</span>
 </label>
@@ -404,7 +404,7 @@ $("input:checkbox").on('click', function() {
 
 $("#ft1").on('click', function() {
 	var txt = $('#fttitle1').html();
-	var txt1 = "sanitation_gooey";
+	var txt1 = "sanitation";
 	$("#currentfactor").html(txt);
 	var desc = "Percentage of country's population that does not have access to drinking water";
 	$("#causedescription").html(desc);
@@ -449,7 +449,7 @@ $("#ft5").on('click', function() {
 
 $("#ft6").on('click', function() {
 	var txt = $('#fttitle6').html();
-	var txt1 = "daily_smoking_gooey";
+	var txt1 = "daily_smoking";
 	$("#currentfactor").html(txt);
 	var desc = "Smoking prevalence on the population, by number of cigarrettes a day";
 	$("#causedescription").html(desc);

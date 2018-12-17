@@ -1,4 +1,4 @@
-var DATA_FILE_LOC = 'sanitation_gooey_format.tsv';
+var DATA_FILE_LOC = '/datasets/factors/sanitation.tsv';
 var USER_YEAR = '2015'; // default user year
 
 // var cells = [[10,10], [93,10], [176,10], [259,10], [342,10],
@@ -75,26 +75,28 @@ $(document).on('yearSelected', function(e, args) {
 });
 
 $( function() {
-  $( "#slider-range-max" ).slider({
-    range: "max",
-    min: 1990,
-    max: 2015,
-    value: $( "#current_year" ).val(),
-    slide: function( event, ui ) {
-      $( "#current_year" ).val(ui.value);
-      current_year = $( "#slider-range-max" ).slider( "value" ) ;
-   
-      USER_YEAR = current_year;
-     
-      
-      drawGooey(countriesSelected);
-      drawRadarAfterUpdate(current_year, countriesSelected);
+	$( "#slider-range-max" ).slider({
+	  range: "max",
+	  min: 1990,
+	  max: 2015,
+	  value: $( "#current_year" ).val(),
+	  slide: function( event, ui ) {
+		$( "#current_year" ).val(ui.value);
+		current_year = $( "#slider-range-max" ).slider( "value" ) ;
+	 
+    USER_YEAR = current_year;
+    
+    console.log("TENTANDO FAZER SLIDEEEEE");
+		drawGooey(countriesSelected);
+		
+    console.log("PASSEI GOOEY");
+		drawRadarAfterUpdate(current_year, countriesSelected);
 
-    }
-
+	  }
+  
+	});
+  
   });
-
-});
 
 
 
@@ -121,9 +123,10 @@ function gooey_switch(args){
   console.log("CAPTEI O FACTOR SELECTED2");
   const { factorname } = args;
   console.log(args);
-  DATA_FILE_LOC = "/datasets/" +args + ".tsv";
+  DATA_FILE_LOC = "/datasets/factors/" +args + ".tsv";
   d3v3.tsv(DATA_FILE_LOC, type, function(error, info) {
    console.log(DATA_FILE_LOC);
+    gooeyData = [];
     gooeyData = info;
     drawGooey(countriesSelected);
   });
@@ -164,7 +167,7 @@ function drawGooey(countriesSelected) {
         };  
       }
       // cells.splice(0, 1);
-      d3v3.range(0, 20 * year_data[USER_YEAR][str]).map(function(o, i) {
+      d3v3.range(0, 0.5 * year_data[USER_YEAR][str]).map(function(o, i) {
 
         nodes_so_far += 1;
         //console.log(str)
