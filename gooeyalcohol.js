@@ -28,6 +28,8 @@ var svgGooey = d3v3.select("#gooeychart").append('svg')
 var g = svgGooey.append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+
+
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////// Create filter ///////////////////////////////
 /////////////////////////////////////////////////////////////////////////// 
@@ -116,8 +118,9 @@ $(document).on('countriesSelected', function(e, args) {
     drawGooey(countriesSelected);
 })
 
-
+const svgLabels = svgGooey.append("g").attr("class", "labels-container");
 //var nodes= [{ radius: 0, fixed: true, choice: "dragger", idd: "root" }];
+
 
 function drawGooey(countriesSelected) {
   gooeyData.forEach(function(d) {
@@ -182,6 +185,15 @@ function drawGooey(countriesSelected) {
     .start();
 
 
+svgGooey.on("mousemove", function() {
+  var p1 = d3v3.mouse(this);
+
+  //console.log( d3v3.event.pageX, d3v3.event.pageY ) // log the mouse x,y position
+  
+  root.px = p1[0];
+  root.py = p1[1];
+  force.resume();
+});
   
   // Draw circle for each node.
   var circleData = circleWrapper.selectAll("circle")
@@ -207,32 +219,65 @@ function drawGooey(countriesSelected) {
       return function(t) { return d.radius = i(t); };
     });
 
+    const dataCountries = countriesSelected;
+    console.log(dataCountries);
+    const svgLabelsData = svgLabels.selectAll('text').data(dataCountries, function(d) {
+      return d;
+    });
 
-    // Labels etc
-    d3v3.keys(foci).forEach(function(d) {
-      if (d != "dragger") {
-        svgGooey.append("text")
-          .attr("id", "counter"+d)
+    svgLabelsData.exit().remove();
+    
+    svgLabelsData.enter().append("text")
+          .attr("id", function(d) {
+            return "counter"+d;
+          })
           .attr("class", "counter")
-          .attr("data-choice", d)
-          .attr("x", foci[d].x)
-          .attr("y", foci[d].y)
+          .attr("data-choice", function(d) {
+            console.log(d);
+            return d;
+          })
+          .attr("x", function(d) {
+            return foci[d].x;
+          })
+          .attr("y",  function(d) {
+            return foci[d].y;
+          })
           .style("font-weight", "lighter")
           .style("font-family", "sans serif")
          // .attr("text-anchor", "middle")
-          .text(year_data[USER_YEAR][d]);
+          .text(function(d) {
+            return year_data[USER_YEAR][d];
+          })
 
-        svgGooey.on("mousemove", function() {
-          var p1 = d3v3.mouse(this);
+    
 
-          //console.log( d3v3.event.pageX, d3v3.event.pageY ) // log the mouse x,y position
+    // // Labels etc
+    // d3v3.keys(foci).forEach(function(d) {
+    //   if (d != "dragger") {
+    //     svgGooey.data()
+
+    //     svgGooey.append("text")
+    //       .attr("id", "counter"+d)
+    //       .attr("class", "counter")
+    //       .attr("data-choice", d)
+    //       .attr("x", foci[d].x)
+    //       .attr("y", foci[d].y)
+    //       .style("font-weight", "lighter")
+    //       .style("font-family", "sans serif")
+    //      // .attr("text-anchor", "middle")
+    //       .text(year_data[USER_YEAR][d]);
+
+    //     svgGooey.on("mousemove", function() {
+    //       var p1 = d3v3.mouse(this);
+
+    //       //console.log( d3v3.event.pageX, d3v3.event.pageY ) // log the mouse x,y position
           
-          root.px = p1[0];
-          root.py = p1[1];
-          force.resume();
-        });
-      }   
-    });
+    //       root.px = p1[0];
+    //       root.py = p1[1];
+    //       force.resume();
+    //     });
+    //   }   
+    // });
 
     // // Country dropdown menu
     // d3v3.select("#dropdown_title").html(USER_YEAR);
