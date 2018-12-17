@@ -86,7 +86,25 @@
 
 <!-------------- Line Chart --------------->
 <div id="linechart" >
-	<h1>Mortality Rate: chosen countries</h1>
+	<!--<div id="pin">
+		<img class="button" id="img1" src="icons/pin4.png" onclick="colorchange1(this.id)">
+	</div>
+	<div id="world">
+		<img class="button2" id="img2" src="icons/world2.png" onclick="colorchange2(this.id)">
+	</div>-->
+		<script>	
+		function colorchange1(id) {
+			var button = "button";
+			document.getElementById(id).style.backgroundColor = "#C0C0C0";
+			document.getElementById(button).style.backgroundColor = "#FFFFFF";
+	   }
+	   function colorchange2(id){
+		   var button2 = "button2";
+			document.getElementById(id).style.backgroundColor = "#C0C0C0";
+			document.getElementById(button2).style.backgroundColor = "#FFFFFF";
+	   }
+	</script>
+	<h1>Mortality Rate</h1>
 	<div id="linesvg" style="width: 740px; height: 370px"></div>
 </div>
 <br>
