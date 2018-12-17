@@ -29,14 +29,7 @@ var RadarChart = {
 	};
 	
 	var colorRadar = [];
-	//console.log(colorsfromExtra);
-	//colorRadar = ["pink", "black", "orange", "yellow", "red", "gray"];
 	colorRadar = colorsfromExtra;
-
-
-
-	//console.log(colorRadar);
-
 
 	if('undefined' !== typeof options){
 	  for(var i in options){
@@ -52,10 +45,8 @@ var RadarChart = {
 		allAxis.push(allAxisData[k]);
 	}
 	
-	//console.log(allAxis);
 	var total = allAxis.length;
 	var radius = cfg.factor*Math.min(cfg.w/2, cfg.h/2);
-	//var Format = d3v3.format('%');
 	d3v3.select(id).select("svg").remove();
 	
 	var g = d3v3.select(id)
@@ -68,7 +59,6 @@ var RadarChart = {
 
 	var tooltip;
 	
-	//Circular segments
 	for(var j=0; j<cfg.levels-1; j++){
 	  var levelFactor = cfg.factor*radius*((j+1)/cfg.levels);
 	  g.selectAll(".levels")
@@ -85,24 +75,6 @@ var RadarChart = {
 	   .style("stroke-width", "0.6px")
 	   .attr("transform", "translate(" + (cfg.w/2-levelFactor) + ", " + (cfg.h/2-levelFactor) + ")");
 	}
-
-	//Text indicating at what % each level is
-	// for(var j=0; j<cfg.levels; j++){
-	//   var levelFactor = cfg.factor*radius*((j+1)/cfg.levels);
-	//   g.selectAll(".levels")
-	//    .data([1]) //dummy data
-	//    .enter()
-	//    .append("svg:text")
-	//    .attr("x", function(d){return levelFactor*(1-cfg.factor*Math.sin(0));})
-	//    .attr("y", function(d){return levelFactor*(1-cfg.factor*Math.cos(0));})
-	//    .attr("class", "legend")
-	//    .style("font-family", "sans-serif")
-	//    .style("font-size", "10px")
-	//    .attr("transform", "translate(" + (cfg.w/2-levelFactor + cfg.ToRight) + ", " + (cfg.h/2-levelFactor) + ")")
-	//    .attr("fill", "white")
-	//    .style('font-weight', 'lighter')
-	//    .text(Format((j+1)*cfg.maxValue/cfg.levels));
-	// }
 	
 	series = 0;
 
@@ -164,22 +136,6 @@ var RadarChart = {
 						 return str;
 					  })
 					 .style("fill", "none")
-					 //.style("fill", function(j, i){return cfg.color(series)})
-					 // .style("fill-opacity", cfg.opacityArea)
-					 // .on('mouseover', function (d){
-						// 				z = "polygon."+d3v3.select(this).attr("class");
-						// 				g.selectAll("polygon")
-						// 				 .transition(200)
-						// 				 .style("fill-opacity", 0.1); 
-						// 				g.selectAll(z)
-						// 				 .transition(200)
-						// 				 .style("fill-opacity", .7);
-						// 			  })
-					 // .on('mouseout', function(){
-						// 				g.selectAll("polygon")
-						// 				 .transition(200)
-						// 				 .style("fill-opacity", cfg.opacityArea);
-					 // })
 					 ;
 	  series++;
 	});
@@ -205,7 +161,6 @@ var RadarChart = {
 		  return cfg.h/2*(1-(Math.max(j.value, 0)/cfg.maxValue)*cfg.factor*Math.cos(i*cfg.radians/total));
 		})
 		.attr("data-id", function(j){return j.axis})
-		//.style("fill", cfg.color(series)).style("fill-opacity", .9)
 		
 		.style("fill", colorRadar[series]).style("fill-opacity", .9)
 		.on('mouseover', function (d){
